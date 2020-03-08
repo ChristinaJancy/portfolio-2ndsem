@@ -42,11 +42,10 @@
       </v-list>
     </v-navigation-drawer>
 
-
-
+    <!-- App bar-->
     <v-app-bar
       app
-      color="#ffffff92"
+     :color="dynamic"
       dark
     >
       <div class="d-flex align-center">
@@ -92,9 +91,12 @@ import * as easings from 'vuetify/es5/services/goto/easing-patterns'
         offset: 0,
         easing: 'easeInOutCubic',
         easings: Object.keys(easings),
+        //for scroll
         home: '#home',
         aboutMe: '#aboutMe',
-        skills: '#skills'
+        skills: '#skills',
+        //Colorchange appbar
+        dynamic: '#00000096'
       }
     },
   }

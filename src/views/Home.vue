@@ -1,80 +1,50 @@
 <template>
   <div>
-    <StretchScroll></StretchScroll>
+      
     <v-row id="home" class="text-center" no-gutter>
       <v-img :src="require('../assets/leaffloor.jpg')" style="margin-top:-110px; max-height:800px;">
         <v-col no-gutter class="my-12" style="margin-bottom:-50px;">
           <br /><br /><br /><br /><br /><br />
-          <h1 class="mx-auto my-12" style="width:500px;">
-            Christina Jancy Pedersen
-            <br />
-            <v-subtitle class="subheading font-weight-regular">Multimedia Designer</v-subtitle>
-            <br />
-            <v-subheader style="margin-left:4em;">Student at Business Academy SouthWest (EASV)</v-subheader>
-          </h1>
-          <br /><br />
+          <Textclip></Textclip>
         </v-col>
       </v-img>
     </v-row>
     <v-row id="aboutMe">
-      <v-col cols="8" style="margin-top:-12px;">
+      <v-col sm="12" md="8" style="margin-top:-12px;">
         <v-img :src="require('../assets/Christina.jpg')"></v-img>
+       <v-subheader>Student at Business Academy SouthWest (EASV)</v-subheader>
       </v-col>
 
-      <v-col cols="4" class="text-left">
-        <v-carousel
-          style="margin-left:-35px;"
-          :show-arrows="false"
-          touch
-          height="350"
-          width="200"
-          light
-          vertical
-          vertical-delimiters
-          hide-delimiter-background
-        >
-          <v-carousel-item
-          style="padding-left:50px;">
-            <h2 class="font-weight-light" style="font-size:16px;">
-              Hi, I'm Christina!
-              <br />I am currently studying Multimedia Design at Business Academy SouthWest (EASV) in Esbjerg.
-              <br />I love being INNOVATIVE, and I’m not afraid of a challenge - equipped with a CREATIVE mindset with a toolbox full of innovative design skills!
-            </h2>
-          </v-carousel-item>
-          <v-carousel-item text-center style="padding-left:50px;">
-            <h2>About me</h2>
-            <span><b>Name:</b> Christina Jancy Pedersen</span> 
-            <br>
-            <span><b>Age:</b> 23 years old (May 4th 1996)</span>
-            <br>
-             <span><b>Email:</b> christinajancy@hotmail.com</span>
-            <br>
-            <h2>Social links</h2>
-            <span><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/christinajancy/" target="_blank">christinajancy</a></span>
-            <br>
-            <span><b>Instagram</b> <a href="https://www.instagram.com/christinajancy/" target="_blank">christinajancy</a> </span>
-          </v-carousel-item>
-        </v-carousel>
+      <v-col md="4" sm="12" class="text-left">
+<aboutMeCarousel></aboutMeCarousel>
       </v-col>
     </v-row>
-    <v-row id="skills">
-      <v-col no-gutter>
-        <h2>My skills</h2>
-      </v-col>
-    </v-row>
-    <v-row>
-
-    </v-row>
+<v-row>
+  <v-col class="mixin mx-auto" style="background-color:black;">
+    <h1 id="skills">
+           My skills
+            <br />
+            <v-subtitle class="subheading font-weight-regular">Multimedia Designer</v-subtitle>
+            <br />
+          </h1>
+      
+  </v-col>
+</v-row>
   </div>
 </template>
 
 <script>
 //import Stretch from '../components/Stretch'
+import Textclip from '../components/Textclip'
+import aboutMeCarousel from '../components/AboutMeCarousel'
+
 
 export default {
   name: "Home",
   components: {
     //Stretch,
+    Textclip,
+    aboutMeCarousel,
 },
   data: () => ({})
 };
@@ -106,7 +76,7 @@ $colorz: (
 }
 // code start here //
 
-h1 {
+.mixin {
   @include infobox_mixin(
     5px,
     map-get($colorz, white),
