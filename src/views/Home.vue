@@ -20,7 +20,7 @@
       </v-col>
     </v-row>
 <v-row>
-  <v-col class="mixin mx-auto" style="background-color:black;">
+  <v-col class=" mx-auto" style="background-color:black;">
     <h1 id="skills">
            My skills
             <br />
