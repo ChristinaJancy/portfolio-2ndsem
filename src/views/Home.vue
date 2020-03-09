@@ -21,16 +21,6 @@
         <aboutMeCarousel></aboutMeCarousel>
       </v-col>
     </v-row>
-    <v-row>
-      <v-col class="mx-auto" style="background-color:black;">
-        <h1 id="skills">
-          My skills
-          <br />
-          <v-subtitle class="subheading font-weight-regular">Multimedia Designer</v-subtitle>
-          <br />
-        </h1>
-      </v-col>
-    </v-row>
   </div>
 </template>
 
