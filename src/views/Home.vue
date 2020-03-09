@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <v-content>
     <v-row fluid>
-      <v-col id="aboutMe" cols="12" fill>
+      <v-col id="home" cols="12" fill>
         <v-img :src="require('../assets/leaffloor.jpg')" style="margin-top:-110px; max-height:700px">
           <br />
           <br />
@@ -12,7 +12,7 @@
           <Textclip></Textclip>
         </v-img>
       </v-col>
-      <v-col id="home" sm="12" md="8" style="margin-top:-30px;">
+      <v-col id="aboutMe" sm="12" md="8" style="margin-top:-25px;">
         <v-img :src="require('../assets/Christina.jpg')" fill></v-img>
         <v-subheader>Student at Business Academy SouthWest (EASV)</v-subheader>
       </v-col>
@@ -30,7 +30,7 @@
         </h1>
       </v-col>
     </v-row>
-  </div>
+  </v-content>
 </template>
 
 <script>
