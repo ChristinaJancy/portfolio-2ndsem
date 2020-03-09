@@ -3,15 +3,14 @@
     <v-row fluid>
       <v-col id="home" cols="auto">
         <!--  :src="require('../assets/leaffloor.jpg')" -->
-        <v-img src="../assets/leaffloor.jpg" style="margin-top:-110px; max-height:700px">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+    <v-card flat tile style="margin-top:-60px;">
+          <v-img
+          src="../assets/leaffloor.jpg"
+          max-height="600">
+          <br><br><br><br><br>
           <Textclip></Textclip>
-        </v-img>
+          </v-img>
+  </v-card>
       </v-col>
       <v-col id="aboutMe" sm="auto" md="8" style="margin-top:-25px;">
         <v-img src="../assets/Christina.jpg" fill></v-img>
