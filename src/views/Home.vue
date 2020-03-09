@@ -1,8 +1,9 @@
 <template>
-  <v-content>
+  <div>
     <v-row fluid>
-      <v-col id="home" cols="12" fill>
-        <v-img :src="require('../assets/leaffloor.jpg')" style="margin-top:-110px; max-height:700px">
+      <v-col id="home" cols="auto">
+        <!--  :src="require('../assets/leaffloor.jpg')" -->
+        <v-img src="../assets/leaffloor.jpg" style="margin-top:-110px; max-height:700px">
           <br />
           <br />
           <br />
@@ -12,11 +13,11 @@
           <Textclip></Textclip>
         </v-img>
       </v-col>
-      <v-col id="aboutMe" sm="12" md="8" style="margin-top:-25px;">
-        <v-img :src="require('../assets/Christina.jpg')" fill></v-img>
+      <v-col id="aboutMe" sm="auto" md="8" style="margin-top:-25px;">
+        <v-img src="../assets/Christina.jpg" fill></v-img>
         <v-subheader>Student at Business Academy SouthWest (EASV)</v-subheader>
       </v-col>
-      <v-col sm="12" md="4" class="text-left">
+      <v-col sm="auto" md="4" class="text-left">
         <aboutMeCarousel></aboutMeCarousel>
       </v-col>
     </v-row>
@@ -30,7 +31,7 @@
         </h1>
       </v-col>
     </v-row>
-  </v-content>
+  </div>
 </template>
 
 <script>
