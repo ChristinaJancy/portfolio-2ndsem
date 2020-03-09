@@ -1,43 +1,42 @@
 <template>
   <div>
-      
-    <v-row id="home" class="text-center" no-gutter>
-      <v-img :src="require('../assets/leaffloor.jpg')" style="margin-top:-110px; max-height:800px;">
-        <v-col no-gutter class="my-12" style="margin-bottom:-50px;">
-          <br /><br /><br /><br /><br /><br />
+    <v-row fluid>
+      <v-col id="aboutMe" cols="12" fill>
+        <v-img :src="require('../assets/leaffloor.jpg')" style="margin-top:-110px; max-height:700px">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
           <Textclip></Textclip>
-        </v-col>
-      </v-img>
-    </v-row>
-    <v-row id="aboutMe">
-      <v-col sm="12" md="8" style="margin-top:-12px;">
-        <v-img :src="require('../assets/Christina.jpg')"></v-img>
-       <v-subheader>Student at Business Academy SouthWest (EASV)</v-subheader>
+        </v-img>
       </v-col>
-
-      <v-col md="4" sm="12" class="text-left">
-<aboutMeCarousel></aboutMeCarousel>
+      <v-col id="home" sm="12" md="8" style="margin-top:-30px;">
+        <v-img :src="require('../assets/Christina.jpg')" fill></v-img>
+        <v-subheader>Student at Business Academy SouthWest (EASV)</v-subheader>
+      </v-col>
+      <v-col sm="12" md="4" class="text-left">
+        <aboutMeCarousel></aboutMeCarousel>
       </v-col>
     </v-row>
-<v-row>
-  <v-col class=" mx-auto" style="background-color:black;">
-    <h1 id="skills">
-           My skills
-            <br />
-            <v-subtitle class="subheading font-weight-regular">Multimedia Designer</v-subtitle>
-            <br />
-          </h1>
-      
-  </v-col>
-</v-row>
+    <v-row>
+      <v-col class="mx-auto" style="background-color:black;">
+        <h1 id="skills">
+          My skills
+          <br />
+          <v-subtitle class="subheading font-weight-regular">Multimedia Designer</v-subtitle>
+          <br />
+        </h1>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
 <script>
 //import Stretch from '../components/Stretch'
-import Textclip from '../components/Textclip'
-import aboutMeCarousel from '../components/AboutMeCarousel'
-
+import Textclip from "../components/Textclip";
+import aboutMeCarousel from "../components/AboutMeCarousel";
 
 export default {
   name: "Home",
@@ -45,7 +44,7 @@ export default {
     //Stretch,
     Textclip,
     aboutMeCarousel,
-},
+  },
   data: () => ({})
 };
 </script>
@@ -59,7 +58,13 @@ $colorz: (
   complete: #2bfc83,
   inprogress: #ffb936,
   incomplete: #ff1212,
-  lightgrey: #cacaca
+  lightgrey: #cacaca,
+  lightred: #Fc766AFF,
+  lightblue: #5BB4B1FF,
+  darkgrey: #00203fff,
+  mint: #ADEFD1FF,
+  
+
 );
 
 @mixin infobox_mixin(
@@ -86,7 +91,7 @@ $colorz: (
   );
   background-color: rgba(0, 0, 0, 0.521);
   color: rgb(255, 255, 255);
-  font-family: 'Oxanium', cursive;
+  font-family: "Oxanium", cursive;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px rgb(255, 255, 255);
   font-size: 3rem;
