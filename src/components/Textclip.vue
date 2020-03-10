@@ -2,7 +2,7 @@
     <div>
         <v-row>
             <v-col>
-                 <svg viewBox="-30 -80 1100 225">
+                 <svg viewBox="0 -80 600 225">
         <clipPath id="textClip" class="filled-heading">
           <text y="70">Christina</text>
           <text y="140">Jancy</text>
@@ -118,7 +118,7 @@ svg {
 .filled-heading {
   text-transform: uppercase;
   font-family: "Oxanium", cursive;
-  font-size: 4em;
+  font-size: 5em;
   line-height: 0.9;
 }
 
