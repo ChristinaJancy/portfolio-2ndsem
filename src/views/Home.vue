@@ -2,7 +2,7 @@
   <v-content>
     <v-card id="home" tile style="margin-top:-50px;">
       <!--   -->
-      <v-img :src="require('../assets/Christina.jpg')" max-height="600">
+      <v-img :src="require('../assets/Me.jpg')" max-height="600">
         <Textclip></Textclip>
       </v-img>
     </v-card>
