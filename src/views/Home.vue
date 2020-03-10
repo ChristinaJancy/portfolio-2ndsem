@@ -1,8 +1,8 @@
 <template>
-  <v-content app>
+  <v-content>
     <v-card id="home" tile style="margin-top:-50px;">
-      <!--  :src="require('../assets/leaffloor.jpg')" -->
-      <v-img src="../assets/Christina.jpg" max-height="600">
+      <!--   -->
+      <v-img :src="require('../assets/Christina.jpg')" max-height="600">
         <Textclip></Textclip>
       </v-img>
     </v-card>
