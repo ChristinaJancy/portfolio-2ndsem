@@ -3,11 +3,9 @@
           style="margin-left:-35px;"
           :show-arrows="false"
           touch
-          height="350"
+          height="200"
           width="200"
           light
-          vertical
-          vertical-delimiters
           hide-delimiter-background
         >
           <v-carousel-item

@@ -1,28 +1,24 @@
 <template>
-<v-content app>
-<v-card id="home" tile style="margin-top:-50px;">
-        <!--  :src="require('../assets/leaffloor.jpg')" -->
-          <v-img
-          src="../assets/leaffloor.jpg"
-          max-height="600">
-          <br><br><br><br><br>
-          <Textclip></Textclip>
-          </v-img>
+  <v-content app>
+    <v-card id="home" tile style="margin-top:-50px;">
+      <!--  :src="require('../assets/leaffloor.jpg')" -->
+      <v-img src="../assets/leaffloor.jpg" max-height="600">
+        <br /><br /><br /><br /> <br />
+      
+      
+     
+        
+        <Textclip></Textclip>
+      </v-img>
     </v-card>
-    <v-divider></v-divider>
-      <v-card id="aboutMe" tile>
-        <v-row>
-        <v-col md="8" sm="auto">
+    <v-card id="aboutMe" tile>
         <v-img src="../assets/Christina.jpg" fill></v-img>
         <v-subheader>Student at Business Academy SouthWest (EASV)</v-subheader>
-      </v-col>
-       <v-col sm="auto" md="4" class="text-left">
+        <v-card-actions>
         <aboutMeCarousel></aboutMeCarousel>
-      </v-col>
-      </v-row>
-      </v-card>
-     
-</v-content>
+     </v-card-actions>
+    </v-card>
+  </v-content>
 </template>
 
 <script>
@@ -35,7 +31,7 @@ export default {
   components: {
     //Stretch,
     Textclip,
-    aboutMeCarousel,
+    aboutMeCarousel
   },
   data: () => ({})
 };
@@ -51,10 +47,10 @@ $colorz: (
   inprogress: #ffb936,
   incomplete: #ff1212,
   lightgrey: #cacaca,
-  lightred: #Fc766AFF,
-  lightblue: #5BB4B1FF,
+  lightred: #fc766aff,
+  lightblue: #5bb4b1ff,
   darkgrey: #00203fff,
-  mint: #ADEFD1FF, 
+  mint: #adefd1ff
 );
 
 @mixin infobox_mixin(
