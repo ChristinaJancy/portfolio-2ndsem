@@ -7,10 +7,6 @@
         <Textclip></Textclip>
       </v-img>
     </v-card>
-<v-card tile id="aboutMe">
-      
-       
-    </v-card>
   </v-content>
 </template>
 
