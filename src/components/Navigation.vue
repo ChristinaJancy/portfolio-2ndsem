@@ -1,6 +1,6 @@
 <template>
     <div>
-              <v-navigation-drawer
+    <v-navigation-drawer
       v-model="drawer"
       app
       relative

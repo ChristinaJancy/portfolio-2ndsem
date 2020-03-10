@@ -1,5 +1,5 @@
 <template>
-            <v-carousel id="AboutMeCarousel"
+          <v-carousel id="AboutMeCarousel"
           style="margin-left:-35px;"
           :show-arrows="false"
           touch

@@ -1,26 +1,28 @@
 <template>
-  <div>
-    <v-row fluid>
-      <v-col id="home" cols="auto">
+<v-content app>
+<v-card id="home" tile style="margin-top:-50px;">
         <!--  :src="require('../assets/leaffloor.jpg')" -->
-    <v-card flat tile style="margin-top:-60px;">
           <v-img
           src="../assets/leaffloor.jpg"
           max-height="600">
           <br><br><br><br><br>
           <Textclip></Textclip>
           </v-img>
-  </v-card>
-      </v-col>
-      <v-col id="aboutMe" sm="auto" md="8" style="margin-top:-25px;">
+    </v-card>
+    <v-divider></v-divider>
+      <v-card id="aboutMe" tile>
+        <v-row>
+        <v-col md="8" sm="auto">
         <v-img src="../assets/Christina.jpg" fill></v-img>
         <v-subheader>Student at Business Academy SouthWest (EASV)</v-subheader>
       </v-col>
-      <v-col sm="auto" md="4" class="text-left">
+       <v-col sm="auto" md="4" class="text-left">
         <aboutMeCarousel></aboutMeCarousel>
       </v-col>
-    </v-row>
-  </div>
+      </v-row>
+      </v-card>
+     
+</v-content>
 </template>
 
 <script>
@@ -52,9 +54,7 @@ $colorz: (
   lightred: #Fc766AFF,
   lightblue: #5BB4B1FF,
   darkgrey: #00203fff,
-  mint: #ADEFD1FF,
-  
-
+  mint: #ADEFD1FF, 
 );
 
 @mixin infobox_mixin(
