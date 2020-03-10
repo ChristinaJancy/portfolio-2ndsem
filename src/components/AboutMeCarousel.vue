@@ -3,7 +3,7 @@
           style="margin-left:-35px;"
           :show-arrows="false"
           touch
-          height="200"
+          height="220"
           width="200"
           light
           hide-delimiter-background
