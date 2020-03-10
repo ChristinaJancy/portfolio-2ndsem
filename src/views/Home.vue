@@ -4,19 +4,15 @@
       <!--  :src="require('../assets/leaffloor.jpg')" -->
       <v-img src="../assets/leaffloor.jpg" max-height="600">
         <br /><br /><br /><br /> <br />
-      
-      
-     
-        
         <Textclip></Textclip>
       </v-img>
     </v-card>
     <v-card id="aboutMe" tile>
         <v-img src="../assets/Christina.jpg" fill></v-img>
         <v-subheader>Student at Business Academy SouthWest (EASV)</v-subheader>
-        <v-card-actions>
+        <div class="mx-10" style="margin-top:-500px; width:500px;">
         <aboutMeCarousel></aboutMeCarousel>
-     </v-card-actions>
+     </div>
     </v-card>
   </v-content>
 </template>
