@@ -2,17 +2,14 @@
   <v-content app>
     <v-card id="home" tile style="margin-top:-50px;">
       <!--  :src="require('../assets/leaffloor.jpg')" -->
-      <v-img src="../assets/leaffloor.jpg" max-height="600">
+      <v-img src="../assets/Christina.jpg" max-height="600">
         <br /><br /><br /><br /> <br />
         <Textclip></Textclip>
       </v-img>
     </v-card>
-    <v-card id="aboutMe" tile>
-        <v-img src="../assets/Christina.jpg" fill></v-img>
-        <v-subheader>Student at Business Academy SouthWest (EASV)</v-subheader>
-        <div class="mx-10" style="margin-top:-500px; width:500px;">
-        <aboutMeCarousel></aboutMeCarousel>
-     </div>
+<v-card tile id="aboutMe">
+      
+       
     </v-card>
   </v-content>
 </template>
@@ -20,14 +17,14 @@
 <script>
 //import Stretch from '../components/Stretch'
 import Textclip from "../components/Textclip";
-import aboutMeCarousel from "../components/AboutMeCarousel";
+//import aboutMeCarousel from "../components/AboutMeCarousel";
 
 export default {
   name: "Home",
   components: {
     //Stretch,
     Textclip,
-    aboutMeCarousel
+    //aboutMeCarousel
   },
   data: () => ({})
 };
@@ -65,18 +62,15 @@ $colorz: (
 
 .mixin {
   @include infobox_mixin(
+    2px,
+    map-get($colorz, rgb(0, 0, 0)),
     5px,
-    map-get($colorz, white),
-    10px,
-    1px,
-    map-get($colorz, white)
+    0px,
+    map-get($colorz, black),
   );
-  background-color: rgba(0, 0, 0, 0.521);
-  color: rgb(255, 255, 255);
+  background-color:rgba(255, 255, 255, 0.267);
+  color: rgb(0, 0, 0);
   font-family: "Oxanium", cursive;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px rgb(255, 255, 255);
-  font-size: 3rem;
 }
 
 h2 {
