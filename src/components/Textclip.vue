@@ -2,7 +2,7 @@
     <div>
         <v-row>
             <v-col>
-                 <svg viewBox="0 0 700 225">
+                 <svg viewBox="0 -80 700 225">
         <clipPath id="textClip" class="filled-heading">
           <text y="70">Christina</text>
           <text y="140">Jancy</text>

@@ -3,7 +3,6 @@
     <v-card id="home" tile style="margin-top:-50px;">
       <!--  :src="require('../assets/leaffloor.jpg')" -->
       <v-img src="../assets/Christina.jpg" max-height="600">
-        <br /><br /><br /><br /> <br />
         <Textclip></Textclip>
       </v-img>
     </v-card>
@@ -11,16 +10,12 @@
 </template>
 
 <script>
-//import Stretch from '../components/Stretch'
 import Textclip from "../components/Textclip";
-//import aboutMeCarousel from "../components/AboutMeCarousel";
 
 export default {
   name: "Home",
   components: {
-    //Stretch,
     Textclip,
-    //aboutMeCarousel
   },
   data: () => ({})
 };
