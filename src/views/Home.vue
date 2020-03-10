@@ -1,94 +1,98 @@
-<template>
+<template> 
+<v-img :src="require('../assets/Christina.jpg')">
   <v-content>
-    <v-card id="home" tile style="margin-top:-50px;">
-      <!--   -->
-      <v-img :src="require('../assets/Me.jpg')" max-height="600">
+   
+    <container class="fill-height" fluid>
+      
         <Textclip></Textclip>
-      </v-img>
-    </v-card>
+
+        <v-card-actions>
+          <v-row>
+            <v-col offset="2" cols="10">
+          <v-btn dark>
+            <h1 class="white--text">About me</h1>
+          </v-btn>
+          </v-col>
+
+          <v-col offset="2" cols="10">
+          <v-btn dark>
+            <h1 class="white--text">My skills</h1>
+          </v-btn>
+          </v-col>
+
+                <v-col offset="2" cols="10">
+          <v-btn dark>
+            <h1 class="white--text">Portfolio</h1>
+          </v-btn>
+          </v-col>
+          </v-row>
+    </v-card-actions>
+     
+
+  <!--  
     <v-card tile>
+
+<Parallax></Parallax>
+
       <v-col>
         <h2 class="text-center">Portfolio</h2>
         <v-row class="mx-auto my-auto">
+         
+          <v-col cols="auto">
+            <Div1></Div1>
+          </v-col>
+
+          <v-col cols="auto">
+             <Div2></Div2>
+          </v-col>
+
+          <v-col cols="auto">
+            <Div3></Div3> 
+          </v-col>
+
+          <v-col cols="auto">
+            <Div4></Div4>
+          </v-col>
+
+          <v-col cols="12">
+            <h2 v-anime="{ rotate: '1turn', backgroundColor: '#FFF', duration: 2000, loop: true }">
+             Hello
+            </h2>
+          </v-col>
           
-          <v-col cols="auto">
-            <div id="div1">
-              <kinesis-container>
-                <kinesis-element :strength="10">
-                  <v-img width="100" height="100" src="../assets/Astro.png"></v-img>
-                </kinesis-element>
-                <kinesis-element :strength="60">
-                  <h2>wooo!</h2>
-                </kinesis-element>
-              </kinesis-container>
-            </div>
-          </v-col>
-
-          <v-col cols="auto">
-            <div width="100" height="100">
-              <button v-on:click="show = !show">
-                <h3>click me!</h3>
-              </button>
-              <transition name="fade">
-                <div v-if="show"
-                id="div2" class="text-center">
-                <p class="my-8">
-                  Hello
-                </p>
-                </div>
-              </transition>
-            </div>
-          </v-col>
-
-          <v-col cols="auto">
-            <div width="100" height="100">
-              <kinesis-container>
-                <kinesis-element
-                  tag="img"
-                  :src="require('../assets/Astro.png')"
-                  :strength="-10"
-                  width="50"
-                  transformOrigin="50% 300%"
-                  axis="x"
-                  type="rotate"
-                />
-                <kinesis-element
-                  tag="img"
-                  width="50"
-                  :src="require('../assets/Astro.png')"
-                  :strength="10"
-                  transformOrigin="50% 300%"
-                  axis="x"
-                  type="rotate"
-                />
-                <kinesis-element
-                  tag="img"
-                  width="50"
-                  :src="require('../assets/Astro.png')"
-                  :strength="10"
-                  type="depth"
-                  transformOrigin="50% 300%"
-                />
-              </kinesis-container>
-            </div>
-          </v-col>
         </v-row>
       </v-col>
-    </v-card>
-  </v-content>
+    </v-card> -->
+    </container>
+    
+  </v-content> </v-img>
 </template>
 
 <script>
 import Textclip from "../components/Textclip";
+//import Parallax from "../components/Parallax";
+//import Div1 from "../components/Div1"
+//import Div2 from "../components/Div2"
+//import Div3 from "../components/Div3"
+//import Div4 from "../components/Div4"
 
 export default {
   name: "Home",
   components: {
-    Textclip
+    Textclip,
+    //Parallax,
+    //Div1,
+    //Div2,
+    //Div3,
+    //Div4,
   },
   data: () => ({
     show: true
-  })
+  }),
+  mounted() {
+    this.$anime(/* ... animate something ... */)
+    
+  },
 };
 </script>
 
@@ -121,7 +125,7 @@ $colorz: (
   color: $color;
 }
 // code start here //
-#div1{
+#div1 {
   width: 100px;
   height: 100px;
   background-color: red;
@@ -130,31 +134,60 @@ $colorz: (
   animation-iteration-count: infinite;
 }
 @keyframes example {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
 }
 
-#div2{
-width: 100px;
+#div2 {
+  width: 100px;
   height: 100px;
   border-radius: 25px;
-  border: 2px solid #73AD21;
+  border: 2px solid #73ad21;
   position: relative;
   animation-name: example2;
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 @keyframes example2 {
-  0%   {border-color:red; }
-  25%  {border-color:yellow;}
-  50%  {border-color:blue;}
-  75%  {border-color:green;}
-  100% {border-color:red;}
+  0% {
+    border-color: red;
+  }
+  25% {
+    border-color: yellow;
+  }
+  50% {
+    border-color: blue;
+  }
+  75% {
+    border-color: green;
+  }
+  100% {
+    border-color: red;
+  }
 }
-
 
 .fade-enter-active,
 .fade-leave-active {

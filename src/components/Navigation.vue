@@ -54,7 +54,7 @@
           alt="Vuetify Logo"
           class="shrink mr-2"
           contain
-          src="@/assets/Astro.png"
+          src="@/assets/sun.png"
           transition="scale-transition"
           width="40"
         />
