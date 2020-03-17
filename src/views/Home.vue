@@ -1,6 +1,6 @@
 <template>
   <v-content>
-    <v-row class="mx-auto" style="background-color:#c34aff">
+    <v-row class="mx-auto" style="background-color:#6242ff">
       <v-col cols="12" class="text-center text--primary">
         <h1 style="font-size:4rem">
           <span>I am a</span>
@@ -21,7 +21,7 @@
 
         <router-link to="/work">
           <v-btn
-            class="my-2"
+            class="my-4"
             style="font-decoration:none; background-color: black;"
             dark
             x-large
@@ -32,6 +32,8 @@
         <v-img src="../assets/Astro.png" width="500"></v-img>
       </v-col>
     </v-row>
+    <h1 class="my-5 text-center">Selected work.</h1>
+
     <v-row style="background-color:white;">
       <v-col md="4" sm="12">
         <v-img
@@ -52,6 +54,52 @@
         </v-img>
       </v-col>
     </v-row>
+    <v-row style="background-color: #6242ff">
+      <v-col md="6" sm="12" >
+        <v-img
+        src="../assets/leaffloor.jpg">
+
+        </v-img>
+      </v-col>
+      <v-col md="6" sm="12" >
+        <v-row>
+          <v-col cols="12">
+          <h1>All about me</h1>
+          </v-col>
+          <v-col cols="12">
+            <p class="text-left" style="padding-right:40px;">I am a multimedia student. I live in Esbjerg, Denmark, and love to drink run and play with my dog, Charlie. I am passionate about web development and design, and I work hard to make my imaginations come true. Thanks for looking!</p>
+          </v-col>
+          <v-col cols="12">
+            <v-btn dark>
+              Learn about me
+            </v-btn>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+  <v-row>
+    <v-col cols="12">
+        <h1>Come find me.</h1>
+    </v-col>
+    <v-col cols="12">
+      <p>
+        I am an active member of differet social medias. Feel free to follow me, comment, or message me. Looking forward to hear from you.
+        you can also email me at: mail
+      </p>
+
+            <v-btn
+          v-for="icon in icons"
+          :key="icon"
+          dark
+          class="mx-4 black--text"
+          icon
+        >
+          <v-icon size="24px">{{ icon }}</v-icon>
+        </v-btn>
+    </v-col>
+
+
+  </v-row>
   </v-content>
 </template>
 
@@ -64,7 +112,13 @@ export default {
     Textclip
   },
   data: () => ({
-    show: true
+    show: true,
+    icons: [
+        'mdi-facebook',
+        'mdi-twitter',
+        'mdi-linkedin',
+        'mdi-instagram',
+      ],
   })
 };
 </script>

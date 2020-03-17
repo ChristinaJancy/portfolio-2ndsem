@@ -46,17 +46,18 @@
     <v-app-bar
       app
       :color="dynamic"
-      dark
+      light
       dense
     >
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
+          style="margin-bottom:-47px;"
           class="shrink mr-2"
           contain
-          src="@/assets/sun.png"
+          src="@/assets/Flowergirl.jpg"
           transition="scale-transition"
-          width="40"
+          width="75"
         />
       </div>
  <template v-slot:extension>
