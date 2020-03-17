@@ -45,7 +45,7 @@
     <!-- App bar-->
     <v-app-bar
       app
-     :color="dynamic"
+      :color="dynamic"
       dark
       dense
     >
@@ -58,14 +58,14 @@
           transition="scale-transition"
           width="40"
         />
-
+      </div>
+ <template v-slot:extension>
         <v-app-bar-title
           class="shrink mt-1 hidden-sm-and-down"
           min-width="100"
           width="100"
         >Jancy</v-app-bar-title>
-      </div>
-
+ </template>
       <v-spacer></v-spacer>
 
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" ></v-app-bar-nav-icon>
@@ -94,7 +94,7 @@ export default {
         aboutMe: '#aboutMe',
         skills: '#skills',
         //Colorchange appbar
-        dynamic: '#00000096'
+        dynamic: '#ffffff'
       }
     },
   }

@@ -1,130 +1,75 @@
-<template> 
-<v-img :src="require('../assets/Christina.jpg')">
+<template>
   <v-content>
-   
-    <container class="fill-height" fluid>
-      
-        <Textclip></Textclip>
-
-        <v-card-actions>
-          <v-row>
-            <v-col offset="2" cols="10">
-          <v-btn dark>
-            <h1 class="white--text">About me</h1>
-          </v-btn>
-          </v-col>
-
-          <v-col offset="2" cols="10">
-          <v-btn dark>
-            <h1 class="white--text">My skills</h1>
-          </v-btn>
-          </v-col>
-
-                <v-col offset="2" cols="10">
-          <v-btn dark>
-            <h1 class="white--text">Portfolio</h1>
-          </v-btn>
-          </v-col>
-          </v-row>
-    </v-card-actions>
-     
-
-  <!--  
-    <v-card tile>
-
-<Parallax></Parallax>
-
-      <v-col>
-        <h2 class="text-center">Portfolio</h2>
-        <v-row class="mx-auto my-auto">
-         
-          <v-col cols="auto">
-            <Div1></Div1>
-          </v-col>
-
-          <v-col cols="auto">
-             <Div2></Div2>
-          </v-col>
-
-          <v-col cols="auto">
-            <Div3></Div3> 
-          </v-col>
-
-          <v-col cols="auto">
-            <Div4></Div4>
-          </v-col>
-
-          <v-col cols="12">
-            <h2 v-anime="{ rotate: '1turn', backgroundColor: '#FFF', duration: 2000, loop: true }">
-             Hello
-            </h2>
-          </v-col>
-          
-        </v-row>
+    <v-row class="mx-auto" style="background-color:#c34aff">
+      <v-col cols="12" class="text-center text--primary">
+        <h1 style="font-size:4rem">
+          <span>I am a</span>
+          <br />
+          <Textclip></Textclip>
+          <span>Designer</span>
+        </h1>
+        <br />
+        <br />
+        <br />
+        <br />
       </v-col>
-    </v-card> -->
-    </container>
-    
-  </v-content> </v-img>
+      <v-col sm="12" md="6" lg="6" class="mx-5">
+        <h3 class="text-left">
+          I am a multimedia design student at Esbjerg Business Academy EASV.
+          <br />Experience in content creation, UX, business and web development
+        </h3>
+
+        <router-link to="/work">
+          <v-btn
+            class="my-2"
+            style="font-decoration:none; background-color: black;"
+            dark
+            x-large
+          >my work</v-btn>
+        </router-link>
+      </v-col>
+      <v-col cols="auto">
+        <v-img src="../assets/Astro.png" width="500"></v-img>
+      </v-col>
+    </v-row>
+    <v-row style="background-color:white;">
+      <v-col md="4" sm="12">
+        <v-img
+        src="../assets/leafroof.jpg">
+
+        </v-img>
+      </v-col>
+      <v-col md="4" sm="12">
+        <v-img
+        src="../assets/leafroof.jpg">
+
+        </v-img>
+      </v-col>
+      <v-col md="4" sm="12">
+        <v-img
+        src="../assets/leafroof.jpg">
+
+        </v-img>
+      </v-col>
+    </v-row>
+  </v-content>
 </template>
 
 <script>
 import Textclip from "../components/Textclip";
-//import Parallax from "../components/Parallax";
-//import Div1 from "../components/Div1"
-//import Div2 from "../components/Div2"
-//import Div3 from "../components/Div3"
-//import Div4 from "../components/Div4"
 
 export default {
   name: "Home",
   components: {
-    Textclip,
-    //Parallax,
-    //Div1,
-    //Div2,
-    //Div3,
-    //Div4,
+    Textclip
   },
   data: () => ({
     show: true
-  }),
-  mounted() {
-    this.$anime(/* ... animate something ... */)
-    
-  },
+  })
 };
 </script>
 
 <style lang="scss" scoped>
-$colorz: (
-  primary: #333333,
-  secondary: #2b2b2b,
-  white: #ffffff,
-  black: #000000,
-  complete: #2bfc83,
-  inprogress: #ffb936,
-  incomplete: #ff1212,
-  lightgrey: #cacaca,
-  lightred: #fc766aff,
-  lightblue: #5bb4b1ff,
-  darkgrey: #00203fff,
-  mint: #adefd1ff
-);
-
-@mixin infobox_mixin(
-  $border-radius,
-  $border-color,
-  $padding,
-  $margin-bottom,
-  $color
-) {
-  border: $border-radius solid $border-color;
-  padding: $padding;
-  margin-bottom: $margin-bottom;
-  color: $color;
-}
-// code start here //
 #div1 {
   width: 100px;
   height: 100px;
