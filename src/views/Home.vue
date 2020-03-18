@@ -15,7 +15,7 @@
         <br />
       </v-col>
       <v-col sm="12" md="6" lg="6" class="mx-5" style="justify-content:center;">
-        <p class="text-left" style="font-size:30px;">
+        <p class="text-left" style="font-size:25px;">
           I am a multimedia design student at 
           <br>
           Esbjerg Business Academy EASV.
