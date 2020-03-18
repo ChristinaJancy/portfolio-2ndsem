@@ -1,6 +1,7 @@
 <template>
   <v-content fluid>
-    <v-row class="mx-auto" style="background-color:#6242ff">
+    <v-container fluid>
+    <v-row  style="background-color:#6242ff; margin-top:-20px;" >
       <v-col cols="12" class="text-center text--primary">
         <h1 style="font-size:4rem">
           <span>I am a</span>
@@ -54,7 +55,7 @@
         </v-img>
       </v-col>
     </v-row>
-    <v-row style="background-color: #6242ff" class="mx-auto">
+    <v-row style="background-color: #6242ff">
         <v-img
         src="../assets/leaffloor.jpg"
         height="500"
@@ -83,7 +84,7 @@
       </v-col>
     </v-row>
 
-  <v-row class="mx-auto">
+  <v-row >
     <v-col cols="12">
         <h1 class="text-center">Come find me.</h1>
     </v-col>
@@ -94,7 +95,7 @@
       </p>  
       </v-col>
 
-      <v-col md="3" sm="12" class="text-center">
+      <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
           <v-btn 
           dark
           class="mx-4 black--text pa-10"
@@ -104,7 +105,7 @@
         </v-btn>
         
       </v-col>
-            <v-col cols="12" md="3" sm="12" class="text-center">
+            <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
           <v-btn 
           dark
           class="mx-4 black--text pa-10"
@@ -113,7 +114,7 @@
           <v-icon size="60px">mdi-twitter</v-icon>
         </v-btn>
       </v-col>
-            <v-col cols="12" md="3" sm="12" class="text-center">
+            <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
           <v-btn 
           dark
           class="mx-4 black--text pa-10"
@@ -122,13 +123,13 @@
           <v-icon size="60px">mdi-linkedin</v-icon>
         </v-btn>
       </v-col>
-            <v-col md="3" sm="12" class="text-center">
+            <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
           <v-btn 
           dark
           class="mx-4 black--text pa-10"
           icon
           >
-          <v-icon size="60px">mdi-instagram</v-icon>
+          <v-icon justify-center size="60px">mdi-instagram</v-icon>
         </v-btn>
       </v-col>
                  
@@ -137,6 +138,7 @@
 
 
   </v-row>
+  </v-container>
   </v-content>
 </template>
 
