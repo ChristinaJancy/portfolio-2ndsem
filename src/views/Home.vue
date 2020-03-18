@@ -37,7 +37,7 @@
     <v-row style="background-color:white;">
       <v-col md="4" sm="12">
         <v-img
-        src="../assets/leafroof.jpg">
+        src="../assets/Flowergirl.jpg">
 
         </v-img>
       </v-col>
@@ -54,17 +54,22 @@
         </v-img>
       </v-col>
     </v-row>
-    <v-row style="background-color: #6242ff">
-      <v-col md="6" sm="12" >
+    <v-row style="background-color: #6242ff" class="mx-auto">
         <v-img
-        src="../assets/leaffloor.jpg">
-
-        </v-img>
+        src="../assets/leaffloor.jpg"
+        height="500"
+        width="400"
+        fill
+        >
+        <v-col md="6" sm="12">
+      
+      
       </v-col>
-      <v-col md="6" sm="12" >
+        </v-img>
+      <v-col md="6" sm="12">
         <v-row>
           <v-col cols="12">
-          <h1>All about me</h1>
+          <h1 class="text-center">All about me</h1>
           </v-col>
           <v-col cols="12">
             <p class="text-left" style="padding-right:40px;">I am a multimedia student. I live in Esbjerg, Denmark, and love to drink run and play with my dog, Charlie. I am passionate about web development and design, and I work hard to make my imaginations come true. Thanks for looking!</p>
@@ -77,26 +82,58 @@
         </v-row>
       </v-col>
     </v-row>
-  <v-row>
+
+  <v-row class="mx-auto">
     <v-col cols="12">
-        <h1>Come find me.</h1>
+        <h1 class="text-center">Come find me.</h1>
     </v-col>
-    <v-col cols="12">
+    <v-col cols="12" >
       <p>
         I am an active member of differet social medias. Feel free to follow me, comment, or message me. Looking forward to hear from you.
         you can also email me at: mail
-      </p>
+      </p>  
+      </v-col>
 
-            <v-btn
-          v-for="icon in icons"
-          :key="icon"
+      <v-col md="3" sm="12" class="text-center">
+          <v-btn 
           dark
-          class="mx-4 black--text"
+          class="mx-4 black--text pa-10"
           icon
-        >
-          <v-icon size="24px">{{ icon }}</v-icon>
+          >
+          <v-icon size="60px">mdi-facebook</v-icon>
         </v-btn>
-    </v-col>
+        
+      </v-col>
+            <v-col cols="12" md="3" sm="12" class="text-center">
+          <v-btn 
+          dark
+          class="mx-4 black--text pa-10"
+          icon
+          >
+          <v-icon size="60px">mdi-twitter</v-icon>
+        </v-btn>
+      </v-col>
+            <v-col cols="12" md="3" sm="12" class="text-center">
+          <v-btn 
+          dark
+          class="mx-4 black--text pa-10"
+          icon
+          >
+          <v-icon size="60px">mdi-linkedin</v-icon>
+        </v-btn>
+      </v-col>
+            <v-col md="3" sm="12" class="text-center">
+          <v-btn 
+          dark
+          class="mx-4 black--text pa-10"
+          icon
+          >
+          <v-icon size="60px">mdi-instagram</v-icon>
+        </v-btn>
+      </v-col>
+                 
+        
+  
 
 
   </v-row>
