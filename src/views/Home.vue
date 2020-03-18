@@ -1,26 +1,30 @@
 <template>
-  <v-content fluid>
     <v-container fluid>
-    <v-row  style="background-color:#6242ff; margin-top:-20px;" >
+    <v-row style="background-color:#FC766AFF; margin-top:-20px; padding-top:50px;">
+      
       <v-col cols="12" class="text-center text--primary">
-        <h1 style="font-size:4rem">
-          <span>I am a</span>
+        <h1 style="font-size:3rem;line-height:30px;">
+          <span style="font-size:6rem">I am a</span>
           <br />
           <Textclip></Textclip>
-          <span>Designer</span>
+          <span style="font-size:6rem;">Designer</span>
         </h1>
         <br />
         <br />
         <br />
         <br />
       </v-col>
-      <v-col sm="12" md="6" lg="6" class="mx-5">
-        <h3 class="text-left">
-          I am a multimedia design student at Esbjerg Business Academy EASV.
-          <br />Experience in content creation, UX, business and web development
-        </h3>
+      <v-col sm="12" md="6" lg="6" class="mx-5" style="justify-content:center;">
+        <p class="text-left" style="font-size:30px;">
+          I am a multimedia design student at 
+          <br>
+          Esbjerg Business Academy EASV.
+          <br />Experience in content creation, UX, 
+          <br>
+          business and web development
+        </p>
 
-        <router-link to="/work">
+        <router-link to="/works">
           <v-btn
             class="my-4"
             style="font-decoration:none; background-color: black;"
@@ -139,7 +143,6 @@
 
   </v-row>
   </v-container>
-  </v-content>
 </template>
 
 <script>

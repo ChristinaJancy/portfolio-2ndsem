@@ -2,18 +2,18 @@
     <div>
         <v-row>
             <v-col>
-                 <svg viewBox="0 0 500 100">
+                 <svg viewBox="0 15 500 100">
                  
         <clipPath id="textClip" class="filled-heading">
-          <text y="80" x="75">Multimedia</text>
+          <text y="80" x="110">Multimedia</text>
           <text y="140"></text>
           <text y="210" />
 
-          <text y="80" x="180">web</text>
+          <text y="80" x="200">web</text>
           <text y="140"></text>
           <text y="210" />
 
-           <text y="80" x="160">UX/UI</text>
+           <text y="80" x="185">UX/UI</text>
           <text y="140"></text>
           <text y="210" />
         </clipPath>
@@ -118,7 +118,7 @@ svg {
 }
 .filled-heading {
   text-transform: uppercase;
-  font-family: "Oxanium", cursive;
+  font-family: 'Crimson Pro', serif;
   font-size: 1em;
   line-height: 1.5;
 }

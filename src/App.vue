@@ -2,8 +2,9 @@
   <v-app id="app">
     
     <Navigation></Navigation>
+      <v-content fluid>
       <router-view />
-      
+      </v-content>
   </v-app>
 </template>
 
@@ -36,11 +37,21 @@ import Navigation from '@/components/Navigation'
   }
 </script>
 
-<style>
+<style lang="scss" scoped>
+
+router-link-exact-active {
+      color: rgb(255, 238, 0);
+    text-decoration: none;
+    }
+  
+
 #app{
   margin:auto;
 }
 h1{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Crimson Pro', serif;
+}
+p{
+  font-family: 'Bitter', serif;
 }
 </style>
