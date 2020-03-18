@@ -4,10 +4,10 @@
       
       <v-col cols="12" class="text-center text--primary">
         <h1 style="font-size:3rem;line-height:30px;">
-          <span style="font-size:6rem">I am a</span>
+          <span style="font-size:4rem">I am a</span>
           <br />
           <Textclip></Textclip>
-          <span style="font-size:6rem;">Designer</span>
+          <span style="font-size:4rem;">Designer</span>
         </h1>
         <br />
         <br />
