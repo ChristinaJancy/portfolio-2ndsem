@@ -1,5 +1,5 @@
 <template>
-  <v-content>
+  <v-content fluid>
     <v-row class="mx-auto" style="background-color:#6242ff">
       <v-col cols="12" class="text-center text--primary">
         <h1 style="font-size:4rem">
