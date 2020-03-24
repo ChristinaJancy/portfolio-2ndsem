@@ -53,15 +53,19 @@
             style="margin-bottom:-47px;"
             class="shrink mr-2"
             contain
-            src="@/assets/Flowergirl.jpg"
+            src="@/assets/jancy.png"
             transition="scale-transition"
-            width="75"
+            width="110"
           />
         </router-link>
       </div>
+     
       <template v-slot:extension>
-        <v-app-bar-title class="shrink mt-1 hidden-sm-and-down" min-width="100" width="100">Jancy</v-app-bar-title>
+         <!-- 
+           <v-app-bar-title class="shrink mt-1 hidden-sm-and-down" min-width="100" width="100">Jancy</v-app-bar-title>
+      -->
       </template>
+      
       <v-spacer></v-spacer>
 
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>

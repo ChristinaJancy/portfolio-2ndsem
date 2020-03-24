@@ -1,7 +1,6 @@
 <template>
-    <v-container fluid>
+  <v-container fluid>
     <v-row style="background-color:#FC766AFF; margin-top:-20px; padding-top:50px;">
-      
       <v-col cols="12" class="text-center text--primary">
         <h1 style="font-size:3rem;line-height:30px;">
           <span style="font-size:4rem">I am a</span>
@@ -9,139 +8,97 @@
           <Textclip></Textclip>
           <span style="font-size:4rem;">Designer</span>
         </h1>
-        <br />
-        <br />
-        <br />
-        <br />
+        <br /><br />  <br />   <br />
       </v-col>
-      <v-col sm="12" md="6" lg="6" class="mx-5" style="justify-content:center;">
-        <p class="text-left" style="font-size:25px;">
-          I am a multimedia design student at 
-          <br>
-          Esbjerg Business Academy EASV.
-          <br />Experience in content creation, UX, 
-          <br>
-          business and web development
-        </p>
+      <v-row class="mx-auto" justify="center" align="center">
+        <v-col cols="12" sm="12" md="6" style="padding-left: 170px;">
+          <p style="font-size:25px; text-align:left;" justify="center">
+            I am a multimedia design student at
+            <br />Esbjerg Business Academy EASV.
+            <br />Experience in content creation, UX,
+            <br />business and web development
+          </p>
 
-        <router-link to="/works">
-          <v-btn
-            class="my-4"
-            style="font-decoration:none; background-color: black;"
-            dark
-            x-large
-          >my work</v-btn>
-        </router-link>
-      </v-col>
-      <v-col cols="auto">
-        <v-img src="../assets/Astro.png" width="500"></v-img>
-      </v-col>
+          <router-link to="/works">
+            <v-btn
+              class="my-4"
+              style="font-decoration:none; background-color: black;"
+              dark
+              x-large
+            >my work</v-btn>
+          </router-link>
+        </v-col>
+        <v-col cols="12" sm="12" md="6" justify="center" align="center">
+          <v-img src="../assets/code_art_cropped.png" width="auto" height="auto" max-height="500" max-width="500"></v-img>
+        </v-col>
+      </v-row>
     </v-row>
     <h1 class="my-5 text-center">Selected work.</h1>
-
     <v-row style="background-color:white;">
       <v-col md="4" sm="12">
-        <v-img
-        src="../assets/Flowergirl.jpg">
-
-        </v-img>
+        <v-img src="../assets/Flowergirl.jpg" max-height="500" contain></v-img>
       </v-col>
       <v-col md="4" sm="12">
-        <v-img
-        src="../assets/leafroof.jpg">
-
-        </v-img>
+        <v-img src="../assets/minimechristina.png" max-height="500" contain></v-img>
       </v-col>
       <v-col md="4" sm="12">
-        <v-img
-        src="../assets/leafroof.jpg">
-
-        </v-img>
+        <v-img src="../assets/pizza.png" max-height="500" contain></v-img>
       </v-col>
     </v-row>
     <v-row style="background-color: #6242ff">
-        <v-img
-        src="../assets/leaffloor.jpg"
-        height="500"
-        width="400"
-        fill
-        >
-        <v-col md="6" sm="12">
-      
-      
-      </v-col>
-        </v-img>
+      <v-img src="../assets/Christina.jpg" height="500" width="400" fill>
+        <v-col md="6" sm="12"></v-col>
+      </v-img>
       <v-col md="6" sm="12">
         <v-row>
           <v-col cols="12">
-          <h1 class="text-center">All about me</h1>
+            <h1 class="text-center">All about me</h1>
           </v-col>
           <v-col cols="12">
-            <p class="text-left" style="padding-right:40px;">I am a multimedia student. I live in Esbjerg, Denmark, and love to drink run and play with my dog, Charlie. I am passionate about web development and design, and I work hard to make my imaginations come true. Thanks for looking!</p>
+            <p
+              class="text-left"
+              style="padding-right:40px;"
+            >I am a multimedia student. I live in Esbjerg, Denmark, and love to drink run and play with my dog, Charlie. I am passionate about web development and design, and I work hard to make my imaginations come true. Thanks for looking!</p>
           </v-col>
           <v-col cols="12">
-            <v-btn dark>
-              Learn about me
-            </v-btn>
+            <v-btn dark>Learn about me</v-btn>
           </v-col>
         </v-row>
       </v-col>
     </v-row>
 
-  <v-row >
-    <v-col cols="12">
+    <v-row>
+      <v-col cols="12">
         <h1 class="text-center">Come find me.</h1>
-    </v-col>
-    <v-col cols="12" >
-      <p>
-        I am an active member of differet social medias. Feel free to follow me, comment, or message me. Looking forward to hear from you.
-        you can also email me at: mail
-      </p>  
+      </v-col>
+      <v-col cols="12">
+        <p>
+          I am an active member of differet social medias. Feel free to follow me, comment, or message me. Looking forward to hear from you.
+          you can also email me at: mail
+        </p>
       </v-col>
 
       <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
-          <v-btn 
-          dark
-          class="mx-4 black--text pa-10"
-          icon
-          >
+        <v-btn dark class="mx-4 black--text pa-10" icon>
           <v-icon size="60px">mdi-facebook</v-icon>
         </v-btn>
-        
       </v-col>
-            <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
-          <v-btn 
-          dark
-          class="mx-4 black--text pa-10"
-          icon
-          >
+      <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
+        <v-btn dark class="mx-4 black--text pa-10" icon>
           <v-icon size="60px">mdi-twitter</v-icon>
         </v-btn>
       </v-col>
-            <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
-          <v-btn 
-          dark
-          class="mx-4 black--text pa-10"
-          icon
-          >
+      <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
+        <v-btn dark class="mx-4 black--text pa-10" icon>
           <v-icon size="60px">mdi-linkedin</v-icon>
         </v-btn>
       </v-col>
-            <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
-          <v-btn 
-          dark
-          class="mx-4 black--text pa-10"
-          icon
-          >
+      <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
+        <v-btn dark class="mx-4 black--text pa-10" icon>
           <v-icon justify-center size="60px">mdi-instagram</v-icon>
         </v-btn>
       </v-col>
-                 
-        
-  
-
-
-  </v-row>
+    </v-row>
   </v-container>
 </template>
 
@@ -155,12 +112,7 @@ export default {
   },
   data: () => ({
     show: true,
-    icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
-      ],
+    icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"]
   })
 };
 </script>

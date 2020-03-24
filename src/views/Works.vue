@@ -1,13 +1,13 @@
 <template>
-  <v-container>
-    <v-row dense>
+  <v-container fluid class="work">
+    <v-row class="mx-12">
       <v-col v-for="work in works" :key="work.title" :cols="work.flex">
         <v-card>
           <v-img
-            :src="work.src"
-            class="white--text align-end"
-            gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-            height="200px"
+          :src="work.src"
+          class="white--text align-end"
+          height="350"
+          contain
           >
           <router-link id="header-link" v-bind:to="{
           name: 'Work', params: 
@@ -21,10 +21,7 @@
           
           <v-card-title id="title" v-text="work.title"></v-card-title></router-link>
           </v-img>
-          <v-card-text v-text="work.about"></v-card-text>
-          <v-card-actions>
-            
-          </v-card-actions>
+          <v-card-text class="text--primary about_text" style="font-weight: bold;" v-text="work.about"></v-card-text>
         </v-card>
       </v-col>
     </v-row>
@@ -39,24 +36,31 @@ export default {
     works: [
       {
         title: "Flowergirl",
-        src: 'url(../assets/Flowergirl.jpg)',
+        src: require('../assets/Flowergirl.jpg'),
         flex: 8,
-        about: 'djspdjapdaofhalifla',
+        about: 'Made in adobe shotoshop',
         id:1,
       },
       {
-        title: "some code stuff",
-        src:"https://www.outsideonline.com/sites/default/files/styles/img_600x600/public/2019/11/22/rock-climbing-palestine-main_s.jpg?itok=BCE0xt-8",
+        title: "Mini me",
+        src: require('../assets/minimechristina.png'),
         flex: 4,
-        price: 850,
+        about: '"Mini me" project',
+        id:2,
+        },
+        {
+        title: "Pizza",
+        src: require('../assets/pizza_cropped.png'),
+        flex: 4,
+        about: 'A slice of pizza made in Adobe Illustrator, during my 1st semester as a multimedia designer.',
         id:2,
       },
       {
-        title: "woooo",
+        title: "project 3",
         src: "https://img.redbull.com/images/c_fill,g_auto,w_1500,h_1000/q_70,f_auto/redbullcom/2016/09/22/1331819378679_2/hold-fokus-p%C3%A5-udgangen-af-svinget.jpg",
-        flex: 12,
-        price: 600,
-         id:3,
+        flex: 8,
+        about: 'I am also a project',
+        id:3,
       },
     ]
   })
@@ -64,13 +68,24 @@ export default {
 </script>
 
 <style>
+
 #title {
   color: #ffffff;
   font-size: 18px;
   font-weight: 300;
   padding: 5px 10px;
   text-decoration: none;
-  background-color: #00000099;
-  border-bottom: 1px solid #ffffff;
+  background-color: #000000d0;
+  border-bottom: 1 solid #ffffff;
+}
+
+.about_text{
+background: rgb(255, 255, 255)
+}
+
+.work{
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
 }
 </style>
