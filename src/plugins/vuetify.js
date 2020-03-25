@@ -18,11 +18,12 @@ export default new Vuetify({
       theme: {
         themes: {
           light: {
-            primary: '#41B3A3',
-            secondary: '#E27D60',
-            button: '#85DCB',
+            primary: '#0b0c10',
+            secondary: '#1F2833',
+            button: '#6bfcf1',
             accent: '#8c9eff',
             error: '#b71c1c',
+            text: '#c5c6c7',
           },
         },
       },

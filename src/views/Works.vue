@@ -1,12 +1,12 @@
 <template>
-  <v-container>
-      <h1 class="text-center">All projects.</h1>
+  <v-container fluid class="primary">
+      <h1 class="text-center text--text">All <span class="button--text">projects.</span></h1>
     <v-row class="mx-12">
       <v-col v-for="work in works" :key="work.title" :cols="work.flex">
         <v-hover
           v-slot:default="{ hover }"
           >
-        <v-card :elevation="hover ? 16 : 2"  style="background-color:transparent;" flat width="auto">
+        <v-card :elevation="hover ? 16 : 2"  class="white" flat width="auto">
           <v-img
           :src="work.src"
           class="white--text align-end"
@@ -80,11 +80,11 @@ export default {
   font-weight: 300;
   padding: 5px 10px;
   text-decoration: none;
-  background-color: #BCD8C1;
 }
 
 .about_text{
 background: rgb(255, 255, 255)
 }
+
 
 </style>

@@ -5,7 +5,7 @@
     <v-row class="primary" style="margin-top:-20px; padding-top:50px;">
       
       
-      <v-col cols="12" class="text-center text--primary">
+      <v-col cols="12" class="text-center text--text">
         <h1 style="font-size:3rem;line-height:30px;">
           <span style="font-size:4rem">I am a</span>
           <br />
@@ -15,8 +15,8 @@
         <br /><br />  <br />   <br />
       </v-col>
       <v-row class="mx-auto" justify="center" align="center">
-        <v-col cols="12" sm="12" md="6" style="padding-left: 170px;">
-          <p style="font-size:25px; text-align:left;" justify="center">
+        <v-col cols="12" sm="12" md="6" style="padding-left: 170px;" class="text--text">
+          <p style="font-size:25px; text-align:left;" class="text--text" justify="center">
             I am a multimedia design student at
             <br />Esbjerg Business Academy EASV.
             <br />Experience in content creation, UX,
@@ -25,9 +25,10 @@
 
           <router-link to="/works">
             <v-btn
-              class="my-4 button"
+              outlined
+              color="button"
+              class="my-4"
               style="font-decoration:none;"
-              light
               x-large
             >my work
             </v-btn>
@@ -65,18 +66,19 @@
       <v-col md="6" sm="12">
         <v-row>
           <v-col cols="12">
-            <h1 class="text-center">All about me</h1>
+            <h1 class="text-center text--text">All about me</h1>
           </v-col>
           <v-col cols="12">
             <p
-              class="text-left"
+              class="text-left text--text"
               style="padding:100px;"
             >I am a multimedia student. I live in Esbjerg, Denmark, and love to drink run and play with my dog, Charlie. I am passionate about web development and design, and I work hard to make my imaginations come true. Thanks for looking!</p>
           </v-col>
           <v-col cols="12">
 
             <v-btn 
-            class="button"
+            outlined
+            color="button"
             >
             Learn about me
             </v-btn>

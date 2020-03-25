@@ -1,6 +1,7 @@
 <template>
   <div>
-    <v-navigation-drawer v-model="drawer" app relative dark right>
+    <v-navigation-drawer 
+    v-model="drawer" app relative dark right>
       <v-list dense>
         
         <!-- Home-->
@@ -45,26 +46,30 @@
     </v-navigation-drawer>
 
     <!-- App bar-->
-    <v-app-bar app :color="dynamic" light dense>
+    <v-app-bar 
+    app 
+    style="color:transparent"
+    light 
+    elevate-on-scroll
+    prominent
+    src="https://picsum.photos/1920/1080?random"
+    fade-img-on-scroll
+    scroll-threshold="200"
+  >
+  <template v-slot:img="{ props }">
+        <v-img
+          v-bind="props"
+          gradient="to top right, #0b0c10, #0b0c10"
+        ></v-img>
+      </template>
       <div class="d-flex align-center">
         <router-link to="/">
-          <v-img
-            alt="Vuetify Logo"
-            style="margin-bottom:-47px;"
-            class="shrink mr-2"
-            contain
-            src="@/assets/jancy.png"
-            transition="scale-transition"
-            width="110"
-          />
+          <h1 class="">
+            Jancy
+          </h1>
         </router-link>
       </div>
-     
-      <template v-slot:extension>
-         <!-- 
-           <v-app-bar-title class="shrink mt-1 hidden-sm-and-down" min-width="100" width="100">Jancy</v-app-bar-title>
-      -->
-      </template>
+    
       
       <v-spacer></v-spacer>
 
@@ -93,7 +98,7 @@ export default {
       aboutMe: "#aboutMe",
       skills: "#skills",
       //Colorchange appbar
-      dynamic: "#ffffff"
+      dynamic: "#ffffff",
     };
   }
 };
