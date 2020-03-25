@@ -16,8 +16,8 @@
         <br />
       </v-col>
       <v-row class="mx-auto" justify="center" align="center">
-        <v-col cols="12" sm="12" md="6" style="padding-left: 170px;" class="text--text">
-          <p style="font-size:25px; text-align:left;" class="text--text" justify="center">
+        <v-col cols="12" sm="12" md="6"  class="text--text">
+          <p style="font-size:25px; text-align:left; padding-left:10px;" class="text--text" justify="center">
             I am a multimedia design student at
             <br />Esbjerg Business Academy EASV.
             <br />Experience in content creation, UX,
