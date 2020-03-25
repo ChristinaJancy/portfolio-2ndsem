@@ -1,14 +1,19 @@
 <template>
-  <v-container fluid class="work">
+  <v-container>
+      <h1 class="text-center">All projects.</h1>
     <v-row class="mx-12">
       <v-col v-for="work in works" :key="work.title" :cols="work.flex">
-        <v-card>
+        <v-hover
+          v-slot:default="{ hover }"
+          >
+        <v-card :elevation="hover ? 16 : 2"  style="background-color:transparent;" flat width="auto">
           <v-img
           :src="work.src"
           class="white--text align-end"
           height="350"
           contain
           >
+         
           <router-link id="header-link" v-bind:to="{
           name: 'Work', params: 
           {
@@ -18,11 +23,11 @@
           about:work.about,
           id:work.id
           }}">
-          
           <v-card-title id="title" v-text="work.title"></v-card-title></router-link>
           </v-img>
-          <v-card-text class="text--primary about_text" style="font-weight: bold;" v-text="work.about"></v-card-text>
+          
         </v-card>
+         </v-hover>
       </v-col>
     </v-row>
   </v-container>
@@ -37,14 +42,14 @@ export default {
       {
         title: "Flowergirl",
         src: require('../assets/Flowergirl.jpg'),
-        flex: 8,
-        about: 'Made in adobe shotoshop',
+        flex: 6,
+        about: 'Made during my first semester as a multimedia designer at Business Academy EASV in Esbjerg. I created this in adobe photoshop',
         id:1,
       },
       {
         title: "Mini me",
         src: require('../assets/minimechristina.png'),
-        flex: 4,
+        flex: 6,
         about: '"Mini me" project',
         id:2,
         },
@@ -57,7 +62,7 @@ export default {
       },
       {
         title: "project 3",
-        src: "https://img.redbull.com/images/c_fill,g_auto,w_1500,h_1000/q_70,f_auto/redbullcom/2016/09/22/1331819378679_2/hold-fokus-p%C3%A5-udgangen-af-svinget.jpg",
+        src: "https://via.placeholder.com/150",
         flex: 8,
         about: 'I am also a project',
         id:3,
@@ -70,22 +75,16 @@ export default {
 <style>
 
 #title {
-  color: #ffffff;
+  color: #000000;
   font-size: 18px;
   font-weight: 300;
   padding: 5px 10px;
   text-decoration: none;
-  background-color: #000000d0;
-  border-bottom: 1 solid #ffffff;
+  background-color: #BCD8C1;
 }
 
 .about_text{
 background: rgb(255, 255, 255)
 }
 
-.work{
-background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-
-}
 </style>

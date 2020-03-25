@@ -44,7 +44,6 @@ router-link-exact-active {
     text-decoration: none;
     }
   
-
 #app{
   margin:auto;
 }

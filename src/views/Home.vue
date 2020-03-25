@@ -1,6 +1,10 @@
 <template>
   <v-container fluid>
-    <v-row style="background-color:#FC766AFF; margin-top:-20px; padding-top:50px;">
+<!-- Floating navigation button -->
+
+    <v-row class="primary" style="margin-top:-20px; padding-top:50px;">
+      
+      
       <v-col cols="12" class="text-center text--primary">
         <h1 style="font-size:3rem;line-height:30px;">
           <span style="font-size:4rem">I am a</span>
@@ -21,31 +25,40 @@
 
           <router-link to="/works">
             <v-btn
-              class="my-4"
-              style="font-decoration:none; background-color: black;"
-              dark
+              class="my-4 button"
+              style="font-decoration:none;"
+              light
               x-large
-            >my work</v-btn>
+            >my work
+            </v-btn>
+
+
           </router-link>
         </v-col>
         <v-col cols="12" sm="12" md="6" justify="center" align="center">
-          <v-img src="../assets/code_art_cropped.png" width="auto" height="auto" max-height="500" max-width="500"></v-img>
+          <v-img src="../assets/png_head.png" width="auto" height="auto" max-height="500" max-width="500"></v-img>
         </v-col>
       </v-row>
     </v-row>
     <h1 class="my-5 text-center">Selected work.</h1>
-    <v-row style="background-color:white;">
+ 
+    <v-row style="background-color:white;" id="selected_work">
       <v-col md="4" sm="12">
-        <v-img src="../assets/Flowergirl.jpg" max-height="500" contain></v-img>
+        <v-img src="https://via.placeholder.com/150" max-height="500" contain></v-img>
       </v-col>
       <v-col md="4" sm="12">
-        <v-img src="../assets/minimechristina.png" max-height="500" contain></v-img>
+        <v-img src="https://via.placeholder.com/150" max-height="500" contain></v-img>
       </v-col>
       <v-col md="4" sm="12">
-        <v-img src="../assets/pizza.png" max-height="500" contain></v-img>
+        <v-img src="https://via.placeholder.com/150" max-height="500" contain></v-img>
       </v-col>
     </v-row>
-    <v-row style="background-color: #6242ff">
+ 
+
+    <v-row class="primary">
+
+
+
       <v-img src="../assets/Christina.jpg" height="500" width="400" fill>
         <v-col md="6" sm="12"></v-col>
       </v-img>
@@ -57,11 +70,18 @@
           <v-col cols="12">
             <p
               class="text-left"
-              style="padding-right:40px;"
+              style="padding:100px;"
             >I am a multimedia student. I live in Esbjerg, Denmark, and love to drink run and play with my dog, Charlie. I am passionate about web development and design, and I work hard to make my imaginations come true. Thanks for looking!</p>
           </v-col>
           <v-col cols="12">
-            <v-btn dark>Learn about me</v-btn>
+
+            <v-btn 
+            class="button"
+            >
+            Learn about me
+            </v-btn>
+
+
           </v-col>
         </v-row>
       </v-col>
@@ -99,8 +119,11 @@
         </v-btn>
       </v-col>
     </v-row>
+ 
   </v-container>
+  
 </template>
+
 
 <script>
 import Textclip from "../components/Textclip";
@@ -112,7 +135,8 @@ export default {
   },
   data: () => ({
     show: true,
-    icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"]
+    icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
+    shouldStick: true,
   })
 };
 </script>

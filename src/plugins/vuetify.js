@@ -15,4 +15,18 @@ export default new Vuetify({
     icons: {
         iconfont: 'mdiSvg', // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4' || 'faSvg'
       },
+      theme: {
+        themes: {
+          light: {
+            primary: '#41B3A3',
+            secondary: '#E27D60',
+            button: '#85DCB',
+            accent: '#8c9eff',
+            error: '#b71c1c',
+          },
+        },
+      },
+      
+      
 });
+
