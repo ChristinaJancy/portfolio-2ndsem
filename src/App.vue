@@ -37,7 +37,8 @@ import Navigation from '@/components/Navigation'
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+
 
 router-link-exact-active {
       color: rgb(255, 238, 0);
@@ -51,6 +52,6 @@ h1{
   font-family: 'Crimson Pro', serif;
 }
 p{
-  font-family: 'Bitter', serif;
+  font-family: 'Baloo Da 2', cursive;
 }
 </style>

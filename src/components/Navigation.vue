@@ -54,7 +54,7 @@
     prominent
     src="https://picsum.photos/1920/1080?random"
     fade-img-on-scroll
-    scroll-threshold="200"
+    scroll-threshold="100"
   >
   <template v-slot:img="{ props }">
         <v-img
@@ -64,13 +64,13 @@
       </template>
       <div class="d-flex align-center">
         <router-link to="/">
-          <h1 class="">
-            Jancy
-          </h1>
+          <div d-flex >
+           <v-img
+           src="../assets/jancy_logo.png">
+           </v-img>
+          </div>
         </router-link>
       </div>
-    
-      
       <v-spacer></v-spacer>
 
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>

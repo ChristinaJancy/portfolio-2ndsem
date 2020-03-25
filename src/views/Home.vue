@@ -1,10 +1,8 @@
 <template>
   <v-container fluid>
-<!-- Floating navigation button -->
+    <!-- Floating navigation button -->
 
     <v-row class="primary" style="margin-top:-20px; padding-top:50px;">
-      
-      
       <v-col cols="12" class="text-center text--text">
         <h1 style="font-size:3rem;line-height:30px;">
           <span style="font-size:4rem">I am a</span>
@@ -12,7 +10,10 @@
           <Textclip></Textclip>
           <span style="font-size:4rem;">Designer</span>
         </h1>
-        <br /><br />  <br />   <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </v-col>
       <v-row class="mx-auto" justify="center" align="center">
         <v-col cols="12" sm="12" md="6" style="padding-left: 170px;" class="text--text">
@@ -30,19 +31,22 @@
               class="my-4"
               style="font-decoration:none;"
               x-large
-            >my work
-            </v-btn>
-
-
+            >my work</v-btn>
           </router-link>
         </v-col>
         <v-col cols="12" sm="12" md="6" justify="center" align="center">
-          <v-img src="../assets/png_head.png" width="auto" height="auto" max-height="500" max-width="500"></v-img>
+          <v-img
+            src="../assets/png_head.png"
+            width="auto"
+            height="auto"
+            max-height="500"
+            max-width="500"
+          ></v-img>
         </v-col>
       </v-row>
     </v-row>
     <h1 class="my-5 text-center">Selected work.</h1>
- 
+
     <v-row style="background-color:white;" id="selected_work">
       <v-col md="4" sm="12">
         <v-img src="https://via.placeholder.com/150" max-height="500" contain></v-img>
@@ -54,36 +58,21 @@
         <v-img src="https://via.placeholder.com/150" max-height="500" contain></v-img>
       </v-col>
     </v-row>
- 
 
     <v-row class="primary">
-
-
-
       <v-img src="../assets/Christina.jpg" height="500" width="400" fill>
         <v-col md="6" sm="12"></v-col>
       </v-img>
       <v-col md="6" sm="12">
-        <v-row>
+        <v-row class="mx-auto my-auto" justify="center" align="center">
           <v-col cols="12">
-            <h1 class="text-center text--text">All about me</h1>
+            <h1 class="text-center text--text">All about me.</h1>
           </v-col>
-          <v-col cols="12">
+          <v-col style="padding: 0 100px 0 100px;" class="my-10" cols="12">
             <p
               class="text-left text--text"
-              style="padding:100px;"
             >I am a multimedia student. I live in Esbjerg, Denmark, and love to drink run and play with my dog, Charlie. I am passionate about web development and design, and I work hard to make my imaginations come true. Thanks for looking!</p>
-          </v-col>
-          <v-col cols="12">
-
-            <v-btn 
-            outlined
-            color="button"
-            >
-            Learn about me
-            </v-btn>
-
-
+            <v-btn outlined color="button">All about me</v-btn>
           </v-col>
         </v-row>
       </v-col>
@@ -91,13 +80,23 @@
 
     <v-row>
       <v-col cols="12">
-        <h1 class="text-center">Come find me.</h1>
-      </v-col>
-      <v-col cols="12">
-        <p>
-          I am an active member of differet social medias. Feel free to follow me, comment, or message me. Looking forward to hear from you.
-          you can also email me at: mail
-        </p>
+        <v-row class="mx-auto" justify="center" align="center">
+          <v-col cols="12">
+            <h1 class="text-center">Come find me.</h1>
+          </v-col>
+          <v-col cols="12" style="padding: 0 100px 0 100px;" justify="center">
+            <p class="text-center">
+              I am an active member of differet social medias.
+              <br />Feel free to follow me, comment, or message me.
+              <br />Looking forward to hear from you.
+              <br />My mail:
+              <a
+                href="mailto:chri91eq@easv360.dk"
+                class="secondary--text font-weight-bold"
+              >chri91eq@easv360.dk</a>
+            </p>
+          </v-col>
+        </v-row>
       </v-col>
 
       <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
@@ -121,9 +120,7 @@
         </v-btn>
       </v-col>
     </v-row>
- 
   </v-container>
-  
 </template>
 
 
@@ -138,7 +135,7 @@ export default {
   data: () => ({
     show: true,
     icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
-    shouldStick: true,
+    shouldStick: true
   })
 };
 </script>
