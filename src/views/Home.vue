@@ -15,38 +15,30 @@
         <br />
         <br />
       </v-col>
-      <v-row class="mx-auto" justify="center" align="center">
+      <v-row justify="center" align="center">
         <v-col cols="12" sm="12" md="6" class="text--text">
-          <p
-            style="text-align:left;"
-            class="text--text"
-            justify="center"
-            align="center"
-            id="text_designer"
-          >
+          <p class="text--text" justify="center" align="center" id="text_designer">
             I am a multimedia design student at
-            <br />Esbjerg Business Academy EASV.
-            <br />Experience in content creation, UX,
-            <br />business and web development
+            <br />
+            <span style="margin-left:-35px;">Esbjerg Business Academy EASV.</span>
+            <br />
+            <span style="margin-left:-10px;">Experience in content creation, UX,</span>
+            <br />
+            <span style="margin-left:-45px;">business and web development</span>
+            <br />
+            <router-link to="/works">
+              <v-btn
+                outlined
+                color="button"
+                class="my-4"
+                style="font-decoration:none;"
+                x-large
+              >my work</v-btn>
+            </router-link>
           </p>
-
-          <router-link to="/works">
-            <v-btn
-              outlined
-              color="button"
-              class="my-4"
-              style="font-decoration:none;"
-              x-large
-            >my work</v-btn>
-          </router-link>
         </v-col>
         <v-col cols="12" sm="12" md="6" justify="center" align="center">
-          <v-img
-            src="../assets/png_head.png"
-            width="auto"
-            height="auto"
-            max-width="400"
-          ></v-img>
+          <v-img src="../assets/png_head.png" width="auto" height="auto" max-width="400"></v-img>
         </v-col>
       </v-row>
     </v-row>
@@ -65,18 +57,31 @@
     </v-row>
 
     <v-row class="primary">
-      <v-img src="../assets/Christina.jpg" height="500" width="400" fill>
+      <v-img src="../assets/Christina.jpg" height="auto" width="400" fill>
         <v-col md="6" sm="12"></v-col>
       </v-img>
       <v-col md="6" sm="12">
-        <v-row class="mx-auto my-auto" justify="center" align="center">
+        <v-row justify="center" align="center">
           <v-col cols="12">
             <h1 class="text-center text--text">All about me.</h1>
           </v-col>
-          <v-col style="padding: 0 100px 0 100px;" class="my-10" cols="12">
-            <p
-              class="text-left text--text"
-            >I am a multimedia student. I live in Esbjerg, Denmark, and love to drink run and play with my dog, Charlie. I am passionate about web development and design, and I work hard to make my imaginations come true. Thanks for looking!</p>
+          <v-col style="padding: 0 100px 0 100px;" class="my-5" cols="12">
+            <p class="text--text" justify="center" align="center">
+              <span>My name is Christina Jancy Pedersen,</span>
+              <br />
+              <span style="margin-left:-51px;">and I live in Esbjerg, Denmark.</span>
+              <br />
+              <span style="margin-right: -20px;">I'm a coffeeholic and I love photography.</span>
+              <br />
+              <span style="margin-right: -20px;">I am passionate about web development</span>
+              <br />
+              <span style="margin-right: -12px;">and design, and I work hard to make my</span>
+              <br />
+              <span style="margin-left: -90px;">imaginations come true.</span>
+              <br />
+              <span style="margin-left: -120px;">Thanks for looking!</span>
+            </p>
+
             <v-btn outlined color="button">All about me</v-btn>
           </v-col>
         </v-row>
@@ -90,7 +95,7 @@
             <h1 class="text-center">Come find me.</h1>
           </v-col>
           <v-col cols="12" style="padding: 0 100px 0 100px;" justify="center">
-            <p class="text-center">
+            <p class="text-center" justify="center" align="center">
               I am an active member of differet social medias.
               <br />Feel free to follow me, comment, or message me.
               <br />Looking forward to hear from you.
@@ -103,7 +108,6 @@
           </v-col>
         </v-row>
       </v-col>
-
       <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
         <v-btn dark class="mx-4 black--text pa-10" icon>
           <v-icon size="60px">mdi-facebook</v-icon>
@@ -146,8 +150,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#text_designer{
-  font-size:25px; 
+#text_designer {
+  font-size: 25px;
 }
 
 @media screen and (max-width: 450px) {
