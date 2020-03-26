@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="primary">
       <h1 class="text-center text--text">All <span class="button--text">projects.</span></h1>
-    <v-row class="mx-12">
+    <v-row class="mx-5">
       <v-col v-for="work in works" :key="work.title" :cols="work.flex">
         <v-hover
           v-slot:default="{ hover }"

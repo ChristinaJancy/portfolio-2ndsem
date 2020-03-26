@@ -2,7 +2,7 @@
   <v-container fluid>
     <!-- Floating navigation button -->
 
-    <v-row class="primary" style="margin-top:-20px; padding-top:50px;">
+    <v-row class="primary" style="margin-top:-20px; padding-top:50px;" fluid>
       <v-col cols="12" class="text-center text--text">
         <h1 style="font-size:3rem;line-height:30px;">
           <span style="font-size:4rem">I am a</span>
@@ -16,8 +16,14 @@
         <br />
       </v-col>
       <v-row class="mx-auto" justify="center" align="center">
-        <v-col cols="12" sm="12" md="6"  class="text--text">
-          <p style="font-size:25px; text-align:left; padding-left:10px;" class="text--text" justify="center">
+        <v-col cols="12" sm="12" md="6" class="text--text">
+          <p
+            style="text-align:left;"
+            class="text--text"
+            justify="center"
+            align="center"
+            id="text_designer"
+          >
             I am a multimedia design student at
             <br />Esbjerg Business Academy EASV.
             <br />Experience in content creation, UX,
@@ -39,8 +45,7 @@
             src="../assets/png_head.png"
             width="auto"
             height="auto"
-            max-height="500"
-            max-width="500"
+            max-width="400"
           ></v-img>
         </v-col>
       </v-row>
@@ -141,6 +146,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#text_designer{
+  font-size:25px; 
+}
+
+@media screen and (max-width: 450px) {
+  #text_designer {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 260px) {
+  #text_designer {
+    font-size: 10px;
+  }
+}
+
 #div1 {
   width: 100px;
   height: 100px;
