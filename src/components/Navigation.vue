@@ -49,7 +49,7 @@
     <!-- App bar-->
     <v-app-bar 
     app 
-    dense
+   
     width="70"
     fixed
     class="primary"

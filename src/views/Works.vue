@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="primary" style="margin-top:-60px; padding-top:50px;">
+  <v-container fluid class="primary" style="margin-top:-70px; padding-top:50px;">
       <h1 class="text-center text--text">All <span class="button--text">projects.</span></h1>
     <v-row class="mx-5">
       <v-col v-for="work in works" :key="work.title" :cols="work.flex">
@@ -13,7 +13,6 @@
           height="350"
           contain
           >
-         
           <router-link id="header-link" v-bind:to="{
           name: 'Work', params: 
           {

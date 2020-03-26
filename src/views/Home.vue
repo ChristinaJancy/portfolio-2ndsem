@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <!-- Floating navigation button -->
-    <v-row class="primary" style="margin-top:-60px; padding-top:50px;" fluid>
+    <v-row class="primary" style="margin-top:-70px; padding-top:50px;" fluid>
       <v-col cols="12" class="text-center text--text">
         <h1 style="font-size:3rem;line-height:30px;">
           <span style="font-size:4rem">I am a</span>
@@ -56,7 +56,7 @@
     </v-row>
 
     <v-row class="primary">
-      <v-img src="../assets/Christina.jpg" height="auto" width="400" fill>
+      <v-img src="../assets/Christina.jpg" height="auto" width="400" contain>
         <v-col md="6" sm="12"></v-col>
       </v-img>
       <v-col md="6" sm="12">
@@ -89,7 +89,7 @@
 
     <v-row>
       <v-col cols="12">
-        <v-row class="mx-auto" justify="center" align="center">
+        <v-row justify="center" align="center">
           <v-col cols="12">
             <h1 class="text-center">Come find me.</h1>
           </v-col>
