@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container>
     <!-- Floating navigation button -->
     <v-row class="primary" style="margin-top:-70px; padding-top:50px;" fluid>
       <v-col cols="12" class="text-center text--text">
