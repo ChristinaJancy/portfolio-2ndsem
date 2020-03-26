@@ -1,17 +1,17 @@
 <template>
   <div>
-    <v-navigation-drawer 
+    <v-navigation-drawer  
     v-model="drawer" 
-    style="border-radius: 0px 0px 200px 0px; "
+    style="border-radius: 0px 0px 200px 0px;padding-top:40px;"
     fixed
     dark
     class="text"
     floating
     clipped
-    mobile-break-point="600px"
+    mobile-break-point
     width="100"
     height="200">
-      <v-list dense justify="left" align="left" style="padding-top:50px;">
+      <v-list dense justify="left" align="left" >
         <!-- Home-->
         
         <router-link to="/">
@@ -51,6 +51,7 @@
     app 
     dense
     width="70"
+    fixed
     class="primary"
     style="border-radius: 0px 0px 30px 0px;" 
   >
