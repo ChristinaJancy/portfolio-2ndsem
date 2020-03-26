@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="primary" style="margin-top:-70px; padding-top:50px;">
+  <v-container fluid class="primary" style="margin-top:-20px; padding-top:50px;">
       <h1 class="text-center text--text">All <span class="button--text">projects.</span></h1>
     <v-row class="mx-5">
       <v-col v-for="work in works" :key="work.title" :cols="work.flex">
@@ -41,28 +41,28 @@ export default {
       {
         title: "Flowergirl",
         src: require('../assets/Flowergirl.jpg'),
-        flex: 6,
+        flex: 12,
         about: 'Made during my first semester as a multimedia designer at Business Academy EASV in Esbjerg. I created this in adobe photoshop',
         id:1,
       },
       {
         title: "Mini me",
         src: require('../assets/minimechristina.png'),
-        flex: 6,
+        flex: 12,
         about: '"Mini me" project',
         id:2,
         },
         {
         title: "Pizza",
         src: require('../assets/pizza_cropped.png'),
-        flex: 4,
+        flex: 6,
         about: 'A slice of pizza made in Adobe Illustrator, during my 1st semester as a multimedia designer.',
         id:2,
       },
       {
         title: "project 3",
         src: "https://via.placeholder.com/150",
-        flex: 8,
+        flex: 6,
         about: 'I am also a project',
         id:3,
       },

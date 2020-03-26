@@ -1,7 +1,7 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <!-- Floating navigation button -->
-    <v-row class="primary" style="margin-top:-70px; padding-top:50px;" fluid>
+    <v-row class="primary" style="margin-top:-20px; padding-top:50px;" fluid>
       <v-col cols="12" class="text-center text--text">
         <h1 style="font-size:3rem;line-height:30px;">
           <span style="font-size:4rem">I am a</span>

@@ -48,8 +48,6 @@
 
     <!-- App bar-->
     <v-app-bar 
-    app 
-   
     width="70"
     fixed
     class="primary"
