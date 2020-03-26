@@ -1,10 +1,5 @@
 <template>
   <v-container fluid class="work">
-    <v-col>
-      <router-link to="/works">
-        <v-btn dark>Go back</v-btn>
-      </router-link>
-    </v-col>
     <v-row dense class="mx-12">
       <v-col cols="12" class="mx-auto">
         <v-card style="background-color:transparent;" flat>
@@ -24,6 +19,11 @@
           <v-card-text class="subtitle-1" v-text="work.about"></v-card-text>
         
       </v-col>
+          <v-col>
+      <router-link to="/works">
+        <v-btn dark>Go back</v-btn>
+      </router-link>
+    </v-col>
     </v-row>
   </v-container>
 </template>
