@@ -2,7 +2,7 @@
     <div>
         <v-row>
             <v-col>
-                 <svg viewBox="0 15 500 100" class="textclip" style="border-radius:500px 500px 500px 500px;">
+                 <svg viewBox="0 15 500 100" class="textclip" style="">
                  
         <clipPath id="textClip" class="filled-heading">
     

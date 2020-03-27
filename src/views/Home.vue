@@ -11,7 +11,6 @@
         </h1>
         <br>
       </v-col>
-      <v-row justify="center" align="center">
 
         <v-col cols="12" sm="12" md="6" class="text--text">
         <br />
@@ -42,7 +41,7 @@
           <v-img src="../assets/png_head.png" width="auto" height="auto" max-width="400"></v-img>
         </v-col>
       </v-row>
-    </v-row>
+
     <v-row class="text" id="selected_work">
       <v-col cols="12">
          <h1 class="my-5 text-center primary--text">Selected work.</h1>
