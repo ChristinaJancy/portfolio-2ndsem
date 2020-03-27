@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <div fluid>
     <!-- Floating navigation button -->
     <v-row class="primary" style="margin-top:-80px; padding-top:50px;" fluid>
       <v-col cols="12" class="text-center text--text" justify="center" >
@@ -18,14 +18,14 @@
         <br />
         <br />
         <br>
-         <p class="text--text" justify="center" align="center" id="text_designer">
+         <p style="line-height:40px;" class="text--text pl-10" justify="left"  id="text_designer">
             I am a multimedia design student at
             <br />
-            <span style="margin-left:-35px;">Esbjerg Business Academy EASV.</span>
+            <span>Esbjerg Business Academy EASV.</span>
             <br />
-            <span style="margin-left:-10px;">Experience in content creation, UX,</span>
+            <span>Experience in content creation, UX,</span>
             <br />
-            <span style="margin-left:-45px;">business and web development</span>
+            <span>business and web development</span>
             <br />
             <router-link to="/works">
               <v-btn
@@ -70,7 +70,7 @@
             <h1 class="text-left text--text pl-10">All about me.</h1>
           </v-col>
           <v-col class="my-5 pl-12" cols="12">
-            <p class="text--text" justify="center">
+            <p class="text--text" style="line-height:35px;" justify="center">
               <span>My name is Christina Jancy Pedersen,</span>
               <br />
               <span>and I live in Esbjerg, Denmark.</span>
@@ -133,7 +133,7 @@
         </v-btn>
       </v-col>
     </v-row>
-  </v-container>
+  </div>
 </template>
 
 

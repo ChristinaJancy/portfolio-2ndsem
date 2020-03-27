@@ -22,7 +22,7 @@
     </v-row>
     <v-row width="100%" class="text" fluid>
       <v-col cols="6">
-        <v-card-text class=" pa-10" v-text="work.about"></v-card-text>
+        <v-card-text v-text="work.about"></v-card-text>
       </v-col>
     </v-row>
   </v-container>
