@@ -1,19 +1,12 @@
 <template>
-  <v-container fluid class="primary" style="margin-top:-20px; padding-top:50px;">
-      <h1 class="text-center text--text">All <span class="button--text">projects.</span></h1>
+  <v-container fluid class="primary" style="margin-top:-80px; padding-top:50px;">
+      <h1 class="text-center text--text">All <span>projects.</span></h1>
     <v-row class="mx-5">
       <v-col v-for="work in works" :key="work.title" :cols="work.flex">
         <v-hover
           v-slot:default="{ hover }"
           >
-        <v-card :elevation="hover ? 16 : 2"  class="white" flat width="auto">
-          <v-img
-          :src="work.src"
-          class="white--text align-end"
-          height="350"
-          contain
-          >
-          <router-link id="header-link" v-bind:to="{
+           <router-link id="header-link" v-bind:to="{
           name: 'Work', params: 
           {
           title:work.title,
@@ -22,10 +15,28 @@
           about:work.about,
           id:work.id
           }}">
-          <v-card-title id="title" v-text="work.title"></v-card-title></router-link>
+        <v-card 
+        :elevation="hover ? 16 : 2"  
+        tile 
+        class="white" 
+        flat 
+        justify="center"
+        align="center"
+        max-width="400"
+        height="400"
+        style="display:flex;"
+        >
+          <v-img
+          :src="work.src"
+          class="white--text align-end"
+          height="400"
+          width="400"
+          contain
+          >
+          <v-card-title id="title" v-text="work.title"></v-card-title>
           </v-img>
-          
         </v-card>
+        </router-link>
          </v-hover>
       </v-col>
     </v-row>
@@ -41,28 +52,28 @@ export default {
       {
         title: "Flowergirl",
         src: require('../assets/Flowergirl.jpg'),
-        flex: 12,
+        flex: 'auto',
         about: 'Made during my first semester as a multimedia designer at Business Academy EASV in Esbjerg. I created this in adobe photoshop',
         id:1,
       },
       {
         title: "Mini me",
         src: require('../assets/minimechristina.png'),
-        flex: 12,
+        flex: 'auto',
         about: '"Mini me" project',
         id:2,
         },
         {
         title: "Pizza",
         src: require('../assets/pizza_cropped.png'),
-        flex: 6,
+        flex: 'auto',
         about: 'A slice of pizza made in Adobe Illustrator, during my 1st semester as a multimedia designer.',
         id:2,
       },
       {
         title: "project 3",
         src: "https://via.placeholder.com/150",
-        flex: 6,
+        flex: 'auto',
         about: 'I am also a project',
         id:3,
       },

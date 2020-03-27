@@ -1,22 +1,24 @@
 <template>
   <v-container fluid>
     <!-- Floating navigation button -->
-    <v-row class="primary" style="margin-top:-20px; padding-top:50px;" fluid>
-      <v-col cols="12" class="text-center text--text">
+    <v-row class="primary" style="margin-top:-80px; padding-top:50px;" fluid>
+      <v-col cols="12" class="text-center text--text" justify="center" >
         <h1 style="font-size:3rem;line-height:30px;">
           <span style="font-size:4rem">I am a</span>
           <br />
           <Textclip></Textclip>
           <span style="font-size:4rem;">Designer</span>
         </h1>
-        <br />
-        <br />
-        <br />
-        <br />
+        <br>
       </v-col>
       <v-row justify="center" align="center">
+
         <v-col cols="12" sm="12" md="6" class="text--text">
-          <p class="text--text" justify="center" align="center" id="text_designer">
+        <br />
+        <br />
+        <br />
+        <br>
+         <p class="text--text" justify="center" align="center" id="text_designer">
             I am a multimedia design student at
             <br />
             <span style="margin-left:-35px;">Esbjerg Business Academy EASV.</span>
@@ -41,20 +43,23 @@
         </v-col>
       </v-row>
     </v-row>
-    <h1 class="my-5 text-center">Selected work.</h1>
-
-    <v-row style="background-color:white;" id="selected_work">
-      <v-col md="4" sm="12">
+    <v-row class="text" id="selected_work">
+      <v-col cols="12">
+         <h1 class="my-5 text-center primary--text">Selected work.</h1>
+      </v-col>
+      <v-col cols="12" md="4" sm="12">
         <v-img src="https://via.placeholder.com/150" max-height="500" contain></v-img>
       </v-col>
-      <v-col md="4" sm="12">
+      <v-col cols="12" md="4" sm="12">
         <v-img src="https://via.placeholder.com/150" max-height="500" contain></v-img>
       </v-col>
-      <v-col md="4" sm="12">
+      <v-col cols="12" md="4" sm="12">
         <v-img src="https://via.placeholder.com/150" max-height="500" contain></v-img>
+      </v-col>
+      <v-col cols="12" md="4" sm="12">
+        
       </v-col>
     </v-row>
-
     <v-row class="primary">
       <v-img src="../assets/Christina.jpg" height="auto" width="400" contain>
         <v-col md="6" sm="12"></v-col>
@@ -62,26 +67,26 @@
       <v-col md="6" sm="12">
         <v-row justify="center" align="center">
           <v-col cols="12">
-            <h1 class="text-center text--text">All about me.</h1>
+            <h1 class="text-left text--text pl-10">All about me.</h1>
           </v-col>
-          <v-col style="padding: 0 100px 0 100px;" class="my-5" cols="12">
-            <p class="text--text" justify="center" align="center">
+          <v-col class="my-5 pl-12" cols="12">
+            <p class="text--text" justify="center">
               <span>My name is Christina Jancy Pedersen,</span>
               <br />
-              <span style="margin-left:-51px;">and I live in Esbjerg, Denmark.</span>
+              <span>and I live in Esbjerg, Denmark.</span>
               <br />
-              <span style="margin-right: -20px;">I'm a coffeeholic and I love photography.</span>
+              <span>I'm a coffeeholic and I love photography.</span>
               <br />
-              <span style="margin-right: -20px;">I am passionate about web development</span>
+              <span>I am passionate about web development</span>
               <br />
-              <span style="margin-right: -12px;">and design, and I work hard to make my</span>
+              <span>and design, and I work hard to make my</span>
               <br />
-              <span style="margin-left: -90px;">imaginations come true.</span>
+              <span>imaginations come true.</span>
               <br />
-              <span style="margin-left: -120px;">Thanks for looking!</span>
+              <span>Thanks for looking!</span>
             </p>
 
-            <v-btn outlined color="button">All about me</v-btn>
+            <v-btn outlined color="button" class="mt-5">All about me</v-btn>
           </v-col>
         </v-row>
       </v-col>
@@ -108,22 +113,22 @@
         </v-row>
       </v-col>
       <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
-        <v-btn dark class="mx-4 black--text pa-10" icon>
+        <v-btn dark class="mx-4 primary--text pa-10" icon>
           <v-icon size="60px">mdi-facebook</v-icon>
         </v-btn>
       </v-col>
       <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
-        <v-btn dark class="mx-4 black--text pa-10" icon>
+        <v-btn dark class="mx-4 primary--text pa-10" icon>
           <v-icon size="60px">mdi-twitter</v-icon>
         </v-btn>
       </v-col>
       <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
-        <v-btn dark class="mx-4 black--text pa-10" icon>
+        <v-btn dark class="mx-4 primary--text pa-10" icon>
           <v-icon size="60px">mdi-linkedin</v-icon>
         </v-btn>
       </v-col>
       <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
-        <v-btn dark class="mx-4 black--text pa-10" icon>
+        <v-btn dark class="mx-4 primary--text pa-10" icon>
           <v-icon justify-center size="60px">mdi-instagram</v-icon>
         </v-btn>
       </v-col>
@@ -143,7 +148,23 @@ export default {
   data: () => ({
     show: true,
     icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
-    shouldStick: true
+       props: {
+      attrs: {
+        type: Object,
+        default: () => ({}),
+      },
+    },
+
+    data: vm => ({
+      initialDark: vm.$vuetify
+        ? vm.$vuetify.theme.dark
+        : false,
+    }),
+
+    beforeDestroy () {
+      if (!this.$vuetify) return
+      this.$vuetify.theme.dark = this.initialDark
+    },
   })
 };
 </script>

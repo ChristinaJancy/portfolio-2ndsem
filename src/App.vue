@@ -46,7 +46,7 @@ router-link-exact-active {
     }
   
 #app{
-  margin:auto;
+  margin:0;
 }
 h1{
   font-family: 'Crimson Pro', serif;

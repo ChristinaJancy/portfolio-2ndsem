@@ -24,10 +24,18 @@ export default new Vuetify({
             accent: '#8c9eff',
             error: '#b71c1c',
             text: '#c5c6c7',
+            textclip: '#0b0c10',
+            textclipText: '#c5c6c7'
           },
+         dark: {
+           primary: '#c5c6c7',
+           text: '#0b0c10',
+           button: '#0b0c10',
+          error: '#b71c1c',
+          textclip: '#0b0c10',
+          textclipText:'#c5c6c7',
+         }
         },
-      },
-      
-      
+      },    
 });
 

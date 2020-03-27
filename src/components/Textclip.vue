@@ -2,9 +2,10 @@
     <div>
         <v-row>
             <v-col>
-                 <svg viewBox="0 15 500 100">
+                 <svg viewBox="0 15 500 100" class="textclip" style="border-radius:500px 0 500px 0;">
                  
         <clipPath id="textClip" class="filled-heading">
+    
           <text y="80" x="110">Multimedia</text>
           <text y="140"></text>
           <text y="210" />
@@ -106,6 +107,7 @@
           />
         </g>
       </svg>
+      
             </v-col>
         </v-row>
     </div>

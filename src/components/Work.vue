@@ -1,29 +1,29 @@
 <template>
-  <v-container fluid class="work">
+  <v-container fluid class="work primary" style="margin-top:-80px; padding-top:50px;">
     <v-row dense class="mx-12">
       <v-col cols="12" class="mx-auto">
-        <v-card style="background-color:transparent;" flat>
+        <v-card flat>
           <v-img
             :src="work.src"
             height="auto"
             max-height="550"
             contain
-            class="align-end"
-            
+            class="align-end justify-center"
           >
             <v-card-title v-text="work.title"></v-card-title>
           </v-img>
-          
         </v-card>
-        
-          <v-card-text class="subtitle-1" v-text="work.about"></v-card-text>
-        
       </v-col>
-          <v-col>
-      <router-link to="/works">
-        <v-btn dark>Go back</v-btn>
-      </router-link>
-    </v-col>
+      <v-col cols="12">
+        <router-link to="/works">
+          <v-btn dark>Go back</v-btn>
+        </router-link>
+      </v-col>
+    </v-row>
+    <v-row width="100%" class="text" fluid>
+      <v-col cols="6">
+        <v-card-text class=" pa-10" v-text="work.about"></v-card-text>
+      </v-col>
     </v-row>
   </v-container>
 </template>

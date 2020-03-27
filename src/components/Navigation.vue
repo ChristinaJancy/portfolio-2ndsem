@@ -1,19 +1,20 @@
 <template>
   <div>
-    <v-navigation-drawer  
-    v-model="drawer" 
-    style="border-radius: 0px 0px 200px 0px;padding-top:40px;"
-    fixed
-    dark
-    class="text"
-    floating
-    clipped
-    mobile-break-point
-    width="100"
-    height="200">
-      <v-list dense justify="left" align="left" >
+    <v-navigation-drawer
+      v-model="drawer"
+      style="border-radius: 0px 0px 200px 0px;padding-top:50px;"
+      fixed
+      dark
+      class="text"
+      floating
+      clipped
+      mobile-break-point
+      width="100"
+      height="280"
+    >
+      <v-list dense justify="left" align="left">
         <!-- Home-->
-        
+
         <router-link to="/">
           <v-list-item link>
             <v-list-item-content>
@@ -36,25 +37,28 @@
         <!-- about  -->
         <router-link to="/about">
           <v-list-item link>
-            
             <v-list-item-content>
               <!--@click="$vuetify.goTo(skills, options)"-->
               <v-list-item-title class="subtitle-2 primary--text">About me</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </router-link>
+<v-divider class="primary"></v-divider>
+        <v-list-item>
+          <v-list-content>
+            <p class="primary--text">Toggle theme:</p>
+           <v-switch
+           style="margin-top:-25px;"
+        v-model="$vuetify.theme.dark"     
+      ></v-switch>
+          </v-list-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
     <!-- App bar-->
-    <v-app-bar 
-    width="70"
-    fixed
-    class="primary"
-    style="border-radius: 0px 0px 30px 0px;" 
-  >
-  <v-spacer></v-spacer>
-      <v-app-bar-nav-icon color="white" @click.stop="drawer = !drawer">
+    <v-app-bar app width="70" fixed class="primary" style="border-radius: 0px 0px 30px 0px;">
+      <v-app-bar-nav-icon color="text" @click.stop="drawer = !drawer">
         <v-icon x-large>mdi-menu</v-icon>
       </v-app-bar-nav-icon>
     </v-app-bar>
@@ -81,7 +85,7 @@ export default {
       aboutMe: "#aboutMe",
       skills: "#skills",
       //Colorchange appbar
-      dynamic: "#ffffff",
+      dynamic: "#ffffff"
     };
   }
 };
