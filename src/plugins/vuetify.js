@@ -28,7 +28,7 @@ export default new Vuetify({
             textclipText: '#c5c6c7'
           },
          dark: {
-           primary: '#c5c6c7',
+           primary: '#fcf1bb',
            text: '#0b0c10',
            button: '#dc143c',
           error: '#b71c1c',

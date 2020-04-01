@@ -6,7 +6,7 @@
   <span class="letter rev">o</span>
   <span class="letter">u</span>
   <span class="letter rev">t </span>
-  <span class="letter rev">m</span>
+  <span>m</span>
   <span class="letter">e</span>
   <span class="letter">.</span>
 </h1>
