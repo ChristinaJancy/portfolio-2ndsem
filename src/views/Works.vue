@@ -1,47 +1,44 @@
 <template>
-  <v-container fluid class="primary" style="margin-top:-80px; padding-top:50px;">
-      <h1 class="text-center text--text">All <span>projects.</span></h1>
+  <v-container style="margin-top:-80px; padding-top:50px;">
+    <h1 class="text-center text--text">
+      All
+      <span>projects.</span>
+    </h1>
     <v-row class="mx-5">
       <v-col v-for="work in works" :key="work.title" :cols="work.flex">
-        <v-hover
-          v-slot:default="{ hover }"
-          >
-           <router-link id="header-link" v-bind:to="{
+        <v-hover v-slot:default="{ hover }">
+          <router-link
+            id="header-link"
+            v-bind:to="{
           name: 'Work', params: 
           {
-          title:work.title,
-          src:work.src,
+          title: work.title,
+          src: work.src,
           flex:work.flex,
           about:work.about,
           id:work.id
-          }}">
-        <v-card 
-        :elevation="hover ? 16 : 2"  
-        tile 
-        class="white" 
-        flat 
-        justify="center"
-        align="center"
-        max-width="400"
-        height="400"
-        style="display:flex;"
-        >
-          <v-img
-          :src="work.src"
-          class="white--text align-end"
-          height="400"
-          width="400"
-          contain
+          }}"
           >
-          <v-card-title id="title" v-text="work.title"></v-card-title>
-          </v-img>
-        </v-card>
-        </router-link>
-         </v-hover>
+            <v-card
+              :elevation="hover ? 16 : 2"
+              tile
+              class="white"
+              flat
+              justify="center"
+              align="center"
+              max-width="400"
+              height="400"
+              style="display:flex;"
+            >
+              <v-img :src="work.src" class="white--text align-end" height="400" width="400" contain>
+                <v-card-title id="title" v-text="work.title"></v-card-title>
+              </v-img>
+            </v-card>
+          </router-link>
+        </v-hover>
       </v-col>
     </v-row>
   </v-container>
-  
 </template>
 
 
@@ -51,39 +48,40 @@ export default {
     works: [
       {
         title: "Flowergirl",
-        src: require('../assets/Flowergirl.jpg'),
-        flex: 'auto',
-        about: 'Made during my first semester as a multimedia designer at Business Academy EASV in Esbjerg. I created this in adobe photoshop',
-        id:1,
+        src: require("../assets/Flowergirl.jpg"),
+        flex: "auto",
+        about:
+          "Made during my first semester as a multimedia designer at Business Academy EASV in Esbjerg. I created this in adobe photoshop",
+        id: 1
       },
       {
         title: "Mini me",
-        src: require('../assets/minimechristina.png'),
-        flex: 'auto',
+        src: require("../assets/minimechristina.png"),
+        flex: "auto",
         about: '"Mini me" project',
-        id:2,
-        },
-        {
+        id: 2
+      },
+      {
         title: "Pizza",
-        src: require('../assets/pizza_cropped.png'),
-        flex: 'auto',
-        about: 'A slice of pizza made in Adobe Illustrator, during my 1st semester as a multimedia designer.',
-        id:2,
+        src: require("../assets/pizza_cropped.png"),
+        flex: "auto",
+        about:
+          "A slice of pizza made in Adobe Illustrator, during my 1st semester as a multimedia designer.",
+        id: 2
       },
       {
         title: "project 3",
         src: "https://via.placeholder.com/150",
-        flex: 'auto',
-        about: 'I am also a project',
-        id:3,
-      },
+        flex: "auto",
+        about: "I am also a project",
+        id: 3
+      }
     ]
   })
 };
 </script>
 
 <style>
-
 #title {
   color: #000000;
   font-size: 18px;
@@ -92,9 +90,7 @@ export default {
   text-decoration: none;
 }
 
-.about_text{
-background: rgb(255, 255, 255)
+.about_text {
+  background: rgb(255, 255, 255);
 }
-
-
 </style>

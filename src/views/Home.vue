@@ -1,12 +1,16 @@
 <template>
   <div fluid>
     <!-- Floating navigation button -->
-    <v-row class="primary" style="margin-top:-80px; padding-top:50px;" fluid>
+    <v-row class="primary" style="margin-top:-80px; padding-top:50px;">
+     
+     
       <v-col cols="12" class="text-center text--text" justify="center" >
         <h1 style="font-size:3rem;line-height:30px;">
           <span style="font-size:4rem">I am a</span>
           <br />
-          <Textclip></Textclip>
+         <Textclip></Textclip>
+         
+
           <span style="font-size:4rem;">Designer</span>
         </h1>
         <br>
@@ -60,7 +64,7 @@
       </v-col>
     </v-row>
     <v-row class="primary">
-      <v-img src="../assets/Christina.jpg" height="auto" width="400" contain>
+      <v-img tag="christina" src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina.jpg?alt=media&token=a7e51811-b671-4e75-8de0-9e9fda6d53d8" width="400" fit>
         <v-col md="6" sm="12"></v-col>
       </v-img>
       <v-col md="6" sm="12">
@@ -98,7 +102,7 @@
             <h1 class="text-center">Come find me.</h1>
           </v-col>
           <v-col cols="12" style="padding: 0 100px 0 100px;" justify="center">
-            <p class="text-center" justify="center" align="center">
+            <p justify="center" align="center">
               I am an active member of differet social medias.
               <br />Feel free to follow me, comment, or message me.
               <br />Looking forward to hear from you.
@@ -137,12 +141,12 @@
 
 
 <script>
-import Textclip from "../components/Textclip";
+import Textclip from '../components/Textclip'
 
 export default {
   name: "Home",
   components: {
-    Textclip
+   Textclip,
   },
   data: () => ({
     show: true,

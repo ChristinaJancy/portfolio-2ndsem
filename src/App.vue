@@ -1,8 +1,7 @@
 <template>
   <v-app id="app">
-    
     <Navigation></Navigation>
-      <v-content fluid>
+      <v-content>
       <router-view />
       </v-content>
   </v-app>
