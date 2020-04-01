@@ -5,11 +5,12 @@
       style="border-radius: 0px 0px 200px 0px;padding-top:50px;"
       fixed
       dark
+      elevation="12"
       class="primary"
       floating
       clipped
       mobile-break-point
-      width="100"
+      width="104"
       height="280"
     >
       <v-list dense justify="left" align="left">
@@ -29,7 +30,7 @@
           <v-list-item link>
             <v-list-item-content>
               <!--@click="$vuetify.goTo(aboutMe, options)" -->
-              <v-list-item-title class="subtitle-2 text--text">My work</v-list-item-title>
+              <v-list-item-title class="subtitle-2 text--text">All projects</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </router-link>

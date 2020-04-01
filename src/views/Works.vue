@@ -1,9 +1,19 @@
 <template>
   <v-container style="margin-top:-80px; padding-top:50px;" class="primary" fluid>
-    <h1 class="text-center text--text">
-      All
-      <span>projects.</span>
-    </h1>
+    <h1 role="img" class="textLine text--text" aria-label="All projects.">
+  <span class="letter">A</span>
+  <span>l</span>
+  <span class="letter rev">l </span>
+  <span class="letter rev">p</span>
+  <span class="letter">r</span>
+  <span class="letter rev">o</span>
+  <span>j</span>
+  <span class="letter rev">e</span>
+  <span class="letter">c</span>
+  <span>t</span>
+  <span class="letter">s</span>
+  <span class="letter">.</span>
+</h1>
     <v-row justify="center">
       <v-col v-for="work in works" :key="work.title" :cols="work.flex">
         <v-hover v-slot:default="{ hover }">
@@ -41,6 +51,7 @@
 <script>
 export default {
   data: () => ({
+    
     works: [
       {
         title: "Flowergirl",

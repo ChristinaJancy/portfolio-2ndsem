@@ -25,3 +25,40 @@ $colorz: (
   darkgrey: #00203fff,
   mint: #adefd1ff
 );
+
+//Text line style start//
+.textLine{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding: 0 0.0625em;
+  transform-style: preserve-3d;
+  font: 200 5vw crimson, serif;
+}
+.textLine::after {
+  position: absolute;
+  top: calc(50% - .5*0.060em);
+  right: 0;
+  width: calc(50% + 50vw);
+  height: 0.070em;
+  border-radius: 0 0.100em 0.100em 0;
+  background: crimson;
+  animation: slide 4s ease-out;
+  content: "";
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(-100%);
+  }
+}
+.letter {
+  overflow: visible;
+  white-space: pre;
+  transform: rotatey(5deg) scalex(1.00061);
+}
+
+.rev {
+  transform: rotatey(-5deg) scalex(1.00061);
+}
+//text line end//
