@@ -5,7 +5,7 @@
       style="border-radius: 0px 0px 200px 0px;padding-top:50px;"
       fixed
       dark
-      class="text"
+      class="primary"
       floating
       clipped
       mobile-break-point
@@ -19,7 +19,7 @@
           <v-list-item link>
             <v-list-item-content>
               <!--@click="$vuetify.goTo(home, options)"-->
-              <v-list-item-title class="subtitle-2 primary--text">Home</v-list-item-title>
+              <v-list-item-title class="subtitle-2 text--text">Home</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </router-link>
@@ -29,7 +29,7 @@
           <v-list-item link>
             <v-list-item-content>
               <!--@click="$vuetify.goTo(aboutMe, options)" -->
-              <v-list-item-title class="subtitle-2 primary--text">My work</v-list-item-title>
+              <v-list-item-title class="subtitle-2 text--text">My work</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </router-link>
@@ -39,14 +39,14 @@
           <v-list-item link>
             <v-list-item-content>
               <!--@click="$vuetify.goTo(skills, options)"-->
-              <v-list-item-title class="subtitle-2 primary--text">About me</v-list-item-title>
+              <v-list-item-title class="subtitle-2 text--text">About me</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </router-link>
 <v-divider class="primary"></v-divider>
         <v-list-item>
           <v-list-content>
-            <p class="primary--text">Toggle theme:</p>
+            <p class="text--text">Toggle theme:</p>
            <v-switch
            style="margin-top:-25px;"
         v-model="$vuetify.theme.dark"     
@@ -57,7 +57,7 @@
     </v-navigation-drawer>
 
     <!-- App bar-->
-    <v-app-bar app width="70" fixed class="primary" style="border-radius: 0px 0px 30px 0px;">
+    <v-app-bar app width="70" fixed class="primary" style="border-radius: 0px 0px 30px 0px;" flat>
       <v-app-bar-nav-icon color="text" @click.stop="drawer = !drawer">
         <v-icon x-large>mdi-menu</v-icon>
       </v-app-bar-nav-icon>
