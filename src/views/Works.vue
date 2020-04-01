@@ -1,10 +1,10 @@
 <template>
-  <v-container style="margin-top:-80px; padding-top:50px;">
+  <v-container style="margin-top:-80px; padding-top:50px;" class="primary" fluid>
     <h1 class="text-center text--text">
       All
       <span>projects.</span>
     </h1>
-    <v-row class="mx-5">
+    <v-row justify="center">
       <v-col v-for="work in works" :key="work.title" :cols="work.flex">
         <v-hover v-slot:default="{ hover }">
           <router-link
@@ -24,11 +24,7 @@
               tile
               class="white"
               flat
-              justify="center"
-              align="center"
-              max-width="400"
               height="400"
-              style="display:flex;"
             >
               <v-img :src="work.src" class="white--text align-end" height="400" width="400" contain>
                 <v-card-title id="title" v-text="work.title"></v-card-title>
@@ -48,7 +44,7 @@ export default {
     works: [
       {
         title: "Flowergirl",
-        src: require("../assets/Flowergirl.jpg"),
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Flowergirl.jpg?alt=media&token=fb59adad-115f-42a1-81e3-ff73203d15d9",
         flex: "auto",
         about:
           "Made during my first semester as a multimedia designer at Business Academy EASV in Esbjerg. I created this in adobe photoshop",
@@ -62,8 +58,10 @@ export default {
         id: 2
       },
       {
+        //require("../assets/pizza_cropped.png")//
+
         title: "Pizza",
-        src: require("../assets/pizza_cropped.png"),
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/pizza_cropped.png?alt=media&token=328d0094-3857-4625-b633-5cbefd289506",
         flex: "auto",
         about:
           "A slice of pizza made in Adobe Illustrator, during my 1st semester as a multimedia designer.",
