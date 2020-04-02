@@ -50,6 +50,9 @@ router-link-exact-active {
 h1{
   font-family: 'Crimson Pro', serif;
 }
+h2{
+  font-family: 'Chakra Petch', sans-serif;
+}
 p{
   font-family: 'Baloo Da 2', cursive;
 }

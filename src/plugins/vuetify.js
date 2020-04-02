@@ -12,30 +12,31 @@ Vue.component('kinesis-container', KinesisContainer)
 Vue.component('kinesis-element', KinesisElement)
 
 export default new Vuetify({
-    icons: {
-        iconfont: 'mdiSvg', // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4' || 'faSvg'
+  icons: {
+    iconfont: 'mdiSvg', // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4' || 'faSvg'
+  },
+  theme: {
+    themes: {
+      light: {
+        primary: '#0b0c10',
+        secondary: '#c5c6c7',
+        button: '#dc143c',
+        accent: '#8c9eff',
+        error: '#b71c1c',
+        text: '#c5c6c7',
+        textclip: '#0b0c10',
+        textclipText: '#c5c6c7'
       },
-      theme: {
-        themes: {
-          light: {
-            primary: '#0b0c10',
-            secondary: '#1F2833',
-            button: '#dc143c',
-            accent: '#8c9eff',
-            error: '#b71c1c',
-            text: '#c5c6c7',
-            textclip: '#0b0c10',
-            textclipText: '#c5c6c7'
-          },
-         dark: {
-           primary: '#fcf1bb',
-           text: '#0b0c10',
-           button: '#dc143c',
-          error: '#b71c1c',
-          textclip: '#0b0c10',
-          textclipText:'#c5c6c7',
-         }
-        },
-      },    
+      dark: {
+        primary: '#c5c6c7',
+        secondary: '#1F2833',
+        text: '#0b0c10',
+        button: '#dc143c',
+        error: '#b71c1c',
+        textclip: '#0b0c10',
+        textclipText: '#c5c6c7',
+      }
+    },
+  },
 });
 

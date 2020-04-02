@@ -44,14 +44,11 @@
             </v-list-item-content>
           </v-list-item>
         </router-link>
-<v-divider class="primary"></v-divider>
+        <v-divider class="primary"></v-divider>
         <v-list-item>
           <v-list-content>
             <p class="text--text">Toggle theme:</p>
-           <v-switch
-           style="margin-top:-25px;"
-        v-model="$vuetify.theme.dark"     
-      ></v-switch>
+            <v-switch style="margin-top:-25px;" v-model="$vuetify.theme.dark"></v-switch>
           </v-list-content>
         </v-list-item>
       </v-list>
@@ -85,8 +82,23 @@ export default {
       home: "#home",
       aboutMe: "#aboutMe",
       skills: "#skills",
-      //Colorchange appbar
-      dynamic: "#ffffff"
+      //Theme toggle//
+      show: true,
+      props: {
+        attrs: {
+          type: Object,
+          default: () => ({})
+        }
+      },
+
+      data: vm => ({
+        initialDark: vm.$vuetify ? vm.$vuetify.theme.dark : false
+      }),
+
+      beforeDestroy() {
+        if (!this.$vuetify) return;
+        this.$vuetify.theme.dark = this.initialDark;
+      }
     };
   }
 };

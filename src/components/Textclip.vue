@@ -7,15 +7,15 @@
                  
         <clipPath id="textClip" class="filled-heading">
     
-          <text y="80" x="110">Multimedia</text>
+          <text y="80" x="150">Multimedia</text>
           <text y="140"></text>
           <text y="210" />
 
-          <text y="80" x="200">web</text>
+          <text y="80" x="217">web</text>
           <text y="140"></text>
           <text y="210" />
 
-           <text y="80" x="185">UX/UI</text>
+           <text y="80" x="210">UX/UI</text>
           <text y="140"></text>
           <text y="210" />
         </clipPath>

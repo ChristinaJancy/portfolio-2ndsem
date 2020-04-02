@@ -45,13 +45,20 @@ $colorz: (
   background: crimson;
   animation: slide 4s ease-out;
   content: "";
+  opacity: 0%;
 }
 
 @keyframes slide {
   0% {
     transform: translate(-100%);
+    opacity: 100%;
+  }
+  100%{
+    transform: translate(100%);
+    opacity: 0%;
   }
 }
+
 .letter {
   overflow: visible;
   white-space: pre;
