@@ -6,7 +6,7 @@
     <div class="box">
         <div class="title">
             <span class="block"></span>
-            <h1 class="secondary--text" >Christina Jancy<span></span></h1>
+            <h1 class="secondary--text">Christina Jancy<span></span></h1>
         </div>
 
         <div class="role">
@@ -15,20 +15,26 @@
         </div>
     </div>
 </div>
-<div justify="center" align="center" class="pt-10">
-<h4 class="wordCarousel">    
-      <span> with experience in</span>  
+<br>
+</v-col>
+<v-col cols="6">
+<div class="pt-10">
+<h4 class="wordCarousel pa-10">    
+      <span class="secondary--text"> with experience in</span>  
         <div> 
 <!--        Use classes 2,3, or 4 to match the number of words --> 
             <ul class="flip4"> 
-                <li>Content creation</li>
-                <li>Web design</li>
-                <li>User Experience</li> 
-                <li>Business</li>  
+                <li class="button--text">Content creation</li>
+                <li class="button--text">Web design</li>
+                <li class="button--text">User Experience</li> 
+                <li class="button--text">Business</li>  
             </ul>
         </div>  
     </h4>
   </div>
+</v-col>
+<v-col cols="6">
+
 </v-col>
 
 <!-- 
@@ -380,20 +386,19 @@ Word Carousel
 */
 
 .wordCarousel {
-    max-width:600px;
     font: 200 3vw 'Crimson Pro', serif;
     color: #939393;
-     display: block;
     div {
         overflow: hidden;
+        position: relative;
         height: 65px;
         padding-top: 10px;
         margin-top: -10px;
         li {
             font: 200 3vw 'Crimson Pro', serif;
             color: #ccc;
+            position: relative;
             font-weight: 700;
-            padding: 0 10px;
             height: 45px;
             margin-bottom: 45px;
             display: block;
