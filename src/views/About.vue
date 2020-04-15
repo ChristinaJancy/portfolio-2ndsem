@@ -1,7 +1,6 @@
 <template>
   <div style="margin-top:-80px; padding-top:50px;" fluid>
-    <v-col cols="auto" class="primary">
-      <v-row>
+      <v-row class="primary">
         <!--
     <v-col cols="12">
 <h1 role="img" class="textLine text--text" aria-label="All projects.">
@@ -96,7 +95,7 @@
         </v-img>
         -->
       </v-row>
-    </v-col>
+
     <v-row class="secondary">
       <v-col md="6" sm="12">
         <h1 class="text-center pa-10">My CV.</h1>

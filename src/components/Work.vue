@@ -2,7 +2,8 @@
   <v-container fluid class="work primary" style="margin-top:-80px; padding-top:50px;">
     <v-row dense class="mx-12">
       <v-col cols="12" class="mx-auto">
-        <v-card flat>
+        <v-card flat
+         class="white">
           <v-img
             :src="work.src"
             height="auto"
