@@ -107,8 +107,7 @@
        <a class="pl-5" href="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina%20Jancy%20Pedersen.pdf?alt=media&token=ae77376b-0cd0-4d3e-add7-96fac45c76f4">See CV as PDF</a>
       </v-col>
       <v-col md="6" sm="12">
-          <h1 class="text-center pa-10">More about me</h1>
-          
+          <h1 class="text-center pa-10">More about me</h1>  
       </v-col>
     </v-row>
   </div>

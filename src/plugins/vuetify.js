@@ -19,7 +19,7 @@ export default new Vuetify({
     themes: {
       light: {
         primary: '#0b0c10',
-        secondary: '#c5c6c7',
+        secondary: '#fbeec1',
         button: '#dc143c',
         accent: '#8c9eff',
         error: '#b71c1c',
@@ -29,7 +29,7 @@ export default new Vuetify({
         aboutTop: '#c5c6c7',
       },
       dark: {
-        primary: '#c5c6c7',
+        primary: '#fbeec1',
         secondary: '#1F2833',
         text: '#0b0c10',
         button: '#dc143c',

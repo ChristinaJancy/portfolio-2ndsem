@@ -1,5 +1,5 @@
 <template>
-    <div> <v-row justify="center" align="center">
+    <div> <v-row justify="center" class="secondary" align="center">
           <v-col cols="12">
             <h1 class="text-center">Come find me.</h1>
           </v-col>
@@ -16,7 +16,7 @@
             </p>
           </v-col>
         </v-row>
-      <v-row>
+      <v-row class="secondary">
       <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
         <v-btn dark class="mx-4 primary--text pa-10" icon>
           <v-icon size="60px">mdi-facebook</v-icon>
