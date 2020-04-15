@@ -1,7 +1,7 @@
 <template>
-  <div style="margin-top:-80px; padding-top:50px;" class="primary" fluid>
-    <v-col cols="auto">
-      <v-row class="primary">
+  <div style="margin-top:-80px; padding-top:50px;" fluid>
+    <v-col cols="auto" class="primary">
+      <v-row>
         <!--
     <v-col cols="12">
 <h1 role="img" class="textLine text--text" aria-label="All projects.">
@@ -17,46 +17,49 @@
 <br><br><br><br><br>
     </v-col>
         -->
-         <v-img
+        <v-img
           tag="christina"
           style="margin-top:-50px;"
           max-height="500"
-          src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina.jpg?alt=media&token=a7e51811-b671-4e75-8de0-9e9fda6d53d8">
-        <v-col cols="6">
-          <br><br><br><br><br><br>
-          <div class="container">
-            <div class="box">
-              <div class="title">
-                <span class="block"></span>
-                <h1 class="text--text">
-                  Christina Jancy
-                  <span></span>
-                </h1>
-              </div>
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina.jpg?alt=media&token=a7e51811-b671-4e75-8de0-9e9fda6d53d8"
+        >
+          <v-col cols="6">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="container">
+              <div class="box">
+                <div class="title">
+                  <span class="block"></span>
+                  <h1 class="aboutTop--text">
+                    Christina Jancy
+                    <span></span>
+                  </h1>
+                </div>
 
-              <div class="role">
-                <div class="block"></div>
-                <p class="text--text">MMD student</p>
+                <div class="role">
+                  <div class="block"></div>
+                  <p class="aboutTop--text">MMD student</p>
+                </div>
               </div>
             </div>
-          </div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-        
-        </v-col>  
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+          </v-col>
         </v-img>
-        </v-row>
-        
-        <v-row>
+
         <v-col md="6" sm="12" align="center">
           <div class="pt-10">
-            <h4 class="wordCarousel pa-10">
+            <h4 class="wordCarousel pa-12">
               <span class="secondary--text">experience in</span>
               <div>
                 <!--        Use classes 2,3, or 4 to match the number of words -->
@@ -71,7 +74,7 @@
           </div>
         </v-col>
 
-        <v-col  md="6" sm="12" align="center">
+        <v-col md="6" sm="12" align="center">
           <iframe
             style="width:90vw; height:60vh; max-width:702px;"
             src="https://www.youtube.com/embed/cG1XHMUauec"
@@ -94,6 +97,14 @@
         -->
       </v-row>
     </v-col>
+    <v-row class="secondary">
+      <v-col md="6" sm="12">
+        <h1 class="text-center">My CV</h1>
+      </v-col>
+      <v-col md="6" sm="12">
+          <h1 class="text-center">More about me</h1>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -231,10 +242,10 @@ About me text
         animation: secFadeIn 2s forwards;
         animation-delay: 3.2s;
         opacity: 0;
-        padding-top: 30px;
+        padding-top: 10vh;
         text-transform: uppercase;
         letter-spacing: 5px;
-        font: 200 2vw "Crimson Pro", serif;
+        font: 200 4vw "Crimson Pro", serif;
       }
     }
   }
@@ -356,16 +367,16 @@ Word Carousel
 */
 
 .wordCarousel {
-  font: 200 3vw "Crimson Pro", serif;
+  font: 200 4vw "Crimson Pro", serif;
   color: #939393;
   div {
     overflow: hidden;
     position: relative;
-    height: 65px;
-    padding-top: 10px;
-    margin-top: -10px;
+    height: 75px;
+    padding-top: 5px;
+    margin-top: -5px;
     li {
-      font: 200 3vw "Crimson Pro", serif;
+      font: 200 4vw "Crimson Pro", serif;
       color: #ccc;
       position: relative;
       font-weight: 700;

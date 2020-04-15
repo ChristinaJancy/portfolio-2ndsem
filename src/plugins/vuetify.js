@@ -25,7 +25,8 @@ export default new Vuetify({
         error: '#b71c1c',
         text: '#c5c6c7',
         textclip: '#0b0c10',
-        textclipText: '#c5c6c7'
+        textclipText: '#c5c6c7',
+        aboutTop: '#c5c6c7',
       },
       dark: {
         primary: '#c5c6c7',
@@ -35,6 +36,7 @@ export default new Vuetify({
         error: '#b71c1c',
         textclip: '#0b0c10',
         textclipText: '#c5c6c7',
+        aboutTop:'#c5c6c7',
       }
     },
   },
