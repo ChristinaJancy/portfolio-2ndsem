@@ -1,6 +1,10 @@
 <template>
   <div style="margin-top:-80px; padding-top:50px;" class="primary" fluid>
- <h1 role="img" class="textLine text--text" aria-label="All projects.">
+    <v-col cols="auto">
+      <v-row class="primary">
+        <!--
+    <v-col cols="12">
+<h1 role="img" class="textLine text--text" aria-label="All projects.">
   <span class="letter">A</span>
   <span class="letter rev">b</span>
   <span class="letter rev">o</span>
@@ -10,40 +14,86 @@
   <span class="letter">e</span>
   <span class="letter">.</span>
 </h1>
-<div class="container">
-    <div class="box">
-        <div class="title">
-            <span class="block"></span>
-            <h1 class="secondary--text">Christina Jancy<span></span></h1>
-        </div>
+<br><br><br><br><br>
+    </v-col>
+        -->
+         <v-img
+          tag="christina"
+          style="margin-top:-50px;"
+          max-height="500"
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina.jpg?alt=media&token=a7e51811-b671-4e75-8de0-9e9fda6d53d8">
+        <v-col cols="6">
+          <br><br><br><br><br><br>
+          <div class="container">
+            <div class="box">
+              <div class="title">
+                <span class="block"></span>
+                <h1 class="text--text">
+                  Christina Jancy
+                  <span></span>
+                </h1>
+              </div>
 
-        <div class="role">
-            <div class="block"></div>
-            <p class="secondary--text">MMD student</p>
-        </div>
-    </div>
-</div>
-<br>
+              <div class="role">
+                <div class="block"></div>
+                <p class="text--text">MMD student</p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        
+        </v-col>  
+        </v-img>
+        </v-row>
+        
+        <v-row>
+        <v-col md="6" sm="12" align="center">
+          <div class="pt-10">
+            <h4 class="wordCarousel pa-10">
+              <span class="secondary--text">experience in</span>
+              <div>
+                <!--        Use classes 2,3, or 4 to match the number of words -->
+                <ul class="flip4">
+                  <li class="button--text">Content creation</li>
+                  <li class="button--text">Web design</li>
+                  <li class="button--text">User Experience</li>
+                  <li class="button--text">Business</li>
+                </ul>
+              </div>
+            </h4>
+          </div>
+        </v-col>
 
-<v-col cols="6">
-<div class="pt-10">
-<h4 class="wordCarousel pa-10">    
-      <span class="secondary--text"> with experience in</span>  
-        <div> 
-<!--        Use classes 2,3, or 4 to match the number of words --> 
-            <ul class="flip4"> 
-                <li class="button--text">Content creation</li>
-                <li class="button--text">Web design</li>
-                <li class="button--text">User Experience</li> 
-                <li class="button--text">Business</li>  
-            </ul>
-        </div>  
-    </h4>
-  </div>
-</v-col>
-<v-col cols="6">
+        <v-col  md="6" sm="12" align="center">
+          <iframe
+            style="width:90vw; height:60vh; max-width:702px;"
+            src="https://www.youtube.com/embed/cG1XHMUauec"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </v-col>
+        <!--
+        <v-img
+          tag="christina"
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina.jpg?alt=media&token=a7e51811-b671-4e75-8de0-9e9fda6d53d8"
+          width="200"
+          fit
+        >
+          <v-col md="6" sm="12">
 
-</v-col>
+          </v-col>
+        </v-img>
+        -->
+      </v-row>
+    </v-col>
   </div>
 </template>
 
@@ -51,9 +101,9 @@
 <style lang="scss" scoped>
 //I am __ designer text scss
 :root {
-  --primary-color: #6CD9CE;
-  --secondary-color: #D93BA1;
-  --complimentary-color: #2E2473;
+  --primary-color: #6cd9ce;
+  --secondary-color: #d93ba1;
+  --complimentary-color: #2e2473;
 }
 
 .h1_intro {
@@ -65,15 +115,15 @@
 }
 
 .h1_intro::before {
-    content: '';
-    position: absolute;
-    animation: 1s underline ease-in-out forwards 2s;
-    mix-blend-mode: screen;
+  content: "";
+  position: absolute;
+  animation: 1s underline ease-in-out forwards 2s;
+  mix-blend-mode: screen;
 }
 
 @keyframes skewBg {
   0% {
-    transform: scale(.5);
+    transform: scale(0.5);
   }
   100% {
     transform: scale(1);
@@ -97,17 +147,16 @@
 About me text 
 
 */
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
 
-
-.container { 
+.container {
   justify-content: center;
   align-items: center;
   text-align: center;
   display: flex;
 
   .box {
-    width:auto;
+    width: auto;
     height: auto;
     position: relative;
     justify-content: center;
@@ -125,12 +174,12 @@ About me text
         height: inherit;
         background: #ffb510;
         position: absolute;
-        animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+        animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
         display: flex;
       }
 
       h1 {
-        font: 200 5vw 'Crimson Pro', serif;
+        font: 200 6vw "Crimson Pro", serif;
         color: #fff;
         -webkit-animation: mainFadeIn 2s forwards;
         -o-animation: mainFadeIn 2s forwards;
@@ -141,21 +190,21 @@ About me text
         position: relative;
 
         span {
-          width:0px;
+          width: 0px;
           height: 0px;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;
           background: #ffb510;
-          -webkit-animation: load 0.6s cubic-bezier(.74, .06, .4, .92) forwards;
-          animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
+          -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92)
+            forwards;
+          animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
           animation-delay: 2s;
           margin-left: 5px;
           margin-top: -10px;
           position: absolute;
           bottom: 13px;
           right: -12px;
-
         }
       }
     }
@@ -173,7 +222,7 @@ About me text
         height: inherit;
         background: #e91e63;
         position: absolute;
-        animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+        animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
         animation-delay: 2s;
         display: flex;
       }
@@ -182,26 +231,23 @@ About me text
         animation: secFadeIn 2s forwards;
         animation-delay: 3.2s;
         opacity: 0;
-        padding-top:30px;
+        padding-top: 30px;
         text-transform: uppercase;
         letter-spacing: 5px;
-        font: 200 2vw 'Crimson Pro', serif
+        font: 200 2vw "Crimson Pro", serif;
       }
     }
   }
 }
 
-
 @keyframes mainBlock {
   0% {
     width: 0%;
     left: 0;
-
   }
   50% {
     width: 100%;
     left: 0;
-
   }
   100% {
     width: 0;
@@ -213,12 +259,10 @@ About me text
   0% {
     width: 0%;
     left: 0;
-
   }
   50% {
     width: 100%;
     left: 0;
-
   }
   100% {
     width: 0;
@@ -235,7 +279,6 @@ About me text
   }
 }
 
-
 @keyframes popIn {
   0% {
     width: 0px;
@@ -251,24 +294,23 @@ About me text
     opacity: 1;
     bottom: 45px;
   }
-   65% {
-      width: 7px;
+  65% {
+    width: 7px;
     height: 7px;
-      bottom: 0px;
-      width: 15px
-   }
-   80% {
-      width: 10px;
+    bottom: 0px;
+    width: 15px;
+  }
+  80% {
+    width: 10px;
     height: 10px;
-      bottom: 20px
-   }
+    bottom: 20px;
+  }
   100% {
     width: 7px;
     height: 7px;
     background: #e9d856;
     border: 0px solid #222;
     bottom: 13px;
-
   }
 }
 
@@ -281,31 +323,29 @@ About me text
   }
 }
 
-
 @keyframes top {
   0% {
     opacity: 0;
-     bottom: -80px
+    bottom: -80px;
   }
   100% {
     opacity: 1;
-     bottom: 0px
-
+    bottom: 0px;
   }
 }
 
 @keyframes icon {
   0% {
     opacity: 0;
-     transform: scale(0.0);
+    transform: scale(0);
   }
-   50% {
-      opacity: 1;
-     transform: scale(1.3) rotate(-02deg);
-   }
+  50% {
+    opacity: 1;
+    transform: scale(1.3) rotate(-02deg);
+  }
   100% {
     opacity: 1;
-     bottom: 0px;
+    bottom: 0px;
   }
 }
 
@@ -316,65 +356,118 @@ Word Carousel
 */
 
 .wordCarousel {
-    font: 200 3vw 'Crimson Pro', serif;
-    color: #939393;
-    div {
-        overflow: hidden;
-        position: relative;
-        height: 65px;
-        padding-top: 10px;
-        margin-top: -10px;
-        li {
-            font: 200 3vw 'Crimson Pro', serif;
-            color: #ccc;
-            position: relative;
-            font-weight: 700;
-            height: 45px;
-            margin-bottom: 45px;
-            display: block;
-        }
+  font: 200 3vw "Crimson Pro", serif;
+  color: #939393;
+  div {
+    overflow: hidden;
+    position: relative;
+    height: 65px;
+    padding-top: 10px;
+    margin-top: -10px;
+    li {
+      font: 200 3vw "Crimson Pro", serif;
+      color: #ccc;
+      position: relative;
+      font-weight: 700;
+      height: 45px;
+      margin-bottom: 45px;
+      display: block;
     }
+  }
 }
 
-.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-.flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip2 {
+  animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip3 {
+  animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip4 {
+  animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
 
 @keyframes flip2 {
-    0% { margin-top: -180px; }
-    5% { margin-top: -90px;  }
-    50% { margin-top: -90px; }
-    55% { margin-top: 0px; }
-    99.99% { margin-top: 0px; }
-    100% { margin-top: -270px; }
+  0% {
+    margin-top: -180px;
+  }
+  5% {
+    margin-top: -90px;
+  }
+  50% {
+    margin-top: -90px;
+  }
+  55% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
 }
 
 @keyframes flip3 {
-    0% { margin-top: -270px; }
-    5% { margin-top: -180px; }
-    33% { margin-top: -180px; }
-    38% { margin-top: -90px; }
-    66% { margin-top: -90px; }
-    71% { margin-top: 0px; }
-    99.99% { margin-top: 0px; }
-    100% { margin-top: -270px; }
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
 }
 
 @keyframes flip4 {
-    0% { margin-top: -360px; }
-    5% { margin-top: -270px; }
-    25% { margin-top: -270px; }
-    30% { margin-top: -180px; }
-    50% { margin-top: -180px; }
-    55% { margin-top: -90px; }
-    75% { margin-top: -90px; }
-    80% { margin-top: 0px; }
-    99.99% { margin-top: 0px; }
-    100% { margin-top: -270px; }
+  0% {
+    margin-top: -360px;
+  }
+  5% {
+    margin-top: -270px;
+  }
+  25% {
+    margin-top: -270px;
+  }
+  30% {
+    margin-top: -180px;
+  }
+  50% {
+    margin-top: -180px;
+  }
+  55% {
+    margin-top: -90px;
+  }
+  75% {
+    margin-top: -90px;
+  }
+  80% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
 }
 
 // Layout //////////////////////////////////////////
 
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
-
 </style>
