@@ -14,8 +14,9 @@
   <span class="letter">s</span>
   <span class="letter">.</span>
 </h1>
-    <v-row justify="center">
-      <v-col v-for="work in works" :key="work.title" :cols="work.flex">
+<br><br><br><br>
+    <v-row justify="center" class="mx-5">
+      <v-col v-for="work in works" :key="work.title" :cols="work.flex" sm="12" md="6">
         <v-hover v-slot:default="{ hover }">
           <router-link
             id="header-link"
@@ -36,7 +37,8 @@
               flat
               height="400"
             >
-              <v-img :src="work.src" class="white--text align-end" height="400" width="400" contain>
+            <!-- width="400"-->
+              <v-img :src="work.src" class="white--text align-end" height="400"  contain>
                 <v-card-title id="title" v-text="work.title"></v-card-title>
               </v-img>
             </v-card>
@@ -74,16 +76,15 @@ export default {
         title: "Pizza",
         src: "https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/pizza_cropped.png?alt=media&token=328d0094-3857-4625-b633-5cbefd289506",
         flex: "auto",
-        about:
-          "A slice of pizza made in Adobe Illustrator, during my 1st semester as a multimedia designer.",
-        id: 2
+        about: "A slice of pizza made in Adobe Illustrator, during my 1st semester as a multimedia designer.",
+        id: 3
       },
       {
         title: "project 3",
         src: "https://via.placeholder.com/150",
         flex: "auto",
         about: "I am also a project",
-        id: 3
+        id: 4
       }
     ]
   })
@@ -94,7 +95,7 @@ export default {
 #title {
   color: #000000;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
   padding: 5px 10px;
   text-decoration: none;
 }
