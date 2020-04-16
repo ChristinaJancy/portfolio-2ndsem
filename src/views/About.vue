@@ -97,16 +97,19 @@
       </v-row>
 
     <v-row class="secondary">
-      <v-col md="6" sm="12">
+      <v-col md="12" sm="12" align="center">
         <h1 class="text-center pa-10">My CV.</h1>
         <v-img
-        src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina%20Jancy%20Pedersen.png?alt=media&token=21a0d42b-e20e-4788-9d0e-6acad8400718">
-
+        src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina%20Jancy%20Pedersen.png?alt=media&token=21a0d42b-e20e-4788-9d0e-6acad8400718"
+        max-width="800"
+        width="auto"
+        >
+        
         </v-img>
        <a class="pl-5" href="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina%20Jancy%20Pedersen.pdf?alt=media&token=9d2ddf62-819a-4145-a6d8-596310a00763">See CV as PDF</a>
       </v-col>
-      <v-col md="6" sm="12">
-          <h1 class="text-center pa-10">More about me</h1>  
+      <v-col md="12" sm="12">
+          <h1 class="text-center pa-10">Business card.</h1>  
       </v-col>
     </v-row>
   </div>
