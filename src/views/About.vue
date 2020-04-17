@@ -109,7 +109,8 @@
        <a class="pl-5" href="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina%20Jancy%20Pedersen.pdf?alt=media&token=9d2ddf62-819a-4145-a6d8-596310a00763">See CV as PDF</a>
       </v-col>
       <v-col md="12" sm="12">
-          <h1 class="text-center pa-10">Business card.</h1>  
+          <h1 class="text-center pa-10">Business card.</h1> 
+
       </v-col>
     </v-row>
   </div>
@@ -117,6 +118,9 @@
 
 
 <style lang="scss" scoped>
+
+
+
 //I am __ designer text scss
 :root {
   --primary-color: #6cd9ce;

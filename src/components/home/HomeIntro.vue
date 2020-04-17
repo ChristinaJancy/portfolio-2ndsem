@@ -22,16 +22,16 @@
         <br />
        
         <p class="text--text text-left" id="text_designer">
-          Hi! I am Christina. 
+          Hi I'm Christina! 
           <br>
-          I am a multimedia design student at
+          A multimedia design student at
           <br>
-          <span>Esbjerg Business Academy EASV.</span>
+          <span>Business Academy EASV.</span>
           <br />
-          <span>Experience in content creation, UX,</span>
+          <span>I do what I love, and I love what I do.</span>
           <br />
-          <span>business and web development</span>
-          <br />
+          <span>This is my passion.</span>
+          <br>
           <router-link to="/works">
             <v-btn
               color="text"
