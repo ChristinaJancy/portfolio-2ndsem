@@ -6,8 +6,9 @@
         <br />
         <br />
         <v-card flat color="text" width="auto" max-width="500">
-          <v-img :src="work.src" height="auto" max-height="550" contain></v-img>
-          <v-card-title v-text="work.title"></v-card-title>
+          <v-img :src="work.src" height="auto" max-height="550" contain>
+             <v-card-title v-text="work.title"></v-card-title>
+          </v-img>
         </v-card>
       </v-col>
       <v-col cols="12" md="6" sm="12" class="my-auto">
