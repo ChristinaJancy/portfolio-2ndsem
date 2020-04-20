@@ -18,9 +18,11 @@
     <br />
     <br />
     <br />
-    <v-row justify="center" class="mx-5">
+
+    <!-- FOR PC -->
+    <v-row justify="center" class="mx-5" id="pcrow">
       <v-col v-for="work in works" :key="work.title" :cols="work.flex" sm="12" md="6">
-        <v-hover v-slot:default="{ hover }">
+        <v-hover v-slot:default="{ hover }" id="header-link">
           <router-link
             id="header-link"
             v-bind:to="{
@@ -34,16 +36,14 @@
           id: work.id
           }}"
           >
-            <!-- this div also part of test-->
             <div class="view view-ninth" align="center">
-              <!-- -->
               <v-card :elevation="hover ? 16 : 2" tile class="white" flat height="400">
                 <!-- width="400"-->
                 <v-img :src="work.src" class="white--text align-end" height="400" contain>
                   <v-card-title id="title" v-text="work.title"></v-card-title>
                 </v-img>
 
-                <!-- test here-->
+                <!-- Hover mask here-->
                 <div class="mask mask-1"></div>
                 <div class="mask mask-2"></div>
                 <div class="content">
@@ -52,29 +52,27 @@
                   <router-link
                     id="header-link"
                     v-bind:to="{
-          name: 'Work', params: 
-          {
-          title: work.title,
-          src: work.src,
-          flex: work.flex,
-          aboutHover: work.aboutHover,
-          about: work.about,
-          id: work.id
-          }}"
+                    name: 'Work', params: 
+                    {
+                    title: work.title,
+                    src: work.src,
+                    flex: work.flex,
+                    aboutHover: work.aboutHover,
+                    about: work.about,
+                    id: work.id
+                    }}"
                   >
                     <v-btn>See more</v-btn>
                   </router-link>
                 </div>
-
-                <!-- test end-->
               </v-card>
-              <!-- this div also part of test-->
             </div>
-            <!-- -->
           </router-link>
         </v-hover>
       </v-col>
     </v-row>
+
+    <!-- FOR PC END-->
   </v-container>
 </template>
 
@@ -82,6 +80,7 @@
 <script>
 export default {
   data: () => ({
+    show:false,
     works: [
       {
         title: "Flowergirl",
@@ -159,7 +158,7 @@ export default {
   margin: 20px 0 0 0;
 }
 .view p {
-  font:500 14px 'Baloo Da 2', cursive;
+  font: 500 14px "Baloo Da 2", cursive;
   position: relative;
   color: #fff;
   padding: 10px 20px 20px;
@@ -218,7 +217,7 @@ export default {
   display: none;
 }
 .view-ninth:hover .content {
-  height: 200px;
+  height: 230px;
   width: 100%;
   opacity: 0.9;
   top: 40px;
@@ -248,4 +247,5 @@ export default {
 .about_text {
   background: rgb(255, 255, 255);
 }
+
 </style>

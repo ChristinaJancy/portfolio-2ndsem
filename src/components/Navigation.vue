@@ -10,7 +10,7 @@
       floating
       clipped
       mobile-break-point
-      width="104"
+      width="110"
       height="280"
     >
       <v-list dense justify="left" align="left">

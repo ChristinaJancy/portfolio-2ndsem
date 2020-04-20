@@ -4,16 +4,19 @@
       <v-content>
       <router-view />
       </v-content>
+      <Footer></Footer>
   </v-app>
 </template>
 
 <script>
 import * as easings from 'vuetify/es5/services/goto/easing-patterns'
 import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 
   export default {
     components: {
       Navigation,
+      Footer,
     },
     data () {
       return {

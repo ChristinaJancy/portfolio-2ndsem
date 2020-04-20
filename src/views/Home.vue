@@ -12,7 +12,10 @@
    
 
 
-       <HomeFooter></HomeFooter>
+       <!--
+         <HomeFooter></HomeFooter>
+       -->
+       
 </v-col>
   </div>
 </template>
@@ -22,7 +25,7 @@
 import HomeIntro from "../components/home/HomeIntro";
 import HomeSelectedProjects from "../components/home/HomeSelectedProjects";
 import HomeAboutMe from "../components/home/HomeAboutMe";
-import HomeFooter from "../components/home/HomeFooter";
+//import HomeFooter from "../components/home/HomeFooter";
 
 
 export default {
@@ -31,7 +34,7 @@ export default {
    HomeIntro,
    HomeSelectedProjects,
    HomeAboutMe,
-   HomeFooter
+   //HomeFooter
   },
   data: () => ({
     

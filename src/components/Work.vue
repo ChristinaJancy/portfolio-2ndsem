@@ -10,18 +10,22 @@
         </v-card>
       </v-col>
       <v-col cols="12" md="6" sm="12">
-        <v-card-title
-          v-text="work.title"
-          class="text--text"
-          style="font:500 5vw 'Baloo Da 2', cursive;"
-        ></v-card-title>
-        <div style="padding: 0 200px 0 0;" class="my-5">
+        <v-row>
+          <v-card-title
+            v-text="work.title"
+            class="text--text"
+            style="font:500 5vw 'Baloo Da 2', cursive;"
+          ></v-card-title>
+          <br />
+          <div style="padding-right:200px;">
           <v-card-text class="text--text" v-text="work.about"></v-card-text>
-            <br><br><br><br>         
+          </div>
+        </v-row>
+        <v-row class="my-12" align="left">
           <router-link to="/works">
             <v-btn class="button mx-5">Go back</v-btn>
           </router-link>
-        </div>
+        </v-row>
       </v-col>
     </v-row>
   </v-container>

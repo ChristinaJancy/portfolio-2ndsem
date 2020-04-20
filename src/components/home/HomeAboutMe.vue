@@ -6,7 +6,6 @@
         width="400"
         fit
       >
-        <v-col md="6" sm="12"></v-col>
       </v-img>
       <v-col md="6" sm="12">
         <v-row justify="center" align="center">
