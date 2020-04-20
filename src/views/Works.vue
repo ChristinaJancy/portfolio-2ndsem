@@ -73,6 +73,37 @@
     </v-row>
 
     <!-- FOR PC END-->
+
+     <!-- FOR PHONE -->
+    <v-row justify="center" class="mx-5" id="phonerow">
+      <v-col v-for="work in works" :key="work.title" :cols="work.flex" sm="12" md="6">
+          <router-link
+            id="header-link"
+            v-bind:to="{
+          name: 'Work', params: 
+          {
+          title: work.title,
+          src: work.src,
+          flex: work.flex,
+          aboutHover: work.aboutHover,
+          about: work.about,
+          id: work.id
+          }}"
+          >
+              <v-card :elevation="5" tile class="white" flat height="400">
+                <!-- width="400"-->
+                <v-img :src="work.src" class="white--text align-end" height="400" contain>
+                 <v-btn v-text="'title:' + work.title">
+                 </v-btn>
+                  <v-btn>
+                    see more
+                  </v-btn>
+                </v-img>
+              </v-card>
+          </router-link>
+      </v-col>
+    </v-row>
+
   </v-container>
 </template>
 
@@ -129,6 +160,18 @@ export default {
 </script>
 
 <style lang="scss">
+#phonerow{
+  display: none;
+}
+@media screen and (max-width:500px){
+  #pcrow{
+    display: none;
+  }
+  #phonerow{
+    display:initial;
+  }
+}
+
 // TEEEEEEEEEEEEST
 .view {
   border: 10px solid #fff;
