@@ -70,8 +70,8 @@
         </div>
       </v-col>
 
-      <v-col cols="6" align="left">
-        <h3 class="text--text text-center">Climate song</h3>
+      <v-col contain cols="12" align="left" display="flex">
+        <h3 class="text--text text-left">Climate song</h3>
         <iframe 
          style="box-shadow:1px 1px 4px #000000;"
           width="600vw"
@@ -120,16 +120,23 @@
           </v-card>
         </router-link>
       </v-col>
-      <v-col cols="12">
-        <iframe
+           <v-col contain cols="12" align="center" display="flex" class="mx-auto">
+        <h3 class="text--text text-center">Climate song</h3>
+        <iframe 
+          style="box-shadow:1px 1px 4px #000000;"
           width="auto"
-          style="min-width:400px;min-height:400px;"
           height="auto"
           src="https://www.youtube.com/embed/JeGRWA_IRzI"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
+        <v-expansion-panels tile hover style="width:auto;max-width:300px;">
+          <v-expansion-panel class="secondary">
+            <v-expansion-panel-header><h3 class="text--primary">Climate song</h3></v-expansion-panel-header>
+            <v-expansion-panel-content class="text--primary"><p>Created when I went to 7th grade. Piano sheet created by me, lyrics created by me and a classmate.</p></v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
       </v-col>
     </v-row>
     <br />
