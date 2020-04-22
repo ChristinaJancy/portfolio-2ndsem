@@ -3,7 +3,7 @@
     <h1 role="img" class="textLine text--text" aria-label="All projects.">
       <span class="letter">A</span>
       <span>l</span>
-      <span class="letter rev">l</span>
+      <span class="letter rev">l </span>
       <span class="letter rev">p</span>
       <span class="letter">r</span>
       <span class="letter rev">o</span>
