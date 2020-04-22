@@ -37,9 +37,9 @@
           id: work.id
           }}"
             >
-              <v-card :elevation="hover ? 16 : 2" tile color="transparent" flat height="400">
+              <v-card :elevation="hover ? 16 : 2" tile color="white" flat height="auto" class="pa-2" style="box-sizing:border-box;">
                 <!-- width="400"-->
-                <h3 class="text--text center-text" v-text="work.title"></h3>
+                <h3 class="primary--text center-text" v-text="work.title"></h3>
                 <v-img :src="work.src" class="align-end" height="400" contain></v-img>
 
                 <!-- Hover mask here-->
@@ -105,7 +105,7 @@
 
     <!-- FOR PHONE -->
     <v-row justify="center" class="mx-5" id="phonerow">
-      <v-col v-for="work in works" :key="work.title" cols="auto" sm="12" md="6">
+      <v-col v-for="work in works" :key="work.title" cols="auto" sm="12">
         <router-link
           id="header-link"
           v-bind:to="{
@@ -120,12 +120,13 @@
           }}"
         >
          
-          <v-card :elevation="5" tile class="transparent" flat height="400">
+          <v-card :elevation="5" tile flat height="auto" class="pa-2" color="white" style="box-sizing:border-box;">
             <!-- width="400"-->
-             <h3 class="text--text" v-text="work.title" align="center"></h3>
+             <h3 class="black--text" v-text="work.title" align="center"></h3>
             <v-img :src="work.src" class="white--text align-end" height="400" contain>
-              <v-btn class="primary secondary--text">see more</v-btn>
+              <v-btn tile color="rgba(255, 255, 255, 0.600)" class="black--text">see more</v-btn>
             </v-img>
+
           </v-card>
         </router-link>
       </v-col>
@@ -141,8 +142,8 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="mx-auto" style="overflow:hidden; margin-top:-1%;">
-          <v-expansion-panels tile hover style="width: 80%;">
+        <div class="mx-auto" style="overflow:hidden;">
+          <v-expansion-panels tile hover style="width: 80%; max-width:400px;">
             <v-expansion-panel class="secondary">
               <v-expansion-panel-header>
                 <h3 class="text--primary">Climate song</h3>
@@ -227,8 +228,8 @@ export default {
 
 .youtube_responsive_container {
   position: relative;
-  padding-bottom: 30%;
-  padding-top: 30px;
+  padding-bottom: 20%;
+  padding-top: 50px;
   height: 0;
   overflow: hidden;
 }
@@ -324,7 +325,7 @@ export default {
   transform-origin: 0% 100%;
 }
 .view-ninth .content {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgb(0, 0, 0);
   height: 0px;
   opacity: 0.5;
   width: 500px;
