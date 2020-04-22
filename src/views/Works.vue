@@ -3,7 +3,7 @@
     <h1 role="img" class="textLine text--text" aria-label="All projects.">
       <span class="letter">A</span>
       <span>l</span>
-      <span class="letter rev">l </span>
+      <span class="letter rev">l</span>
       <span class="letter rev">p</span>
       <span class="letter">r</span>
       <span class="letter rev">o</span>
@@ -22,7 +22,7 @@
     <!-- FOR PC -->
     <v-row justify="center" class="mx-5" id="pcrow">
       <v-col v-for="work in works" :key="work.title" :cols="work.flex">
-        <div class="view view-ninth" align="center"  style="box-shadow:1px 1px 4px #000000;">
+        <div class="view view-ninth" align="center" style="box-shadow:1px 1px 4px #000000;">
           <v-hover v-slot:default="{ hover }" id="header-link">
             <router-link
               id="header-link"
@@ -72,19 +72,25 @@
 
       <v-col contain cols="12" align="left" display="flex">
         <h3 class="text--text text-left">Climate song</h3>
-        <iframe 
-         style="box-shadow:1px 1px 4px #000000;"
-          width="600vw"
-          height="300vh"
-          src="https://www.youtube.com/embed/JeGRWA_IRzI"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <v-expansion-panels tile hover style="width:auto;max-width:300px;">
+        <div class="youtube_responsive_container">
+          <iframe
+            style="box-shadow:1px 1px 4px #000000;"
+            width="auto"
+            height="auto"
+            src="https://www.youtube.com/embed/JeGRWA_IRzI"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <v-expansion-panels tile hover style="width:auto;max-width:300px; margin-top:-5%;">
           <v-expansion-panel class="secondary">
-            <v-expansion-panel-header><h3 class="text--primary">Climate song</h3></v-expansion-panel-header>
-            <v-expansion-panel-content class="text--primary"><p>Created when I went to 7th grade. Piano sheet created by me, lyrics created by me and a classmate.</p></v-expansion-panel-content>
+            <v-expansion-panel-header>
+              <h3 class="text--primary">Climate song</h3>
+            </v-expansion-panel-header>
+            <v-expansion-panel-content class="text--primary">
+              <p>Created when I went to 7th grade. Piano sheet created by me, lyrics created by me and a classmate.</p>
+            </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
       </v-col>
@@ -115,28 +121,35 @@
           <v-card :elevation="5" tile class="transparent" flat height="400">
             <!-- width="400"-->
             <v-img :src="work.src" class="white--text align-end" height="400" contain>
-                  <v-btn class="primary secondary--text">see more</v-btn>
+              <v-btn class="primary secondary--text">see more</v-btn>
             </v-img>
           </v-card>
         </router-link>
       </v-col>
-           <v-col contain cols="12" align="center" display="flex" class="mx-auto">
-        <h3 class="text--text text-center">Climate song</h3>
-        <iframe 
-          style="box-shadow:1px 1px 4px #000000;"
-          width="auto"
-          height="auto"
-          src="https://www.youtube.com/embed/JeGRWA_IRzI"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <v-expansion-panels tile hover style="width:auto;max-width:300px;">
-          <v-expansion-panel class="secondary">
-            <v-expansion-panel-header><h3 class="text--primary">Climate song</h3></v-expansion-panel-header>
-            <v-expansion-panel-content class="text--primary"><p>Created when I went to 7th grade. Piano sheet created by me, lyrics created by me and a classmate.</p></v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels>
+      <v-col cols="12" align="left" class="mx-12">
+          <h3 class="text--text text-left">Climate song</h3>
+          <div class="youtube_responsive_container">
+            <iframe
+              width="auto"
+              height="auto"
+              src="https://www.youtube.com/embed/JeGRWA_IRzI"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="mx-auto" style="overflow:hidden;">
+          <v-expansion-panels tile hover style="width: 80%; max-width:300px; margin-top:5%;">
+            <v-expansion-panel class="secondary">
+              <v-expansion-panel-header>
+                <h3 class="text--primary">Climate song</h3>
+              </v-expansion-panel-header>
+              <v-expansion-panel-content class="text--primary">
+                <p>Created when I went to 7th grade. Piano sheet created by me, lyrics created by me and a classmate.</p>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+          </div>
       </v-col>
     </v-row>
     <br />
@@ -207,6 +220,28 @@ export default {
 </script>
 
 <style lang="scss">
+// Youtube responsive
+
+.youtube_responsive_container {
+  position: relative;
+  padding-bottom: 30%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.youtube_responsive_container iframe,
+.youtube_responsive_container object,
+.youtube_responsive_container embed {
+  top: 0;
+  left: 0;
+  width: 80%;
+  position: absolute;
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
+}
+//Youtube responsive end
 #phonerow {
   display: none;
 }
