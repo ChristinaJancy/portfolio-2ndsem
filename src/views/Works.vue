@@ -1,5 +1,5 @@
 <template>
-  <v-container style="margin-top:-80px; padding-top:50px;" class="primary" fluid>
+  <div style="margin-top:-80px; padding-top:50px;" class="primary" fluid>
     <h1 role="img" class="textLine text--text" aria-label="All projects.">
       <span class="letter">A</span>
       <span>l</span>
@@ -119,9 +119,10 @@
           id: work.id
           }}"
         >
-          <h3 class="text--text" v-text="work.title" align="center"></h3>
+         
           <v-card :elevation="5" tile class="transparent" flat height="400">
             <!-- width="400"-->
+             <h3 class="text--text" v-text="work.title" align="center"></h3>
             <v-img :src="work.src" class="white--text align-end" height="400" contain>
               <v-btn class="primary secondary--text">see more</v-btn>
             </v-img>
@@ -156,7 +157,7 @@
     </v-row>
     <br />
     <br />
-  </v-container>
+  </div>
 </template>
 
 
