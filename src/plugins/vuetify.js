@@ -27,6 +27,7 @@ export default new Vuetify({
         textclip: '#e3e2df',
         textclipText: '#e3e2df',
         aboutTop: '#e3e2df',
+        about_carousel: '#DC143C',
       },
       dark: {
         primary: '#e3e2df',
@@ -37,6 +38,7 @@ export default new Vuetify({
         textclip: '#0b0c10',
         textclipText: '#e3e2df',
         aboutTop:'#e3e2df',
+        about_carousel: '#DC143C',
       }
     },
   },

@@ -22,7 +22,7 @@
     <!-- FOR PC -->
     <v-row justify="center" class="mx-5" id="pcrow">
       <v-col v-for="work in works" :key="work.title" :cols="work.flex">
-        <div class="view view-ninth" align="center">
+        <div class="view view-ninth" align="center"  style="box-shadow:1px 1px 4px #000000;">
           <v-hover v-slot:default="{ hover }" id="header-link">
             <router-link
               id="header-link"
@@ -72,11 +72,12 @@
 
       <v-col cols="6" align="left">
         <h3 class="text--text text-center">Climate song</h3>
-        <iframe
+        <iframe 
+         style="box-shadow:1px 1px 4px #000000;"
           width="600vw"
           height="300vh"
           src="https://www.youtube.com/embed/JeGRWA_IRzI"
-          frameborder="1"
+          frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
@@ -215,7 +216,6 @@ export default {
 .view {
   overflow: hidden;
   text-align: center;
-  box-shadow: 1px 1px 3px #000000;
   cursor: default;
 }
 .view .mask,

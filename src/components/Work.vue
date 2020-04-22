@@ -5,7 +5,7 @@
         <br />
         <br />
         <br />
-        <v-card flat color="white" width="auto">
+        <v-card flat color="transparent" width="auto">
           <v-img :src="work.src" height="auto" max-height="550" contain></v-img>
         </v-card>
       </v-col>
@@ -30,8 +30,10 @@
             <v-btn class="button mx-5">Go back</v-btn>
           </router-link>
         </v-row>
+     
       </v-col>
     </v-row>
+       <br><br><b></b>
   </v-container>
 </template>
 

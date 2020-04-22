@@ -47,11 +47,6 @@
         </a>
       </v-col>
     </v-row>
-    <v-row class="secondary pt-10">
-      <v-col>
-        <h1>dhskd</h1>
-      </v-col>
-    </v-row>
     <br />
     <br />
     <br />

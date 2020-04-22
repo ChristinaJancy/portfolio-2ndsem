@@ -38,7 +38,7 @@
                   <span></span>
                 </h1>
               </div>
-
+              <br><br>
               <div class="role">
                 <div class="block"></div>
                 <p class="aboutTop--text">MMD student</p>
@@ -55,7 +55,6 @@
           <br />
         </v-col>
       </v-img>
-
       <v-col md="6" sm="12" align="center">
         <div class="pt-10">
           <h4 class="wordCarousel pa-12">
@@ -63,10 +62,10 @@
             <div>
               <!--        Use classes 2,3, or 4 to match the number of words -->
               <ul class="flip4">
-                <li class="button--text">Content creation</li>
-                <li class="button--text">Web design</li>
-                <li class="button--text">User Experience</li>
-                <li class="button--text">Business</li>
+                <li class="about_carousel--text">Content creation</li>
+                <li class="about_carousel--text">Web design</li>
+                <li class="about_carousel--text">User Experience</li>
+                <li class="about_carousel--text">Business</li>
               </ul>
             </div>
           </h4>
@@ -74,6 +73,8 @@
       </v-col>
 
       <v-col md="6" sm="12" align="center">
+        <br><br>
+        <h1 class="text--text">My video cv.</h1>
         <iframe
           style="width:90vw; height:60vh; max-width:702px;"
           src="https://www.youtube.com/embed/cG1XHMUauec"
@@ -81,6 +82,7 @@
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
+        <br><br>
       </v-col>
       <!--
         <v-img
@@ -256,7 +258,7 @@ About me text
       .block {
         width: 0%;
         height: inherit;
-        background: #e91e63;
+        background: #DC143C;
         position: absolute;
         animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
         animation-delay: 2s;
@@ -267,7 +269,6 @@ About me text
         animation: secFadeIn 2s forwards;
         animation-delay: 3.2s;
         opacity: 0;
-        padding-top: 10vh;
         text-transform: uppercase;
         letter-spacing: 5px;
         font: 200 4vw "Crimson Pro", serif;
