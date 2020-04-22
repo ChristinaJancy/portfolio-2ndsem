@@ -28,7 +28,7 @@
       <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
         <a href="https://github.com/ChristinaJancy" target="_blank">
           <v-btn dark class="mx-4 primary--text pa-10" icon>
-            <v-icon size="60px">mdi-github</v-icon>
+              <i style="font-size:60px;" class="fa fa-github"></i>
           </v-btn>
         </a>
       </v-col>
@@ -42,9 +42,14 @@
       <v-col cols="12" md="3" sm="6" xs="6" class="text-center">
         <a href="https://www.instagram.com/christinajancy/?hl=da" target="_blank">
           <v-btn dark class="mx-4 primary--text pa-10" icon>
-            <i style="font-size:60px;" class="fa fa-github"></i>
+               <v-icon size="60px">mdi-instagram</v-icon>
           </v-btn>
         </a>
+      </v-col>
+    </v-row>
+    <v-row class="secondary pt-10">
+      <v-col>
+        <h1>dhskd</h1>
       </v-col>
     </v-row>
     <br />

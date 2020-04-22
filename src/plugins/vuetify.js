@@ -20,7 +20,7 @@ export default new Vuetify({
       light: {
         primary: '#0b0c10',
         secondary: '#e3e2df',
-        button: '#dc143c',
+        button: '#e3e2df',
         accent: '#8c9eff',
         error: '#b71c1c',
         text: '#e3e2df',
@@ -32,7 +32,7 @@ export default new Vuetify({
         primary: '#e3e2df',
         secondary: '#1F2833',
         text: '#0b0c10',
-        button: '#dc143c',
+        button: '#1F2833',
         error: '#b71c1c',
         textclip: '#0b0c10',
         textclipText: '#e3e2df',

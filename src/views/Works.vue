@@ -21,11 +21,12 @@
 
     <!-- FOR PC -->
     <v-row justify="center" class="mx-5" id="pcrow">
-      <v-col v-for="work in works" :key="work.title" :cols="work.flex" sm="12" md="6">
-        <v-hover v-slot:default="{ hover }" id="header-link">
-          <router-link
-            id="header-link"
-            v-bind:to="{
+      <v-col v-for="work in works" :key="work.title" :cols="work.flex">
+        <div class="view view-ninth" align="center">
+          <v-hover v-slot:default="{ hover }" id="header-link">
+            <router-link
+              id="header-link"
+              v-bind:to="{
           name: 'Work', params: 
           {
           title: work.title,
@@ -35,13 +36,11 @@
           about: work.about,
           id: work.id
           }}"
-          >
-            <div class="view view-ninth" align="center">
-              <v-card :elevation="hover ? 16 : 2" tile class="white" flat height="400">
+            >
+              <v-card :elevation="hover ? 16 : 2" tile color="transparent" flat height="400">
                 <!-- width="400"-->
-                <v-img :src="work.src" class="white--text align-end" height="400" contain>
-                  <v-card-title id="title" v-text="work.title"></v-card-title>
-                </v-img>
+                <h3 class="text--text center-text" v-text="work.title"></h3>
+                <v-img :src="work.src" class="align-end" height="400" contain></v-img>
 
                 <!-- Hover mask here-->
                 <div class="mask mask-1"></div>
@@ -66,17 +65,38 @@
                   </router-link>
                 </div>
               </v-card>
-            </div>
-          </router-link>
-        </v-hover>
+            </router-link>
+          </v-hover>
+        </div>
+      </v-col>
+
+      <v-col cols="6" align="left">
+        <h3 class="text--text text-center">Climate song</h3>
+        <iframe
+          width="600vw"
+          height="300vh"
+          src="https://www.youtube.com/embed/JeGRWA_IRzI"
+          frameborder="1"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <v-expansion-panels tile hover style="width:auto;max-width:300px;">
+          <v-expansion-panel class="secondary">
+            <v-expansion-panel-header><h3 class="text--primary">Climate song</h3></v-expansion-panel-header>
+            <v-expansion-panel-content class="text--primary"><p>Created when I went to 7th grade. Piano sheet created by me, lyrics created by me and a classmate.</p></v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
       </v-col>
     </v-row>
+    <br />
+    <br />
+    <br />
 
     <!-- FOR PC END-->
 
     <!-- FOR PHONE -->
     <v-row justify="center" class="mx-5" id="phonerow">
-      <v-col v-for="work in works" :key="work.title" :cols="work.flex" sm="12" md="6">
+      <v-col v-for="work in works" :key="work.title" cols="auto" sm="12" md="6">
         <router-link
           id="header-link"
           v-bind:to="{
@@ -90,22 +110,29 @@
           id: work.id
           }}"
         >
-          <v-card :elevation="5" tile class="white" flat height="400">
+          <h3 class="text--text" v-text="work.title" align="center"></h3>
+          <v-card :elevation="5" tile class="transparent" flat height="400">
             <!-- width="400"-->
             <v-img :src="work.src" class="white--text align-end" height="400" contain>
-              <v-row>
-                <v-col align="left">
-                  <v-btn text class="black--text" v-text="work.title"></v-btn>
-                </v-col>
-                <v-col align="right">
-                  <v-btn text class="black--text">see more</v-btn>
-                </v-col>
-              </v-row>
+                  <v-btn class="primary secondary--text">see more</v-btn>
             </v-img>
           </v-card>
         </router-link>
       </v-col>
+      <v-col cols="12">
+        <iframe
+          width="auto"
+          style="min-width:400px;min-height:400px;"
+          height="auto"
+          src="https://www.youtube.com/embed/JeGRWA_IRzI"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </v-col>
     </v-row>
+    <br />
+    <br />
   </v-container>
 </template>
 
@@ -119,7 +146,7 @@ export default {
         title: "Flowergirl",
         src:
           "https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Flowergirl.jpg?alt=media&token=fb59adad-115f-42a1-81e3-ff73203d15d9",
-        flex: "auto",
+        flex: "4",
         aboutHover:
           "Made using Adobe Photoshop, during my 1st semester as a MMD student.",
         about:
@@ -128,8 +155,8 @@ export default {
       },
       {
         title: "Mini me",
-        src: require("../assets/minimechristina.png"),
-        flex: "auto",
+        src: require("../assets/minime.png"),
+        flex: "4",
         aboutHover:
           "Made using Adobe illustrator, during my 1st semester as a MMD student",
         about: '"Mini me" project',
@@ -141,7 +168,7 @@ export default {
         title: "Pizza",
         src:
           "https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/pizza_cropped.png?alt=media&token=328d0094-3857-4625-b633-5cbefd289506",
-        flex: "auto",
+        flex: "4",
         aboutHover:
           "Made using Adobe illustrator, made in the beginning of my 1st semester as a MMD student",
         about:
@@ -149,12 +176,22 @@ export default {
         id: 3
       },
       {
-        title: "project 3",
-        src: "https://via.placeholder.com/150",
-        flex: "auto",
-        aboutHover: "Just a test",
-        about: "I am also a project",
+        title: '"High pink"',
+        src:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/High%20Pink%20Label_cropped.png?alt=media&token=a4af2e6b-5fe5-4f5b-9375-31717ce608e5",
+        flex: "6",
+        aboutHover: "Made for a 2nd semester SoMe commercial. ",
+        about: "Made using adobe illustrator",
         id: 4
+      },
+      {
+        title: "Portfolio logo",
+        src:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Jancy-logo.png?alt=media&token=c4ee5a84-c985-4a70-a460-ace9dad5da63",
+        flex: "6",
+        aboutHover: "Logo created for this portfolio",
+        about: "Made using adobe illustrator",
+        id: 5
       }
     ]
   })
@@ -165,7 +202,7 @@ export default {
 #phonerow {
   display: none;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 830px) {
   #pcrow {
     display: none;
   }
@@ -176,12 +213,10 @@ export default {
 
 // TEEEEEEEEEEEEST
 .view {
-  border: 10px solid #fff;
   overflow: hidden;
   text-align: center;
   box-shadow: 1px 1px 3px #000000;
   cursor: default;
-  background: #fff no-repeat center center;
 }
 .view .mask,
 .view .content {
@@ -229,7 +264,7 @@ export default {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   transition: all 0.4s ease-in-out 0.6s;
-  background: #dc143c6b;
+  background: #dc14146b;
 }
 .view-ninth .mask-1 {
   left: auto;
@@ -282,7 +317,6 @@ export default {
 //TEEEEST EEEEEND
 
 #title {
-  color: #000000;
   font-size: 18px;
   font-weight: 500;
   padding: 5px 10px;

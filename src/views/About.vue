@@ -1,7 +1,7 @@
 <template>
   <div style="margin-top:-80px; padding-top:50px;" fluid>
-      <v-row class="primary">
-        <!--
+    <v-row class="primary">
+      <!--
     <v-col cols="12">
 <h1 role="img" class="textLine text--text" aria-label="All projects.">
   <span class="letter">A</span>
@@ -15,74 +15,74 @@
 </h1>
 <br><br><br><br><br>
     </v-col>
-        -->
-        <v-img
-          tag="christina"
-          style="margin-top:-50px;"
-          max-height="500"
-          src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina.jpg?alt=media&token=a7e51811-b671-4e75-8de0-9e9fda6d53d8"
-        >
-          <v-col cols="6">
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <div class="container">
-              <div class="box">
-                <div class="title">
-                  <span class="block"></span>
-                  <h1 class="aboutTop--text">
-                    Christina Jancy
-                    <span></span>
-                  </h1>
-                </div>
+      -->
+      <v-img
+        tag="christina"
+        style="margin-top:-50px;"
+        max-height="500"
+        src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina.jpg?alt=media&token=a7e51811-b671-4e75-8de0-9e9fda6d53d8"
+      >
+        <v-col cols="6">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <div class="container">
+            <div class="box">
+              <div class="title">
+                <span class="block"></span>
+                <h1 class="aboutTop--text">
+                  Christina Jancy
+                  <span></span>
+                </h1>
+              </div>
 
-                <div class="role">
-                  <div class="block"></div>
-                  <p class="aboutTop--text">MMD student</p>
-                </div>
+              <div class="role">
+                <div class="block"></div>
+                <p class="aboutTop--text">MMD student</p>
               </div>
             </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-          </v-col>
-        </v-img>
-
-        <v-col md="6" sm="12" align="center">
-          <div class="pt-10">
-            <h4 class="wordCarousel pa-12">
-              <span class="secondary--text">experience in</span>
-              <div>
-                <!--        Use classes 2,3, or 4 to match the number of words -->
-                <ul class="flip4">
-                  <li class="button--text">Content creation</li>
-                  <li class="button--text">Web design</li>
-                  <li class="button--text">User Experience</li>
-                  <li class="button--text">Business</li>
-                </ul>
-              </div>
-            </h4>
           </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </v-col>
+      </v-img>
 
-        <v-col md="6" sm="12" align="center">
-          <iframe
-            style="width:90vw; height:60vh; max-width:702px;"
-            src="https://www.youtube.com/embed/cG1XHMUauec"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </v-col>
-        <!--
+      <v-col md="6" sm="12" align="center">
+        <div class="pt-10">
+          <h4 class="wordCarousel pa-12">
+            <span class="secondary--text">experience in</span>
+            <div>
+              <!--        Use classes 2,3, or 4 to match the number of words -->
+              <ul class="flip4">
+                <li class="button--text">Content creation</li>
+                <li class="button--text">Web design</li>
+                <li class="button--text">User Experience</li>
+                <li class="button--text">Business</li>
+              </ul>
+            </div>
+          </h4>
+        </div>
+      </v-col>
+
+      <v-col md="6" sm="12" align="center">
+        <iframe
+          style="width:90vw; height:60vh; max-width:702px;"
+          src="https://www.youtube.com/embed/cG1XHMUauec"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </v-col>
+      <!--
         <v-img
           tag="christina"
           src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina.jpg?alt=media&token=a7e51811-b671-4e75-8de0-9e9fda6d53d8"
@@ -93,24 +93,41 @@
 
           </v-col>
         </v-img>
-        -->
-      </v-row>
+      -->
+    </v-row>
 
     <v-row class="secondary">
       <v-col md="12" sm="12" align="center">
         <h1 class="text-center pa-10">My CV.</h1>
         <v-img
-        src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina%20Jancy%20Pedersen.png?alt=media&token=21a0d42b-e20e-4788-9d0e-6acad8400718"
-        max-width="800"
-        width="auto"
-        >
-        
-        </v-img>
-       <a class="pl-5" href="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina%20Jancy%20Pedersen.pdf?alt=media&token=9d2ddf62-819a-4145-a6d8-596310a00763">See CV as PDF</a>
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina%20Jancy%20Pedersen%20-%20CV.png?alt=media&token=bdbdbee7-4f39-42fa-b247-3c84966e46ad"
+          max-width="800"
+          width="auto"
+        ></v-img>
+        <a
+          class="pl-5"
+          href="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina%20Jancy%20Pedersen%20-%20CV.pdf?alt=media&token=6296cae1-d602-470d-90de-f81e80f07030"
+        >See CV as PDF</a>
       </v-col>
-      <v-col md="12" sm="12">
-          <h1 class="text-center pa-10">Business card.</h1> 
-
+    </v-row>
+    <v-row class="primary">
+        <v-col md="12" sm="12" align="center">
+        <h1 class="text-center pa-10 text--text">Business card.</h1>
+        <h3 class="text--text">Front</h3>
+        <v-img
+          max-width="500"
+          width="auto"
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Business%20card%20front%20-%20Christina%20Jancy%20Pedersen.png?alt=media&token=a267cb3b-2852-4e3a-89c3-fa3d5a07bc8f"
+        ></v-img>
+        <br>
+        <h3 class="text--text">Back</h3>
+        <v-img
+          max-width="500"
+          width="auto"
+          src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Business%20card%20back%20-%20Christina%20Jancy%20Pedersen.png?alt=media&token=b80673a5-f77f-4e78-9644-1c4766483055"
+        ></v-img>
+        <a class="text--text" href="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Business%20card%20front%20%26%20back%20-%20Christina%20Jancy%20Pedersen.pdf?alt=media&token=56557d49-d917-41ae-a270-c7403ede5d2a" target="_blank">See business card as pdf</a>
+        <br><br>
       </v-col>
     </v-row>
   </div>
@@ -118,9 +135,6 @@
 
 
 <style lang="scss" scoped>
-
-
-
 //I am __ designer text scss
 :root {
   --primary-color: #6cd9ce;
