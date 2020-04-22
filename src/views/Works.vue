@@ -83,16 +83,18 @@
             allowfullscreen
           ></iframe>
         </div>
-        <v-expansion-panels tile hover style="width:auto;max-width:300px; margin-top:-5%;">
-          <v-expansion-panel class="secondary">
-            <v-expansion-panel-header>
-              <h3 class="text--primary">Climate song</h3>
-            </v-expansion-panel-header>
-            <v-expansion-panel-content class="text--primary">
-              <p>Created when I went to 7th grade. Piano sheet created by me, lyrics created by me and a classmate.</p>
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels>
+        <div style="margin-top:0%">
+          <v-expansion-panels tile hover style="width:100%;max-width:400px;">
+            <v-expansion-panel class="secondary">
+              <v-expansion-panel-header>
+                <h3 class="text--primary">Climate song</h3>
+              </v-expansion-panel-header>
+              <v-expansion-panel-content class="text--primary">
+                <p>Created when I went to 7th grade. Piano sheet created by me, lyrics created by me and a classmate.</p>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+        </div>
       </v-col>
     </v-row>
     <br />
@@ -127,19 +129,19 @@
         </router-link>
       </v-col>
       <v-col cols="12" align="left" class="mx-12">
-          <h3 class="text--text text-left">Climate song</h3>
-          <div class="youtube_responsive_container">
-            <iframe
-              width="auto"
-              height="auto"
-              src="https://www.youtube.com/embed/JeGRWA_IRzI"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="mx-auto" style="overflow:hidden;">
-          <v-expansion-panels tile hover style="width: 80%; max-width:300px; margin-top:5%;">
+        <h3 class="text--text text-left">Climate song</h3>
+        <div class="youtube_responsive_container">
+          <iframe
+            width="auto"
+            height="auto"
+            src="https://www.youtube.com/embed/JeGRWA_IRzI"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="mx-auto" style="overflow:hidden; margin-top:-1%;">
+          <v-expansion-panels tile hover style="width: 80%;">
             <v-expansion-panel class="secondary">
               <v-expansion-panel-header>
                 <h3 class="text--primary">Climate song</h3>
@@ -149,7 +151,7 @@
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
-          </div>
+        </div>
       </v-col>
     </v-row>
     <br />
