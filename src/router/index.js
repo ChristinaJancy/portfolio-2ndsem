@@ -31,7 +31,7 @@ const routes = [
   },
   {
     path: '/climatevideo/',
-    name: 'climateVideo',
+    name: 'ClimateVideo',
     component: ClimateVideo,
   },
 ]
