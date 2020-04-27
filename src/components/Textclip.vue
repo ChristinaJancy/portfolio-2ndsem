@@ -3,15 +3,15 @@
     <div>
         <v-row>
             <v-col>
-                 <svg viewBox="0 15 500 100" style="">
+                 <svg viewBox="0 15 600 100" style="">
                  
         <clipPath id="textClip" class="filled-heading">
     
-          <text y="80" x="150">Multimedia</text>
+          <text y="80" x="125">Multimedia</text>
           <text y="140"></text>
           <text y="210" />
 
-          <text y="80" x="217">web</text>
+          <text y="80" x="225">web</text>
           <text y="140"></text>
           <text y="210" />
 
@@ -122,7 +122,7 @@ svg {
 .filled-heading {
   text-transform: uppercase;
   font-family: 'Crimson Pro', serif;
-  font-size: 1em;
+  font-size: 200%;
   line-height: 1.5;
 }
 

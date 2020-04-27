@@ -5,10 +5,10 @@
     -->
     <v-col cols="12" class="text-center text--text" justify="center">
       <h1 class="h1_intro" style="line-height:5px;">
-        <span style="font: 200 5vw 'Crimson Pro', serif">I am a</span>
+        <span style="font: 200 8vw 'Crimson Pro', serif">I am a</span>
         <br />
         <Textclip></Textclip>
-        <span style="font: 200 5vw 'Crimson Pro', serif">Designer</span>
+        <span style="font: 200 8vw 'Crimson Pro', serif">Designer</span>
       </h1>
       <br />
     </v-col>
