@@ -81,6 +81,7 @@
                     Small screen navigation
    
 
+--------------------------->
       <v-navigation-drawer
         v-model="drawer"
         fixed
@@ -147,21 +148,21 @@
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon  color="black" @click.stop="drawer = !drawer"> 
         
-         //@click="hidden = !hidden">{{ hidden ? 'mdi-menu' : 'mdi-window-close' }}
+         <!--@click="hidden = !hidden">{{ hidden ? 'mdi-menu' : 'mdi-window-close' }}-->
           
           <v-icon>mdi-menu</v-icon>
      </v-app-bar-nav-icon>
       <v-spacer></v-spacer>
     </v-app-bar>  
 
-    
+    <!--
     Mobile NAVIGATION END
     -->
   </div>
 </template>
 
 <style lang="scss" scoped>
-/* .smallscreennav {
+ .smallscreennav {
   display: none;
 }
 .pcnav {
@@ -175,7 +176,7 @@
     display: initial;
   }
 }
-*/
+
 </style>
 
 
