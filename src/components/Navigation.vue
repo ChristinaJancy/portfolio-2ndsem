@@ -152,7 +152,7 @@
           <v-icon @click="hidden = !hidden">{{ hidden ? 'mdi-menu' : 'mdi-window-close' }}</v-icon>
      </v-app-bar-nav-icon>
       <v-spacer></v-spacer>
-    </v-app-bar> 
+    </v-app-bar>  
 
     <!-- 
     PC NAVIGATION END
