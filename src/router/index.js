@@ -32,7 +32,7 @@ const routes = [
   {
     path: '/climatevideo/',
     name: 'ClimateVideo',
-    component: ClimateVideo,
+    component: ClimateVideo, 
   },
 ]
 
