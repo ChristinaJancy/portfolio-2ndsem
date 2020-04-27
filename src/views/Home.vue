@@ -1,6 +1,6 @@
 <template>
-  <div fluid>
-    <v-col>
+
+    <v-col style="width:100%">
     <!-- Floating navigation button -->
     
      
@@ -17,7 +17,7 @@
        -->
        
 </v-col>
-  </div>
+
 </template>
 
 

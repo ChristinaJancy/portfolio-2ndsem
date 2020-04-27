@@ -20,8 +20,8 @@
     <br />
 
     <!-- FOR PC -->
-    <v-row justify="center" class="mx-5" id="pcrow">
-      <v-col v-for="work in works" :key="work.title" :cols="work.flex">
+    <v-row justify="center" class="mx-5" id="pcrow" >
+      <v-col v-for="work in works" :key="work.title" :cols="work.flex" >
         <div class="view view-ninth" align="center" style="box-shadow:1px 1px 4px #000000;">
           <v-hover v-slot:default="{ hover }" id="header-link">
             <router-link
@@ -39,7 +39,7 @@
             >
               <v-card :elevation="hover ? 16 : 2" tile color="white" flat height="auto" class="pa-2" style="box-sizing:border-box;">
                 <!-- width="400"-->
-                <h3 class="primary--text center-text" v-text="work.title"></h3>
+                <h3 class="black--text center-text" v-text="work.title"></h3>
                 <v-img :src="work.src" class="align-end" height="400" contain></v-img>
 
                 <!-- Hover mask here-->
@@ -70,31 +70,34 @@
         </div>
       </v-col>
 
-      <v-col contain cols="12" align="left" display="flex">
-        <h3 class="text--text text-left">Climate song</h3>
-        <div class="youtube_responsive_container">
-          <iframe
-            style="box-shadow:1px 1px 4px #000000;"
-            width="auto"
-            height="auto"
-            src="https://www.youtube.com/embed/JeGRWA_IRzI"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+<!-- Video column--> 
+      <v-col v-for="climateVideo in climateVideo" :key="climateVideo.title" :cols="climateVideo.flex">
+        <div class="view view-ninth" align="center" style="box-shadow:1px 1px 4px #000000;">
+          <v-hover v-slot:default="{ hover }">
+            <router-link
+              to="/climatevideo"
+            >
+              <v-card :elevation="hover ? 16 : 2" tile color="white" flat height="auto" class="pa-2" style="box-sizing:border-box;">
+                <!-- width="400"-->
+                 <h3 class="primary--text center-text" v-text="climateVideo.title"></h3>
+                <v-img src="../assets/climate_song_studio.png" class="align-end" height="400" contain></v-img>
+
+                <!-- Hover mask here-->
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                  <h2 v-text="climateVideo.title"></h2>
+                  <p v-text="climateVideo.aboutHover"></p>
+                  <router-link to="/climatevideo"
+                  >
+                    <v-btn>Listen now!</v-btn>
+                  </router-link>
+                </div>
+              </v-card>
+            </router-link>
+          </v-hover>
         </div>
-        <div style="margin-top:0%">
-          <v-expansion-panels tile hover style="width:100%;max-width:400px;">
-            <v-expansion-panel class="secondary">
-              <v-expansion-panel-header>
-                <h3 class="text--primary">Climate song</h3>
-              </v-expansion-panel-header>
-              <v-expansion-panel-content class="text--primary">
-                <p>Created when I went to 7th grade. Piano sheet created by me, lyrics created by me and a classmate.</p>
-              </v-expansion-panel-content>
-            </v-expansion-panel>
-          </v-expansion-panels>
-        </div>
+
       </v-col>
     </v-row>
     <br />
@@ -130,31 +133,23 @@
           </v-card>
         </router-link>
       </v-col>
-      <v-col cols="12" align="left" class="mx-12">
-        <h3 class="text--text text-left">Climate song</h3>
-        <div class="youtube_responsive_container">
-          <iframe
-            width="auto"
-            height="auto"
-            src="https://www.youtube.com/embed/JeGRWA_IRzI"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="mx-auto" style="overflow:hidden;">
-          <v-expansion-panels tile hover style="width: 80%; max-width:400px;">
-            <v-expansion-panel class="secondary">
-              <v-expansion-panel-header>
-                <h3 class="text--primary">Climate song</h3>
-              </v-expansion-panel-header>
-              <v-expansion-panel-content class="text--primary">
-                <p>Created when I went to 7th grade. Piano sheet created by me, lyrics created by me and a classmate.</p>
-              </v-expansion-panel-content>
-            </v-expansion-panel>
-          </v-expansion-panels>
-        </div>
+
+      <!-- VIDEO COLUMN -->
+        <v-col v-for="climateVideo in climateVideo" :key="climateVideo.title" cols="auto" sm="12">
+        <router-link
+         to="/climatevideo"
+        >
+          <v-card :elevation="5" tile flat height="auto" class="pa-2" color="white" style="box-sizing:border-box;">
+            <!-- width="400"-->
+             <h3 class="black--text" v-text="climateVideo.title" align="center"></h3>
+            <v-img src="../assets/climate_song_studio.png" class="white--text align-end" height="400" contain>
+              <v-btn tile color="rgba(255, 255, 255, 0.600)" class="black--text">Listen now!</v-btn>
+            </v-img>
+
+          </v-card>
+        </router-link>
       </v-col>
+
     </v-row>
     <br />
     <br />
@@ -218,34 +213,22 @@ export default {
         about: "Made using adobe illustrator",
         id: 5
       }
-    ]
+    ],
+    climateVideo:[
+      { 
+        title: "Climate song",
+        src:require("../assets/climate_song_studio.png"),
+        flex: "6",
+        aboutHover: "Lyrics written by me and a classmate, piano composed by me.",
+        about: "Lyrics written by me and a classmate, piano composed by me.",
+      }
+    ],
   })
 };
 </script>
 
 <style lang="scss">
-// Youtube responsive
 
-.youtube_responsive_container {
-  position: relative;
-  padding-bottom: 20%;
-  padding-top: 50px;
-  height: 0;
-  overflow: hidden;
-}
-
-.youtube_responsive_container iframe,
-.youtube_responsive_container object,
-.youtube_responsive_container embed {
-  top: 0;
-  left: 0;
-  width: 80%;
-  position: absolute;
-  height: 100%;
-  max-width: 400px;
-  max-height: 400px;
-}
-//Youtube responsive end
 #phonerow {
   display: none;
 }
