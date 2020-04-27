@@ -20,29 +20,39 @@
       <v-card flat tile class="secondary flex text-center">
         <br><br>
         <v-card-text>
+        <v-row>
+          <v-col md="3" sm="12">
           <a href="https://www.facebook.com/christinajancy/" target="_blank">
             <v-btn class="mx-6 primary--text" icon>
               <v-icon size="60">mdi-facebook</v-icon>
             </v-btn>
           </a>
-
+          <br><br>
+          </v-col>
+          <v-col md="3" sm="12">
           <a href="https://github.com/ChristinaJancy" target="_blank">
             <v-btn dark class="mx-6 primary--text" icon>
               <v-icon style="font-size:60px;" class="fa fa-github"></v-icon>
             </v-btn>
           </a>
-
+              <br><br>
+        </v-col>
+        <v-col md="3" sm="12">
           <a href="https://www.linkedin.com/in/christinajancy/" target="_blank">
             <v-btn dark class="mx-6 primary--text" icon>
               <v-icon size="60">mdi-linkedin</v-icon>
             </v-btn>
           </a>
-
+              <br><br>
+          </v-col>
+          <v-col md="3" sm="12">
           <a href="https://www.instagram.com/christinajancy/?hl=da" target="_blank">
             <v-btn dark class="mx-6 primary--text" icon>
               <v-icon size="60">mdi-instagram</v-icon>
             </v-btn>
           </a>
+          </v-col>
+          </v-row>
         </v-card-text>
 
  <v-card-text class="secondary--text pt-0">
