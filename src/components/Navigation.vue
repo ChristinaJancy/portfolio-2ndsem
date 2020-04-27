@@ -79,9 +79,8 @@
     <!-- -----------------------------
 
                     Small screen navigation
-    --------------------------------->
+   
 
-    <v-card class="my-auto">
       <v-navigation-drawer
         v-model="drawer"
         fixed
@@ -95,7 +94,7 @@
         style="background-color: rgba(0, 0, 0, 0.940);"
       >
         <v-list align="center" nav class="my-12">
-          <!-- Home-->
+
 
           <router-link to="/">
             <v-list-item link class="pa-12">
@@ -103,33 +102,32 @@
                 <v-icon class="white--text">mdi-home</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <!--@click="$vuetify.goTo(home, options)"-->
+         
                 <v-list-item-title class="title white--text">Home</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </router-link>
 
-          <!-- my work-->
           <router-link to="/works">
             <v-list-item link class="pa-12">
               <v-list-item-icon>
                 <v-icon class="white--text">mdi-home</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <!--@click="$vuetify.goTo(aboutMe, options)" -->
+
                 <v-list-item-title class="title white--text">All projects</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </router-link>
 
-          <!-- about  -->
+     
           <router-link to="/about">
             <v-list-item link class="pa-12">
               <v-list-item-icon>
                 <v-icon class="white--text">mdi-home</v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <!--@click="$vuetify.goTo(skills, options)"-->
+          
                 <v-list-item-title class="title white--text">About me</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
@@ -144,24 +142,26 @@
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
-    </v-card>
-    <!-- App bar-->
+  
     <v-app-bar bottom app class="smallscreennav" fixed style="background-color:#ffffff95;">
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon  color="black" @click.stop="drawer = !drawer"> 
-          <v-icon @click="hidden = !hidden">{{ hidden ? 'mdi-menu' : 'mdi-window-close' }}</v-icon>
+        
+         //@click="hidden = !hidden">{{ hidden ? 'mdi-menu' : 'mdi-window-close' }}
+          
+          <v-icon>mdi-menu</v-icon>
      </v-app-bar-nav-icon>
       <v-spacer></v-spacer>
     </v-app-bar>  
 
-    <!-- 
-    PC NAVIGATION END
+    
+    Mobile NAVIGATION END
     -->
   </div>
 </template>
 
 <style lang="scss" scoped>
-.smallscreennav {
+/* .smallscreennav {
   display: none;
 }
 .pcnav {
@@ -175,6 +175,7 @@
     display: initial;
   }
 }
+*/
 </style>
 
 

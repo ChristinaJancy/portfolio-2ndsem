@@ -4,7 +4,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Works from '../views/Works.vue'
 import Work from '../components/Work.vue'
-import ClimateVideo from '../components/ClimateVideo.vue'
+import ClimateVideo from '../components/ClimateVideo'
 
 Vue.use(VueRouter)
 
