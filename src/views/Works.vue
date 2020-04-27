@@ -75,7 +75,7 @@
         <div class="view view-ninth" align="center" style="box-shadow:1px 1px 4px #000000;">
           <v-hover v-slot:default="{ hover }">
             <router-link
-              to="/climatevideo"
+              to=""
             >
               <v-card :elevation="hover ? 16 : 2" tile color="white" flat height="auto" class="pa-2" style="box-sizing:border-box;">
                 <!-- width="400"-->
@@ -88,7 +88,7 @@
                 <div class="content">
                   <h2 v-text="climateVideo.title"></h2>
                   <p v-text="climateVideo.aboutHover"></p>
-                  <router-link to="/climatevideo"
+                  <router-link to=""
                   >
                     <v-btn>Listen now!</v-btn>
                   </router-link>
@@ -137,7 +137,7 @@
       <!-- VIDEO COLUMN -->
         <v-col v-for="climateVideo in climateVideo" :key="climateVideo.title" cols="auto" sm="12">
         <router-link
-         to="/climatevideo"
+         to=""
         >
           <v-card :elevation="5" tile flat height="auto" class="pa-2" color="white" style="box-sizing:border-box;">
             <!-- width="400"-->
