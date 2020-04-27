@@ -134,11 +134,10 @@
           </router-link>
 
           <v-list-item align="end">
-            <v-list-item-content>
+            <v-list-item-content class="mr-10" align="center">
               <v-list-item-title class="title white--text">Toggle theme:</v-list-item-title>
             </v-list-item-content>
-            <v-spacer></v-spacer>
-            <v-switch style="margin-right:30%;" v-model="$vuetify.theme.dark"></v-switch>
+            <v-switch v-model="$vuetify.theme.dark"></v-switch>
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
