@@ -150,7 +150,7 @@
         
          <!--@click="hidden = !hidden">{{ hidden ? 'mdi-menu' : 'mdi-window-close' }}-->
           
-          <v-icon>mdi-menu</v-icon>
+          <v-icon size="60">mdi-menu</v-icon>
      </v-app-bar-nav-icon>
       <v-spacer></v-spacer>
     </v-app-bar>  
