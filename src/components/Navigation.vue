@@ -91,7 +91,7 @@
         floating
         mobile-break-point
         width="100%"
-        height="93%"
+        height="92%"
         style="background-color: rgba(0, 0, 0, 0.940);"
       >
         <v-list align="center" nav class="my-12">
