@@ -93,11 +93,11 @@
         width="100%"
         style="background-color: rgba(0, 0, 0, 0.940);"
       >
-        <v-list align="center" nav class="my-12">
+        <v-list align="center" nav class="my-12" style="box-sizing:border-box;">
 
 
           <router-link to="/">
-            <v-list-item link class="pa-12">
+            <v-list-item link class="pa-7 mt-12">
               <v-list-item-icon>
                 <v-icon class="white--text">mdi-home</v-icon>
               </v-list-item-icon>
@@ -109,7 +109,7 @@
           </router-link>
 
           <router-link to="/works">
-            <v-list-item link class="pa-12">
+            <v-list-item link class="pa-7">
               <v-list-item-icon>
                 <v-icon class="white--text">mdi-home</v-icon>
               </v-list-item-icon>
@@ -122,7 +122,7 @@
 
      
           <router-link to="/about">
-            <v-list-item link class="pa-12">
+            <v-list-item link class="pa-7">
               <v-list-item-icon>
                 <v-icon class="white--text">mdi-home</v-icon>
               </v-list-item-icon>
