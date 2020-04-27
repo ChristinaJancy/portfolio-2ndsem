@@ -30,7 +30,7 @@ const routes = [
     component: Work,
   },
   {
-    path: '/climatevideo/',
+    path: '/climatevideo',
     name: 'ClimateVideo',
     component: ClimateVideo, 
   },
