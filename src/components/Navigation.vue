@@ -76,7 +76,7 @@
     PC NAVIGATION END
     -->
 
-    <!-- -----------------------------
+<!-------------------------------
 
                     Small screen navigation
    
@@ -97,7 +97,7 @@
 
 
           <router-link to="/">
-            <v-list-item link class="pa-7 mt-12">
+            <v-list-item link class="pa-7 mt-12" style="background-color:#1F2833;">
               <v-list-item-icon>
                 <v-icon class="white--text">mdi-home</v-icon>
               </v-list-item-icon>
@@ -109,7 +109,7 @@
           </router-link>
 
           <router-link to="/works">
-            <v-list-item link class="pa-7">
+            <v-list-item link class="pa-7" style="background-color:#1F283399;">
               <v-list-item-icon>
                 <v-icon class="white--text">mdi-home</v-icon>
               </v-list-item-icon>
@@ -122,7 +122,7 @@
 
      
           <router-link to="/about">
-            <v-list-item link class="pa-7">
+            <v-list-item link class="pa-7" style="background-color:#1F283370;">
               <v-list-item-icon>
                 <v-icon class="white--text">mdi-home</v-icon>
               </v-list-item-icon>
@@ -133,8 +133,8 @@
             </v-list-item>
           </router-link>
 
-          <v-list-item align="end">
-            <v-list-item-content class="mr-10" align="center">
+          <v-list-item align="center">
+            <v-list-item-content class="" align="end">
               <v-list-item-title class="title white--text">Toggle theme:</v-list-item-title>
             </v-list-item-content>
             <v-switch v-model="$vuetify.theme.dark"></v-switch>
@@ -142,7 +142,7 @@
         </v-list>
       </v-navigation-drawer>
   
-    <v-app-bar bottom app class="smallscreennav" fixed style="background-color:#ffffff95;">
+    <v-app-bar bottom app class="smallscreennav" fixed style="background-color:#e3e2df;">
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon  color="black" @click.stop="drawer = !drawer"> 
         

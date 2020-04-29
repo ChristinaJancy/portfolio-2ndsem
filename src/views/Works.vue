@@ -1,5 +1,7 @@
 <template>
   <div style="margin-top:-80px; padding-top:50px;" class="primary" fluid>
+    <h1 class="text--text text-center " >All projects.</h1>
+    <!--
     <h1 role="img" class="textLine text--text" aria-label="All projects.">
       <span class="letter">A</span>
       <span>l</span>
@@ -14,11 +16,12 @@
       <span class="letter">s</span>
       <span class="letter">.</span>
     </h1>
+    
     <br />
     <br />
     <br />
     <br />
-
+-->
     <!-- FOR PC -->
     <v-row justify="center" class="mx-5" id="pcrow" >
       <v-col v-for="work in works" :key="work.title" :cols="work.flex" >
