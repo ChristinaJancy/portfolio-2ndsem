@@ -1,6 +1,6 @@
 <template>
   <div style="margin-top:-80px; padding-top:50px;" fluid>
-    <v-row class="primary">
+    <v-row class="primary" style="margin-top:-50px;">
       <!--
     <v-col cols="12">
 <h1 role="img" class="textLine text--text" aria-label="All projects.">
@@ -16,14 +16,14 @@
 <br><br><br><br><br>
     </v-col>
       -->
+
       <v-img
         tag="christina"
-        style="margin-top:-50px;"
-        max-height="500"
+        max-height="600"
+        width="100%"
         src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina.jpg?alt=media&token=a7e51811-b671-4e75-8de0-9e9fda6d53d8"
       >
         <v-col cols="6">
-          <br />
           <br />
           <br />
           <br />
@@ -38,26 +38,25 @@
                   <span></span>
                 </h1>
               </div>
-              <br><br>
+              <br />
+              <br />
               <div class="role">
                 <div class="block"></div>
                 <p class="aboutTop--text">MMD student</p>
               </div>
             </div>
           </div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
         </v-col>
       </v-img>
-      <v-col md="6" sm="12" align="center">
-        <div class="pt-10">
-          <h4 class="wordCarousel pa-12">
+      <v-col cols="12" align="center">
+        <div class="pt-12">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <h4 class="wordCarousel pt-12">
             <span class="secondary--text">experience in</span>
             <div>
               <!--        Use classes 2,3, or 4 to match the number of words -->
@@ -69,20 +68,30 @@
               </ul>
             </div>
           </h4>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
       </v-col>
 
-      <v-col md="6" sm="12" align="center">
-        <br><br>
+      <v-col cols="12" align="center">
+        <br />
+        <br />
         <h1 class="text--text">My video cv.</h1>
-        <iframe
-          style="width:90vw; height:60vh; max-width:702px;"
-          src="https://www.youtube.com/embed/cG1XHMUauec"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <br><br>
+        <div align="center" justify="center" class="mx-12">
+        <div class="youtube_responsive_container">
+          <iframe
+            src="https://www.youtube.com/embed/cG1XHMUauec"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        </div>
+        <br />
+        <br />
       </v-col>
       <!--
         <v-img
@@ -113,7 +122,7 @@
       </v-col>
     </v-row>
     <v-row class="primary">
-        <v-col md="12" sm="12" align="center">
+      <v-col md="12" sm="12" align="center">
         <h1 class="text-center pa-10 text--text">Business card.</h1>
         <h3 class="text--text">Front</h3>
         <v-img
@@ -121,15 +130,20 @@
           width="auto"
           src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Business%20card%20front%20-%20Christina%20Jancy%20Pedersen.png?alt=media&token=a267cb3b-2852-4e3a-89c3-fa3d5a07bc8f"
         ></v-img>
-        <br>
+        <br />
         <h3 class="text--text">Back</h3>
         <v-img
           max-width="500"
           width="auto"
           src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Business%20card%20back%20-%20Christina%20Jancy%20Pedersen.png?alt=media&token=b80673a5-f77f-4e78-9644-1c4766483055"
         ></v-img>
-        <a class="text--text" href="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Business%20card%20front%20%26%20back%20-%20Christina%20Jancy%20Pedersen.pdf?alt=media&token=56557d49-d917-41ae-a270-c7403ede5d2a" target="_blank">See business card as pdf</a>
-        <br><br>
+        <a
+          class="text--text"
+          href="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Business%20card%20front%20%26%20back%20-%20Christina%20Jancy%20Pedersen.pdf?alt=media&token=56557d49-d917-41ae-a270-c7403ede5d2a"
+          target="_blank"
+        >See business card as pdf</a>
+        <br />
+        <br />
       </v-col>
     </v-row>
   </div>
@@ -137,6 +151,24 @@
 
 
 <style lang="scss" scoped>
+// Youtube responsive
+.youtube_responsive_container {
+  position: relative;
+  padding-bottom: 50%;
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+.youtube_responsive_container iframe,
+.youtube_responsive_container object,
+.youtube_responsive_container embed {
+  left: 0;
+  width: 100%;
+  position: absolute;
+  height: 90%;
+}
+//Youtube responsive end
+
 //I am __ designer text scss
 :root {
   --primary-color: #6cd9ce;
@@ -258,7 +290,7 @@ About me text
       .block {
         width: 0%;
         height: inherit;
-        background: #DC143C;
+        background: #dc143c;
         position: absolute;
         animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
         animation-delay: 2s;
@@ -393,7 +425,7 @@ Word Carousel
 */
 
 .wordCarousel {
-  font: 200 4vw "Crimson Pro", serif;
+  font: 200 6vw "Crimson Pro", serif;
   color: #939393;
   div {
     overflow: hidden;
@@ -402,7 +434,7 @@ Word Carousel
     padding-top: 5px;
     margin-top: -5px;
     li {
-      font: 200 4vw "Crimson Pro", serif;
+      font: 200 4.5vw "Crimson Pro", serif;
       color: #ccc;
       position: relative;
       font-weight: 700;
