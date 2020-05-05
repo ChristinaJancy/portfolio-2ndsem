@@ -78,7 +78,7 @@
         <div class="view view-ninth" align="center" style="box-shadow:1px 1px 4px #000000;">
           <v-hover v-slot:default="{ hover }">
             <router-link
-              to=""
+              to="/climatevideo"
             >
               <v-card :elevation="hover ? 16 : 2" tile color="white" flat height="auto" class="pa-2" style="box-sizing:border-box;">
                 <!-- width="400"-->

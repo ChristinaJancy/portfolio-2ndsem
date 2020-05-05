@@ -2,9 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
+import Climatevideo from '../components/Climatevideo.vue'
 import Works from '../views/Works.vue'
 import Work from '../components/Work.vue'
-//import ClimateVideo from '../components/ClimateVideo'
+
 
 Vue.use(VueRouter)
 
@@ -25,15 +26,15 @@ const routes = [
     component: Works,
   },
   {
+    path: '/climatevideo',
+    name: 'Climatevideo',
+    component: Climatevideo,
+  },
+  {
     path: '/work/:title',
     name: 'Work',
     component: Work,
   },
- /* {
-    path: '/climatevideo',
-    name: 'ClimateVideo',
-    component: ClimateVideo, 
-  },*/
 ]
 
 const router = new VueRouter({
