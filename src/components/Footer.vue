@@ -1,5 +1,5 @@
 <template>
-  <div class="secondary" style="margin-top:-69px;">
+  <div class="secondary" style="margin-top:-77px;">
     <v-col cols="12">
       <h1 class="text-center pt-10">Come find me.</h1>
     </v-col>

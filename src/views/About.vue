@@ -18,9 +18,11 @@
       -->
 
       <v-img
+      style=""
         tag="christina"
         max-height="600"
-        width="100%"
+        width="100%" fit
+        class="ma-0"
         src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina.jpg?alt=media&token=a7e51811-b671-4e75-8de0-9e9fda6d53d8"
       >
         <v-col cols="6">
