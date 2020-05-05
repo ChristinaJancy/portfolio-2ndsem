@@ -91,7 +91,7 @@
                 <div class="content">
                   <h2 v-text="climateVideo.title"></h2>
                   <p v-text="climateVideo.aboutHover"></p>
-                  <router-link to=""
+                  <router-link to="/climatevideo"
                   >
                     <v-btn>Listen now!</v-btn>
                   </router-link>
@@ -140,7 +140,7 @@
       <!-- VIDEO COLUMN -->
         <v-col v-for="climateVideo in climateVideo" :key="climateVideo.title" cols="auto" sm="12">
         <router-link
-         to=""
+         to="/climatevideo"
         >
           <v-card :elevation="5" tile flat height="auto" class="pa-2" color="white" style="box-sizing:border-box;">
             <!-- width="400"-->
