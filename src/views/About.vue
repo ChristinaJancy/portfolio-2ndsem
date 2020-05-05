@@ -1,6 +1,6 @@
 <template>
-  <div style="margin-top:-80px; padding-top:50px;" fluid>
-    <v-row class="primary" style="margin-top:-50px;margin-right:0;">
+  <div style="box-sizing:border-box; margin-top:-120px; margin-right: 0; padding-top:50px; width:100%" fluid>
+    <v-row class="primary">
       <!--
     <v-col cols="12">
 <h1 role="img" class="textLine text--text" aria-label="All projects.">
@@ -18,7 +18,7 @@
       -->
 
       <v-img
-      style=""
+        style=""
         tag="christina"
         max-height="600" 
         fit
@@ -51,7 +51,7 @@
         </v-col>
       </v-img>
       <v-col cols="12" align="center">
-        <div class="pt-12">
+        <div>
           <br />
           <br />
           <br />
@@ -118,7 +118,6 @@
           width="auto"
         ></v-img>
         <a
-          class="pl-5"
           href="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina%20Jancy%20Pedersen%20-%20CV.pdf?alt=media&token=6296cae1-d602-470d-90de-f81e80f07030"
         >See CV as PDF</a>
       </v-col>
