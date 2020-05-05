@@ -1,6 +1,6 @@
 <template>
   <div style="margin-top:-80px; padding-top:50px;" fluid>
-    <v-row class="primary" style="margin-top:-50px;">
+    <v-row class="primary" style="margin-top:-50px;margin-right:0;">
       <!--
     <v-col cols="12">
 <h1 role="img" class="textLine text--text" aria-label="All projects.">
@@ -20,8 +20,8 @@
       <v-img
       style=""
         tag="christina"
-        max-height="600"
-        width="100%" fit
+        max-height="600" 
+        fit
         class="ma-0"
         src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina.jpg?alt=media&token=a7e51811-b671-4e75-8de0-9e9fda6d53d8"
       >
