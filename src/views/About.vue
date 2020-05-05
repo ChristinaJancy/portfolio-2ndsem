@@ -110,8 +110,10 @@
     </v-row>
 
     <v-row class="secondary">
-      <v-col md="12" sm="12" align="center">
-        <h1 class="text-center pa-10">My CV.</h1>
+      <v-col cols="12" align="center">
+        <br><br>
+        <h1 class="text-center">My CV.</h1>
+        <br><br>
         <v-img
           src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina%20Jancy%20Pedersen%20-%20CV.png?alt=media&token=bdbdbee7-4f39-42fa-b247-3c84966e46ad"
           max-width="800"
@@ -123,8 +125,10 @@
       </v-col>
     </v-row>
     <v-row class="primary">
-      <v-col md="12" sm="12" align="center">
-        <h1 class="text-center pa-10 text--text">Business card.</h1>
+      <v-col cols="12" align="center">
+        <br><br>
+        <h1 class="text-center text--text">Business card.</h1>
+        <br><br>
         <h3 class="text--text">Front</h3>
         <v-img
           max-width="500"
