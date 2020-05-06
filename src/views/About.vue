@@ -1,6 +1,7 @@
 <template>
-  <div style="box-sizing:border-box; margin-top:-120px; margin-right: 0; padding-top:50px; width:calc(100%-10px;)" position="relative" fluid>
+  <div style="box-sizing:border-box; margin:-120px auto 0 auto; overflow-x: hidden; width: 100%; " fluid>
     <v-row class="primary" style="margin: 0 auto; padding: 0 auto;">
+     
       <!--
     <v-col cols="12">
 <h1 role="img" class="textLine text--text" aria-label="All projects.">
@@ -50,6 +51,8 @@
           </div>
         </v-col>
       </v-img>
+    </v-row>
+<v-row class="primary">
 <v-col cols="12">
   <br><br><br><br><br><br><br><br><br>
           <h4 class="wordCarousel pt-12 mx-auto ma-0 pa-0" align="center">
@@ -66,7 +69,6 @@
           </h4>
            <br><br><br><br><br><br><br><br><br>
 </v-col>
-
 
       <v-col cols="12" align="center">
         <br />
@@ -85,20 +87,7 @@
         <br />
         <br />
       </v-col>
-      <!--
-        <v-img
-          tag="christina"
-          src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina.jpg?alt=media&token=a7e51811-b671-4e75-8de0-9e9fda6d53d8"
-          width="200"
-          fit
-        >
-          <v-col md="6" sm="12">
-
-          </v-col>
-        </v-img>
-      -->
-    </v-row>
-
+</v-row>
     <v-row class="secondary">
       <v-col cols="12" align="center">
         <br><br>
