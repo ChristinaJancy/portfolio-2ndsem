@@ -20,20 +20,16 @@
 
       <v-img
         tag="christina"
-        max-height="600" 
+     
         fit
         width="100%"
       
         src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina.jpg?alt=media&token=a7e51811-b671-4e75-8de0-9e9fda6d53d8"
       >
         <v-col cols="6">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+
           <div class="container ma-0 pa-0">
-            <div class="box">
+            <div class="box" style="padding-top: 50%">
               <div class="title">
                 <span class="block"></span>
                 <h1 class="aboutTop--text">
@@ -41,9 +37,7 @@
                   <span></span>
                 </h1>
               </div>
-              <br />
-              <br />
-              <div class="role">
+              <div class="role" style="padding-top: 10%">
                 <div class="block"></div>
                 <p class="aboutTop--text">MMD student</p>
               </div>
@@ -54,7 +48,7 @@
     </v-row>
 <v-row class="primary" style="margin: 0 auto; parddin: 0 auto;">
 <v-col cols="12" >
-  <br><br><br><br><br><br>
+  <br><br><br><br><br>
           <h4 class="wordCarousel pt-12 mx-auto" align="center">
             <span class="secondary--text">experience in</span>
             <div>
