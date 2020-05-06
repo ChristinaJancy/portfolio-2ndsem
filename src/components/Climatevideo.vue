@@ -17,11 +17,11 @@
         </div>
       </v-col>
 
-      <v-col cols="12" md="6" sm="12" class="my-auto">
+      <v-col cols="12" md="6" sm="12" class="my-auto mx-10">
 
         <v-row>
-          <div style="padding-right:200px; ">
-            <v-card-text style="padding-left:60px;"
+          <div>
+            <v-card-text style="width:calc(100% -180px)"
               class="text--text"
             >Lyrics written by me and a classmate during 6th grade, where I also composed the piano.</v-card-text>
           </div>

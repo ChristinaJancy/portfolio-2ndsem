@@ -77,7 +77,6 @@
           <br />
         </div>
       </v-col>
-
       <v-col cols="12" align="center">
         <br />
         <br />
