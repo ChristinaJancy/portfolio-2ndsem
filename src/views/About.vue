@@ -1,5 +1,5 @@
 <template>
-  <div style="box-sizing:border-box; margin-top:-120px; margin-right: 0; padding-top:50px; width:100%" fluid>
+  <div style="box-sizing:border-box; margin-top:-120px; margin-right: 0; padding-top:50px; width:calc(100%-10px;)" fluid>
     <v-row class="primary">
       <!--
     <v-col cols="12">
