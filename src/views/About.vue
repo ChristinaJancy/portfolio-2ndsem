@@ -52,10 +52,10 @@
         </v-col>
       </v-img>
     </v-row>
-<v-row class="primary">
-<v-col cols="12">
+<v-row class="primary" style="margin: 0 auto; parddin: 0 auto;">
+<v-col cols="12" >
   <br><br><br><br><br><br><br><br><br>
-          <h4 class="wordCarousel pt-12 mx-auto ma-0 pa-0" align="center">
+          <h4 class="wordCarousel pt-12 mx-auto" align="center">
             <span class="secondary--text">experience in</span>
             <div>
               <!--        Use classes 2,3, or 4 to match the number of words -->
@@ -88,7 +88,7 @@
         <br />
       </v-col>
 </v-row>
-    <v-row class="secondary">
+    <v-row class="secondary" style="margin: 0 auto; parddin: 0 auto;">
       <v-col cols="12" align="center">
         <br><br>
         <h1 class="text-center">My CV.</h1>
@@ -103,7 +103,7 @@
         >See CV as PDF</a>
       </v-col>
     </v-row>
-    <v-row class="primary">
+    <v-row class="primary" style="margin: 0 auto; parddin: 0 auto;">
       <v-col cols="12" align="center">
         <br><br>
         <h1 class="text-center text--text">Business card.</h1>
