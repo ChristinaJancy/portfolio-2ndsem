@@ -130,7 +130,7 @@
             <!-- width="400"-->
              <h3 class="black--text" v-text="work.title" align="center"></h3>
             <v-img :src="work.src" class="white--text align-end" height="400" contain>
-              <v-btn tile color="rgba(255, 255, 255, 0.600)" class="black--text">see more</v-btn>
+              <v-btn width="100%" tile color="rgba(255, 255, 255, 0.600)" class="black--text">see more</v-btn>
             </v-img>
 
           </v-card>
@@ -146,7 +146,7 @@
             <!-- width="400"-->
              <h3 class="black--text" v-text="climateVideo.title" align="center"></h3>
             <v-img src="../assets/climate_song_studio.png" class="white--text align-end" height="400" contain>
-              <v-btn tile color="rgba(255, 255, 255, 0.600)" class="black--text">Listen now!</v-btn>
+              <v-btn width="100%" tile color="rgba(255, 255, 255, 0.600)" class="black--text">Listen now!</v-btn>
             </v-img>
 
           </v-card>
