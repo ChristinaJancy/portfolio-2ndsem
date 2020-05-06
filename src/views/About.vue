@@ -1,6 +1,6 @@
 <template>
-  <div style="box-sizing:border-box; margin-top:-120px; margin-right: 0; padding-top:50px; width:calc(100%-10px;)" fluid>
-    <v-row class="primary">
+  <div style="box-sizing:border-box; margin-top:-120px; margin-right: 0; padding-top:50px; width:calc(100%-10px;)" position="relative" fluid>
+    <v-row class="primary" style="margin: 0 auto; padding: 0 auto;">
       <!--
     <v-col cols="12">
 <h1 role="img" class="textLine text--text" aria-label="All projects.">
@@ -18,12 +18,11 @@
       -->
 
       <v-img
-        style=""
         tag="christina"
         max-height="600" 
         fit
         width="100%"
-        class="ma-0 pa-0"
+      
         src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina.jpg?alt=media&token=a7e51811-b671-4e75-8de0-9e9fda6d53d8"
       >
         <v-col cols="6">
@@ -266,7 +265,6 @@ About me text
             forwards;
           animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
           animation-delay: 2s;
-          margin-left: 5px;
           margin-top: -10px;
           position: absolute;
           bottom: 13px;
