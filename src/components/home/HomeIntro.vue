@@ -36,7 +36,7 @@
     </v-col>
 
     <v-col cols="12" sm="12" md="6" justify="center" align="center">
-      <v-img src="../../assets/Jancy-logo.png" width="auto" height="auto" max-width="400"></v-img>
+      <v-img src="../../assets/Jancyv2.png" width="auto" height="auto" max-width="400"></v-img>
     </v-col>
   </v-row>
 </template>
