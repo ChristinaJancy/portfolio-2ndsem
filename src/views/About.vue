@@ -1,33 +1,16 @@
 <template>
-  <div style="box-sizing:border-box; margin:-120px auto 0 auto; overflow-x: hidden; width: 100%; " fluid>
+  <div
+    style="box-sizing:border-box; margin:-120px auto 0 auto; overflow-x: hidden; width: 100%; "
+    fluid
+  >
     <v-row class="primary" style="margin: 0 auto; padding: 0 auto;">
-     
-      <!--
-    <v-col cols="12">
-<h1 role="img" class="textLine text--text" aria-label="All projects.">
-  <span class="letter">A</span>
-  <span class="letter rev">b</span>
-  <span class="letter rev">o</span>
-  <span class="letter">u</span>
-  <span class="letter rev">t </span>
-  <span>m</span>
-  <span class="letter">e</span>
-  <span class="letter">.</span>
-</h1>
-<br><br><br><br><br>
-    </v-col>
-      -->
-
       <v-img
         tag="christina"
-     
         fit
         width="100%"
-      
         src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina.jpg?alt=media&token=a7e51811-b671-4e75-8de0-9e9fda6d53d8"
       >
         <v-col cols="6">
-
           <div class="container ma-0 pa-0">
             <div class="box" style="padding-top: 50%">
               <div class="title">
@@ -46,47 +29,47 @@
         </v-col>
       </v-img>
     </v-row>
-<v-row class="primary" style="margin: 0 auto; parddin: 0 auto;">
-<v-col cols="12" style="padding-top:20%; padding-bottom:20%;">
-
-          <h4 class="wordCarousel pt-12 mx-auto" align="center">
-            <span class="secondary--text">experience in</span>
-            <div>
-              <!--        Use classes 2,3, or 4 to match the number of words -->
-              <ul class="flip4">
-                <li class="about_carousel--text">Content creation</li>
-                <li class="about_carousel--text">Web design</li>
-                <li class="about_carousel--text">User Experience</li>
-                <li class="about_carousel--text">Business</li>
-              </ul>
-            </div>
-          </h4>
-
-</v-col>
+    <v-row class="primary" style="margin: 0 auto; parddin: 0 auto;">
+      <v-col cols="12" style="padding-top:20%; padding-bottom:20%;">
+        <h4 class="wordCarousel pt-12 mx-auto" align="center">
+          <span class="secondary--text">experience in</span>
+          <div>
+            <!--        Use classes 2,3, or 4 to match the number of words -->
+            <ul class="flip4">
+              <li class="about_carousel--text">Content creation</li>
+              <li class="about_carousel--text">Web design</li>
+              <li class="about_carousel--text">User Experience</li>
+              <li class="about_carousel--text">Business</li>
+            </ul>
+          </div>
+        </h4>
+      </v-col>
 
       <v-col cols="12" align="center">
         <br />
         <br />
         <h1 class="text--text">My video cv.</h1>
         <div align="center" justify="center" class="mx-12">
-        <div class="youtube_responsive_container">
-          <iframe
-            src="https://www.youtube.com/embed/cG1XHMUauec"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+          <div class="youtube_responsive_container">
+            <iframe
+              src="https://www.youtube.com/embed/cG1XHMUauec"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
         <br />
         <br />
       </v-col>
-</v-row>
+    </v-row>
     <v-row class="secondary" style="margin: 0 auto; parddin: 0 auto;">
       <v-col cols="12" align="center">
-        <br><br>
+        <br />
+        <br />
         <h1 class="text-center">My CV.</h1>
-        <br><br>
+        <br />
+        <br />
         <v-img
           src="https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Christina%20Jancy%20Pedersen%20-%20CV.png?alt=media&token=bdbdbee7-4f39-42fa-b247-3c84966e46ad"
           max-width="800"
@@ -99,9 +82,11 @@
     </v-row>
     <v-row class="primary" style="margin: 0 auto; parddin: 0 auto;">
       <v-col cols="12" align="center">
-        <br><br>
+        <br />
+        <br />
         <h1 class="text-center text--text">Business card.</h1>
-        <br><br>
+        <br />
+        <br />
         <h3 class="text--text">Front</h3>
         <v-img
           max-width="500"
