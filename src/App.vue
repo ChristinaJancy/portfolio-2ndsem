@@ -1,5 +1,5 @@
 <template>
-  <v-app id="app">
+  <v-app id="app" >
     <Navigation></Navigation>
       <v-content>
       <router-view />
@@ -35,7 +35,10 @@ import Footer from '@/components/Footer'
         skills: '#skills',
         //Colorchange appbar
         dynamic: '#00000096'
-      }
+      },
+      window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+}
     },
   }
 </script>
