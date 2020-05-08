@@ -12,7 +12,7 @@
         <a
           href="mailto:chri91eq@easv360.dk"
           class="primary--text font-weight-bold"
-        >chri91eq@easv360.dk</a>
+        >chri91eq@easv360.dk</a> 
       </p>
     </v-col>
 
