@@ -97,7 +97,7 @@
 
 
           <router-link to="/">
-            <v-list-item link class="pa-7 mt-12" style="background-color:#1F2833;">
+            <v-list-item link class="pa-7" style="background-color:#1F2833;">
           
               <v-list-item-content>
            <v-icon class="white--text" size="30">mdi-home</v-icon>
