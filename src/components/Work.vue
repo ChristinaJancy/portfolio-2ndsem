@@ -63,6 +63,6 @@ export default {
 <style scoped>
 #worktext {
   line-height: 40px;
-  font: 400 4vh "Baloo Da 2", cursive;
+  font: 400 3vh "Baloo Da 2", cursive;
 }
 </style>
