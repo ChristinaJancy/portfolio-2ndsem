@@ -44,25 +44,6 @@
 </template>
 
 
-
-<script scoped>
-export default {
-  data: () => ({
-    climateVideo: [
-      {
-        title: "climate song",
-        src: require("../assets/climate_song_studio.png"),
-        flex: "6",
-        aboutHover:
-          "Lyrics written by me and a classmate during 6th grade, where I also composed the piano.",
-        about: "Lyrics written by me and a classmate, piano composed by me."
-      }
-    ]
-  })
-};
-</script>
-
-
 <style lang="scss" scoped>
 // Youtube responsive
 .youtube_responsive_container {
