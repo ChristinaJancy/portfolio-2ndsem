@@ -91,13 +91,14 @@
         clipped
         mobile-break-point
         width="100%"
+        height="100%"
         style="background-color: rgba(0, 0, 0, 0.940);"
       >
         <v-list align="center" nav class="my-12" style="box-sizing:border-box;">
 
 
           <router-link to="/">
-            <v-list-item link class="pa-7" style="background-color:#1F2833; margin-top:-30px">
+            <v-list-item link class="pa-5" style="background-color:#1F2833;">
           
               <v-list-item-content>
            <v-icon class="white--text" size="30">mdi-home</v-icon>
@@ -107,7 +108,7 @@
           </router-link>
 
           <router-link to="/works">
-            <v-list-item link class="pa-7" style="background-color:#1F283399;">
+            <v-list-item link class="pa-5" style="background-color:#1F283399;">
             
               <v-list-item-content>
                     <v-icon class="white--text">mdi-animation</v-icon>
@@ -118,7 +119,7 @@
 
      
           <router-link to="/about">
-            <v-list-item link class="pa-7" style="background-color:#1F283370;">
+            <v-list-item link class="pa-5" style="background-color:#1F283370;">
 
               <v-list-item-content>
             <v-icon class="white--text">mdi-face-woman</v-icon>
