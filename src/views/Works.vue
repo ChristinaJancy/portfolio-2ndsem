@@ -216,7 +216,7 @@ export default {
           "https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Jancyv2.png?alt=media&token=00bc5306-4ede-4cdf-b9e4-92e3a7de8cb7",
         flex: "6",
         aboutHover: "Logo created for this portfolio",
-        about: "Made using adobe illustrator",
+        about: "Made using adobe illustrator. I wanted to create a logo, that can show who I am. I like that it is a logo, that can be 'split' into smaller parts, e.g. only showing my name, or only the face.",
         id: 5
       }
     ],

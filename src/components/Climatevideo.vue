@@ -24,7 +24,7 @@
             style="width:calc(100% -180px)"
             class="text--text"
             id="worktext"
-          >Lyrics written by me and a classmate during 6th grade, where I also composed the piano.</v-card-text>
+          >Lyrics written by me and a classmate during 6th grade, where I also composed the piano. This was created as a part of a climate project, where we worked together with people from Iceland and Estonia. It was a super fun project and a great learning experience.</v-card-text>
         </div>
       </v-col>
     </v-row>
@@ -68,7 +68,7 @@ export default {
 .youtube_responsive_container {
   position: relative;
   padding-bottom: 50%;
-  padding-top: 50px;
+  padding-top: 30px;
   overflow: hidden;
 }
 

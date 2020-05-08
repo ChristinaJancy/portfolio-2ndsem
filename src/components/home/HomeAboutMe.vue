@@ -28,8 +28,9 @@
               <br />
               <span>Thanks for looking!</span>
             </p>
-
+          <router-link to="/about">
             <v-btn color="text" class="mt-5">All about me</v-btn>
+            </router-link>
           </v-col>
         </v-row>
       </v-col>

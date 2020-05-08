@@ -47,8 +47,8 @@
       </v-img>
     </v-row>
 <v-row class="primary" style="margin: 0 auto; parddin: 0 auto;">
-<v-col cols="12" >
-  <br><br><br><br><br>
+<v-col cols="12" style="padding-top:20%; padding-bottom:20%;">
+
           <h4 class="wordCarousel pt-12 mx-auto" align="center">
             <span class="secondary--text">experience in</span>
             <div>
@@ -61,7 +61,7 @@
               </ul>
             </div>
           </h4>
-           <br><br><br><br><br><br>
+
 </v-col>
 
       <v-col cols="12" align="center">
