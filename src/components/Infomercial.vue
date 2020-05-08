@@ -50,8 +50,8 @@ export default {
   data: () => ({
     infomercial: [
       {
-        title: "climate song",
-        src: require("../assets/climate_song_studio.png"),
+        title: "Infomercial",
+        src: require("../assets/drugs.png"),
         flex: "6",
         aboutHover:
           "Lyrics written by me and a classmate during 6th grade, where I also composed the piano.",

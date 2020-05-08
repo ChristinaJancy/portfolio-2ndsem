@@ -112,8 +112,8 @@
             >
               <v-card :elevation="hover ? 16 : 2" tile color="white" flat height="auto" class="pa-2" style="box-sizing:border-box;">
                 <!-- width="400"-->
-                 <h3 class="primary--text center-text" v-text="climateVideo.title"></h3>
-                <v-img src="../assets/drugs.png" class="align-end" height="427" contain></v-img>
+                 <h3 class="primary--text center-text" v-text="infomercial.title"></h3>
+                <v-img src="../assets/drugs.png" class="align-end" height="400" contain></v-img>
 
                 <!-- Hover mask here-->
                 <div class="mask mask-1"></div>
@@ -189,7 +189,7 @@
         >
           <v-card :elevation="5" tile flat height="auto" class="pa-2" color="white" style="box-sizing:border-box;">
             <!-- width="400"-->
-             <h3 class="black--text" v-text="climateVideo.title" align="center"></h3>
+             <h3 class="black--text" v-text="infomercial.title" align="center"></h3>
             <v-img src="../assets/drugs.png" class="white--text align-end" height="400" contain>
               <v-btn width="100%" tile color="rgba(255, 255, 255, 0.600)" class="black--text">Watch now!</v-btn>
             </v-img>
