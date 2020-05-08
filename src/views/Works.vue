@@ -210,7 +210,7 @@ export default {
       {
         title: "Portfolio logo",
         src:
-          "https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Jancy-logo.png?alt=media&token=c4ee5a84-c985-4a70-a460-ace9dad5da63",
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/Jancyv2.png?alt=media&token=00bc5306-4ede-4cdf-b9e4-92e3a7de8cb7",
         flex: "6",
         aboutHover: "Logo created for this portfolio",
         about: "Made using adobe illustrator",
