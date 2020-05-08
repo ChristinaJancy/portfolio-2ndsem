@@ -17,6 +17,7 @@
         <v-card flat color="transparent" width="auto">
           <v-img :src="work.src" height="auto" max-height="550" contain></v-img>
         </v-card>
+        <a href="https://www.youtube.com/watch?v=2G_vG5WPwbs" target="_blank" class="text--text" v-text="work.link"></a>
       </v-col>
       <v-col cols="12" md="6" sm="12" class="my-auto" align="end">
         <br />

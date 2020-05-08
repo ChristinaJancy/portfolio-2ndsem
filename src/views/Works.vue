@@ -152,6 +152,7 @@
           flex: work.flex,
           aboutHover: work.aboutHover,
           about: work.about,
+          link: work.link,
           id: work.id
           }}"
         >
@@ -250,7 +251,7 @@ export default {
         flex: "6",
         aboutHover: "Made for a 2nd semester SoMe commercial. ",
         about: "Made using adobe illustrator for a for a school project. We created a short commercial, about a drink called 'High Pink'. This was the label created by me. ",
-        link: "watch here: https://www.youtube.com/watch?v=2G_vG5WPwbs",
+        link: "Watch on YouTube " + " (opens new tab )",
         id: 4
       },
       {
