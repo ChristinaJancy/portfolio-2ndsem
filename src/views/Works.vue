@@ -84,7 +84,7 @@
             >
               <v-card :elevation="hover ? 16 : 2" tile color="white" flat height="auto" class="pa-2" style="box-sizing:border-box;">
                 <!-- width="400"-->
-                 <h3 class="primary--text center-text" v-text="climateVideo.title"></h3>
+                 <h3 class="black--text center-text" v-text="climateVideo.title"></h3>
                 <v-img src="../assets/climate_song_studio.png" class="align-end" height="400" contain></v-img>
 
                 <!-- Hover mask here-->
@@ -112,7 +112,7 @@
             >
               <v-card :elevation="hover ? 16 : 2" tile color="white" flat height="auto" class="pa-2" style="box-sizing:border-box;">
                 <!-- width="400"-->
-                 <h3 class="primary--text center-text" v-text="infomercial.title"></h3>
+                 <h3 class="black--text center-text" v-text="infomercial.title"></h3>
                 <v-img src="../assets/drugs.png" class="align-end" height="400" contain></v-img>
 
                 <!-- Hover mask here-->
