@@ -104,6 +104,34 @@
         </div>
 
       </v-col>
+        <v-col v-for="infomercial in infomercial" :key="infomercial.title" :cols="infomercial.flex">
+        <div class="view view-ninth" align="center" style="box-shadow:1px 1px 4px #000000;">
+          <v-hover v-slot:default="{ hover }">
+            <router-link
+              to="/infomercial"
+            >
+              <v-card :elevation="hover ? 16 : 2" tile color="white" flat height="auto" class="pa-2" style="box-sizing:border-box;">
+                <!-- width="400"-->
+                 <h3 class="primary--text center-text" v-text="climateVideo.title"></h3>
+                <v-img src="../assets/drugs.png" class="align-end" height="427" contain></v-img>
+
+                <!-- Hover mask here-->
+                <div class="mask mask-1"></div>
+                <div class="mask mask-2"></div>
+                <div class="content">
+                  <h2 v-text="infomercial.title"></h2>
+                  <p v-text="infomercial.aboutHover"></p>
+                  <router-link to="/infomercial"
+                  >
+                    <v-btn>Watch now!</v-btn>
+                  </router-link>
+                </div>
+              </v-card>
+            </router-link>
+          </v-hover>
+        </div>
+
+      </v-col>
     </v-row>
     <br />
     <br />
@@ -149,6 +177,21 @@
              <h3 class="black--text" v-text="climateVideo.title" align="center"></h3>
             <v-img src="../assets/climate_song_studio.png" class="white--text align-end" height="400" contain>
               <v-btn width="100%" tile color="rgba(255, 255, 255, 0.600)" class="black--text">Listen now!</v-btn>
+            </v-img>
+
+          </v-card>
+        </router-link>
+      </v-col>
+      
+      <v-col v-for="infomercial in infomercial" :key="infomercial.title" cols="auto" sm="12">
+        <router-link
+         to="/infomercial"
+        >
+          <v-card :elevation="5" tile flat height="auto" class="pa-2" color="white" style="box-sizing:border-box;">
+            <!-- width="400"-->
+             <h3 class="black--text" v-text="climateVideo.title" align="center"></h3>
+            <v-img src="../assets/drugs.png" class="white--text align-end" height="400" contain>
+              <v-btn width="100%" tile color="rgba(255, 255, 255, 0.600)" class="black--text">Watch now!</v-btn>
             </v-img>
 
           </v-card>
@@ -229,6 +272,15 @@ export default {
         about: "Lyrics written by me and a classmate, piano composed by me.",
       }
     ],
+  infomercial:[
+    {
+      title: "Infomercial",
+        src:require("../assets/drugs.png"),
+        flex: "6",
+        aboutHover: "Infomercial project made during my 2nd semester",
+        about: "Infomercial project made during my 2nd semester",
+ }
+  ]
   })
 };
 </script>

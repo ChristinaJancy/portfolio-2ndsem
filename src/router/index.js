@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Climatevideo from '../components/Climatevideo.vue'
+import Infomercial from '../components/Infomercial.vue'
 import Works from '../views/Works.vue'
 import Work from '../components/Work.vue'
 
@@ -29,6 +30,11 @@ const routes = [
     path: '/climatevideo',
     name: 'Climatevideo',
     component: Climatevideo,
+  },
+  {
+    path: '/infomercial',
+    name: 'Infomercial',
+    component: Infomercial
   },
   {
     path: '/work/:title',
