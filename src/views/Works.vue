@@ -37,6 +37,7 @@
           flex: work.flex,
           aboutHover: work.aboutHover,
           about: work.about,
+          link: work.link,
           id: work.id
           }}"
             >
@@ -61,6 +62,7 @@
                     flex: work.flex,
                     aboutHover: work.aboutHover,
                     about: work.about,
+                    link: work.link,
                     id: work.id
                     }}"
                   >
@@ -173,7 +175,7 @@ export default {
         aboutHover:
           "Made using Adobe Photoshop, during my 1st semester as a MMD student.",
         about:
-          "Made during my first semester as a multimedia designer at Business Academy EASV in Esbjerg. I created this in adobe photoshop",
+          "Made during my first semester as a multimedia designer at Business Academy EASV in Esbjerg. I created this in adobe photoshop, using double exposure effects. The task was to have someone take a picture of yourself in profile and combine it with whatever was on your mind using double exposure effects.",
         id: 1
       },
       {
@@ -182,7 +184,7 @@ export default {
         flex: "4",
         aboutHover:
           "Made using Adobe illustrator, during my 1st semester as a MMD student",
-        about: '"Mini me" project',
+        about: 'This project was called "Mini me" project, and the task was to create an illustrated version of yourself, for a class photo',
         id: 2
       },
       {
@@ -195,7 +197,7 @@ export default {
         aboutHover:
           "Made using Adobe illustrator, made in the beginning of my 1st semester as a MMD student",
         about:
-          "A slice of pizza made in Adobe Illustrator, during my 1st semester as a multimedia designer.",
+          "A slice of pizza made in Adobe Illustrator, during my 1st semester as a multimedia designer. It was a fun little task, to get to know Adobe Illustrator better.",
         id: 3
       },
       {
@@ -204,7 +206,8 @@ export default {
           "https://firebasestorage.googleapis.com/v0/b/portfolio-708bc.appspot.com/o/High%20Pink%20Label_cropped.png?alt=media&token=a4af2e6b-5fe5-4f5b-9375-31717ce608e5",
         flex: "6",
         aboutHover: "Made for a 2nd semester SoMe commercial. ",
-        about: "Made using adobe illustrator",
+        about: "Made using adobe illustrator for a for a school project. We created a short commercial, about a drink called 'High Pink'. This was the label created by me. ",
+        link: "watch here: https://www.youtube.com/watch?v=2G_vG5WPwbs",
         id: 4
       },
       {

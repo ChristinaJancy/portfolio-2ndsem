@@ -23,6 +23,7 @@
           <v-card-text
             style="width:calc(100% -180px)"
             class="text--text"
+            id="worktext"
           >Lyrics written by me and a classmate during 6th grade, where I also composed the piano.</v-card-text>
         </div>
       </v-col>
@@ -80,4 +81,9 @@ export default {
   height: 90%;
 }
 //Youtube responsive end
+
+#worktext{
+  line-height: 40px;
+  font: 400 4vh 'Baloo Da 2', cursive;
+}
 </style>

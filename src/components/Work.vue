@@ -7,6 +7,9 @@
           class="text--text"
           style="font:500 60px 'Crimson Pro', serif, cursive;"
         ></h1>
+        <br />
+        <br />
+        <br />
       </v-col>
     </v-row>
     <v-row>
@@ -18,13 +21,13 @@
       <v-col cols="12" md="6" sm="12" class="my-auto" align="end">
         <br />
         <div class="mx-12" align="left">
-          <v-card-text class="text--text" v-text="work.about"></v-card-text>
+          <v-card-text id="worktext" class="text--text" v-text="work.about"></v-card-text>
         </div>
       </v-col>
     </v-row>
     <v-row>
       <v-col>
-                <div align="right">
+        <div align="right">
           <router-link to="/works">
             <v-btn class="button">Go back</v-btn>
           </router-link>
@@ -49,9 +52,17 @@ export default {
         flex: work.flex,
         aboutHover: work.aboutHover,
         about: work.about,
+        link: work.link,
         id: work.id
       }
     };
   }
 };
 </script>
+
+<style scoped>
+#worktext {
+  line-height: 40px;
+  font: 400 4vh "Baloo Da 2", cursive;
+}
+</style>
